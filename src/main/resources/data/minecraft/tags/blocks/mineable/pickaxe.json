@@ -5,6 +5,9 @@
     "gemcraft:deepslate_ruby_ore",
     "gemcraft:end_stone_ruby_ore",
     "gemcraft:end_stone_diamond_ore",
-    "gemcraft:end_stone_emerald_ore"
+    "gemcraft:end_stone_emerald_ore",
+    "gemcraft:nether_ruby_ore",
+    "gemcraft:nether_diamond_ore",
+    "gemcraft:nether_emerald_ore"
   ]
 }

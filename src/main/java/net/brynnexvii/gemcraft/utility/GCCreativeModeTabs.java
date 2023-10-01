@@ -22,6 +22,7 @@ public class GCCreativeModeTabs {
                         .displayItems((pParameters, pOutput) -> {
                                 pOutput.accept(Blocks.DIAMOND_ORE);
                                 pOutput.accept(Blocks.DEEPSLATE_DIAMOND_ORE);
+                                pOutput.accept(GCBlocks.NETHER_DIAMOND_ORE.get());
                                 pOutput.accept(GCBlocks.END_STONE_DIAMOND_ORE.get());
                                 pOutput.accept(GCItems.RAW_DIAMOND.get());
                                 pOutput.accept(Items.DIAMOND);
@@ -30,6 +31,7 @@ public class GCCreativeModeTabs {
 
                                 pOutput.accept(Blocks.EMERALD_ORE);
                                 pOutput.accept(Blocks.DEEPSLATE_EMERALD_ORE);
+                                pOutput.accept(GCBlocks.NETHER_EMERALD_ORE.get());
                                 pOutput.accept(GCBlocks.END_STONE_EMERALD_ORE.get());
                                 pOutput.accept(GCItems.RAW_EMERALD.get());
                                 pOutput.accept(Items.EMERALD);
@@ -38,6 +40,7 @@ public class GCCreativeModeTabs {
 
                                 pOutput.accept(GCBlocks.RUBY_ORE.get());
                                 pOutput.accept(GCBlocks.DEEPSLATE_RUBY_ORE.get());
+                                pOutput.accept(GCBlocks.NETHER_RUBY_ORE.get());
                                 pOutput.accept(GCBlocks.END_STONE_RUBY_ORE.get());
                                 pOutput.accept(GCItems.RUBY.get());
                                 pOutput.accept(GCItems.RAW_RUBY.get());

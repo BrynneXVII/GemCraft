@@ -2,6 +2,9 @@
   "values": [
     "gemcraft:ruby_ore",
     "gemcraft:ruby_block",
-    "gemcraft:deepslate_ruby_ore"
+    "gemcraft:deepslate_ruby_ore",
+    "gemcraft:nether_ruby_ore",
+    "gemcraft:nether_diamond_ore",
+    "gemcraft:nether_emerald_ore"
   ]
 }
