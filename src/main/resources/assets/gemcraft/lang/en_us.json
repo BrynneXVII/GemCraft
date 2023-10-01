@@ -1,0 +1,12 @@
+{
+  "item.gemcraft.brilliant_diamond": "Brilliant Cut Diamond",
+  "item.gemcraft.brilliant_ruby": "Brilliant Cut Ruby",
+  "item.gemcraft.ruby": "Ruby",
+  "item.gemcraft.brilliant_emerald": "Brilliant Cut Emerald",
+
+  "block.gemcraft.ruby_ore": "Ruby Ore",
+  "block.gemcraft.deepslate_ruby_ore": "Deepslate Ruby Ore",
+  "block.gemcraft.ruby_block": "Ruby Block",
+
+  "gccreativetab.gem_tab": "Cut Gems"
+}

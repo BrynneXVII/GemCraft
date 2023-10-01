@@ -1,0 +1,46 @@
+package net.brynnexvii.gemcraft.utility;
+
+import net.brynnexvii.gemcraft.GemCraft;
+import net.brynnexvii.gemcraft.block.GCBlocks;
+import net.brynnexvii.gemcraft.item.GCItems;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.network.chat.Component;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.RegistryObject;
+
+public class GCCreativeModeTabs {
+        public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, GemCraft.MODID);
+
+        public static final RegistryObject<CreativeModeTab> GEM_TAB = CREATIVE_MODE_TABS.register("gem_tab",
+                () -> CreativeModeTab.builder().icon(() -> new ItemStack(GCItems.BRILLIANT_RUBY.get()))
+                        .title(Component.translatable("gccreativetab.gem_tab"))
+                        .displayItems((pParameters, pOutput) -> {
+                                pOutput.accept(Blocks.DIAMOND_ORE);
+                                pOutput.accept(Blocks.DEEPSLATE_DIAMOND_ORE);
+                                pOutput.accept(GCItems.BRILLIANT_DIAMOND.get());
+                                pOutput.accept(Items.DIAMOND);
+                                pOutput.accept(Blocks.DIAMOND_BLOCK);
+
+                                pOutput.accept(GCBlocks.RUBY_ORE.get());
+                                pOutput.accept(GCBlocks.DEEPSLATE_RUBY_ORE.get());
+                                pOutput.accept(GCItems.RUBY.get());
+                                pOutput.accept(GCItems.BRILLIANT_RUBY.get());
+                                pOutput.accept(GCBlocks.RUBY_BLOCK.get());
+
+                                pOutput.accept(Blocks.EMERALD_ORE);
+                                pOutput.accept(Blocks.DEEPSLATE_EMERALD_ORE);
+                                pOutput.accept(Items.EMERALD);
+                                pOutput.accept(GCItems.BRILLIANT_EMERALD.get());
+                                pOutput.accept(Blocks.EMERALD_BLOCK);
+
+                        }).build());
+        public static void register(IEventBus eventBus){
+
+            CREATIVE_MODE_TABS.register(eventBus);
+        }
+}
