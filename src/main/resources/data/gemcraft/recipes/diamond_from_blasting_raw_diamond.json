@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 150,
+  "experience": 1,
+  "group": "diamond",
+  "ingredient": {
+    "item": "gemcraft:raw_diamond"
+  },
+  "result": "minecraft:diamond"
+}

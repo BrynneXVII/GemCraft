@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "gemcraft:ruby"
+    }
+  },
+  "result": {
+    "item": "gemcraft:ruby_block"
+  }
+}
+

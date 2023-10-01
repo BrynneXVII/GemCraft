@@ -58,7 +58,6 @@ public class GemCraft
             event.accept(GCItems.BRILLIANT_DIAMOND);
             event.accept(GCItems.BRILLIANT_RUBY);
             event.accept(GCItems.BRILLIANT_EMERALD);
-
         }
     }
 

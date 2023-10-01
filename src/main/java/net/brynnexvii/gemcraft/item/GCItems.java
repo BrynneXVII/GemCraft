@@ -14,11 +14,17 @@ public class GCItems {
     //items
     public static final RegistryObject<Item>  BRILLIANT_DIAMOND = ITEMS.register("brilliant_diamond",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item>  RAW_DIAMOND = ITEMS.register("raw_diamond",
+            () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item>  BRILLIANT_RUBY = ITEMS.register("brilliant_ruby",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item>  RUBY = ITEMS.register("ruby",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item>  RAW_RUBY = ITEMS.register("raw_ruby",
+            () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item>  BRILLIANT_EMERALD = ITEMS.register("brilliant_emerald",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item>  RAW_EMERALD = ITEMS.register("raw_emerald",
             () -> new Item(new Item.Properties()));
 
     //item register method

@@ -1,12 +1,18 @@
 {
   "item.gemcraft.brilliant_diamond": "Brilliant Cut Diamond",
+  "item.gemcraft.raw_diamond": "Raw Diamond",
   "item.gemcraft.brilliant_ruby": "Brilliant Cut Ruby",
   "item.gemcraft.ruby": "Ruby",
+  "item.gemcraft.raw_ruby": "Raw Ruby",
   "item.gemcraft.brilliant_emerald": "Brilliant Cut Emerald",
+  "item.gemcraft.raw_emerald": "Raw Emerald",
 
   "block.gemcraft.ruby_ore": "Ruby Ore",
   "block.gemcraft.deepslate_ruby_ore": "Deepslate Ruby Ore",
   "block.gemcraft.ruby_block": "Ruby Block",
+  "block.gemcraft.end_stone_ruby_ore": "End Stone Ruby Ore",
+  "block.gemcraft.end_stone_diamond_ore": "End Stone Diamond Ore",
+  "block.gemcraft.end_stone_emerald_ore": "End Stone Emerald Ore",
 
   "gccreativetab.gem_tab": "Cut Gems"
 }
