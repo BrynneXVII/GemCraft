@@ -22,5 +22,9 @@
   "block.gemcraft.nether_diamond_ore": "Netherrack Diamond Ore",
   "block.gemcraft.nether_emerald_ore": "Netherrack Emerald Ore",
 
+  "gemcraft.ruby_powder.base_tool_tip": "Crushed raw ruby. Can be used to .....",
+  "gemcraft.diamond_powder.base_tool_tip": "Crushed raw diamond. Can be used to .....",
+  "gemcraft.emerald_powder.base_tool_tip": "Crushed raw emerald. Can be used to .....",
+
   "gccreativetab.gem_tab": "Cut Gems"
 }

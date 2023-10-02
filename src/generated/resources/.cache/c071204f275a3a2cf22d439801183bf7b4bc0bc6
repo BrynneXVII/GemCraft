@@ -1,0 +1,12 @@
+// 1.20.1	2023-10-01T23:58:25.9437001	Tags for minecraft:block mod id gemcraft
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/forge/tags/blocks/needs_netherite_tool.json
+f3c24bf7460c427c00f911e66bbfe8fb13ff9ac5 data/gemcraft/tags/blocks/green_interacting_flowers.json
+6f02943824dd84a66642203b8d101620bfe1abad data/gemcraft/tags/blocks/red_interacting_flowers.json
+85f4a6f81128f89d2f1a48f4e67b21cb2f5350ba data/gemcraft/tags/blocks/white_interacting_flowers.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/blocks/mineable/axe.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/blocks/mineable/hoe.json
+6f17de9ab86907a3d6bf4bfd122d64693071b1f4 data/minecraft/tags/blocks/mineable/pickaxe.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/blocks/mineable/shovel.json
+e1c545775d3a86464afec2ed68ed26e24c009765 data/minecraft/tags/blocks/needs_diamond_tool.json
+79c2e982b32d10d44e62bfba9ef87d073a9e07c1 data/minecraft/tags/blocks/needs_iron_tool.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/blocks/needs_stone_tool.json
