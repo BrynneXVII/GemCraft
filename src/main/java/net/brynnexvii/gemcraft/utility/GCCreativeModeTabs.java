@@ -50,6 +50,8 @@ public class GCCreativeModeTabs {
                                 pOutput.accept(GCItems.BRILLIANT_RUBY.get());
                                 pOutput.accept(GCBlocks.RUBY_BLOCK.get());
 
+                                pOutput.accept(GCItems.ROCK_CANDY.get());
+
                         }).build());
         public static void register(IEventBus eventBus){
 
