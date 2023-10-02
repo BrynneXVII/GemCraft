@@ -27,6 +27,13 @@ public class GCItems {
     public static final RegistryObject<Item>  RAW_EMERALD = ITEMS.register("raw_emerald",
             () -> new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> RUBY_POWDER = ITEMS.register("ruby_powder",
+            () -> new RubyPowderItem(new Item.Properties()));
+    public static final RegistryObject<Item> EMERALD_POWDER = ITEMS.register("emerald_powder",
+            () -> new EmeraldPowderItem(new Item.Properties()));
+    public static final RegistryObject<Item> DIAMOND_POWDER = ITEMS.register("diamond_powder",
+            () -> new DiamondPowderItem(new Item.Properties()));
+
     //item register method
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);

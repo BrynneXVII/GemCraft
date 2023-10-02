@@ -1,7 +1,9 @@
 package net.brynnexvii.gemcraft.item;
 
 import net.minecraft.core.BlockPos;
+import net.minecraft.network.chat.Component;
 import net.minecraft.world.InteractionResult;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
@@ -23,11 +25,17 @@ public abstract class JewelPowderItem extends Item {
         if(!level.isClientSide){
             BlockPos blockpos = pContext.getClickedPos();
             BlockState blockstate = level.getBlockState(blockpos);
+            Player player = pContext.getPlayer();
             if(isInteractingFlower(blockstate)){
+                pContext.getPlayer().sendSystemMessage(Component.literal("TEST - YES"));
+                if (!player.getAbilities().instabuild) {
+                    pContext.getItemInHand().shrink(1);
+                }
                 return InteractionResult.SUCCESS;
             }
-
+            player.sendSystemMessage(Component.literal("TEST - NO"));
         }
+
         return InteractionResult.FAIL;
     }
 
