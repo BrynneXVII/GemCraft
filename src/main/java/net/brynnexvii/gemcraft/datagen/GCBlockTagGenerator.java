@@ -69,5 +69,13 @@ public class GCBlockTagGenerator extends BlockTagsProvider {
                         GCBlocks.END_STONE_EMERALD_ORE.get());
         this.tag(Tags.Blocks.NEEDS_NETHERITE_TOOL);
 
+        //Special Block Tags
+        //--------------------------------------------------
+        this.tag(BlockTags.FENCES)
+                .add(GCBlocks.WILLOW_FENCE.get());
+        this.tag(BlockTags.FENCE_GATES)
+                .add(GCBlocks.WILLOW_FENCE_GATE.get());
+        this.tag(BlockTags.WALLS)
+                .add(GCBlocks.WILLOW_WALL.get());
     }
 }

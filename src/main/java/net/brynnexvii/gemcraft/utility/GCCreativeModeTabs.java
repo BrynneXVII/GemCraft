@@ -50,6 +50,20 @@ public class GCCreativeModeTabs {
                                 pOutput.accept(GCItems.BRILLIANT_RUBY.get());
                                 pOutput.accept(GCBlocks.RUBY_BLOCK.get());
 
+                                pOutput.accept(GCBlocks.WILLOW_LOG.get());
+                                pOutput.accept(GCBlocks.STRIPPED_WILLOW_LOG.get());
+                                pOutput.accept(GCBlocks.WILLOW_WOOD.get());
+                                pOutput.accept(GCBlocks.WILLOW_PLANKS.get());
+                                pOutput.accept(GCBlocks.WILLOW_STAIRS.get());
+                                pOutput.accept(GCBlocks.WILLOW_SLAB.get());
+                                pOutput.accept(GCBlocks.WILLOW_BUTTON.get());
+                                pOutput.accept(GCBlocks.WILLOW_PRESSURE_PLATE.get());
+                                pOutput.accept(GCBlocks.WILLOW_FENCE.get());
+                                pOutput.accept(GCBlocks.WILLOW_FENCE_GATE.get());
+                                pOutput.accept(GCBlocks.WILLOW_WALL.get());
+                                pOutput.accept(GCBlocks.WILLOW_DOOR.get());
+                                pOutput.accept(GCBlocks.WILLOW_TRAPDOOR.get());
+
                                 pOutput.accept(GCItems.ROCK_CANDY.get());
 
                         }).build());

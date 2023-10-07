@@ -37,6 +37,23 @@ public class GCBlockLootTables extends BlockLootSubProvider {
                 block -> createOreDrop(GCBlocks.NETHER_RUBY_ORE.get(), GCItems.RAW_RUBY.get()));
         this.add(GCBlocks.END_STONE_RUBY_ORE.get(),
                 block -> createOreDrop(GCBlocks.END_STONE_RUBY_ORE.get(), GCItems.RAW_RUBY.get()));
+
+        this.dropSelf(GCBlocks.WILLOW_LOG.get()); // do not know how to strip logs, might need to be an advanced block instead
+        this.dropSelf(GCBlocks.STRIPPED_WILLOW_LOG.get());
+        this.dropSelf(GCBlocks.WILLOW_WOOD.get());
+        this.dropSelf(GCBlocks.WILLOW_PLANKS.get());
+        this.dropSelf(GCBlocks.WILLOW_STAIRS.get());
+        this.dropSelf(GCBlocks.WILLOW_BUTTON.get());
+        this.dropSelf(GCBlocks.WILLOW_PRESSURE_PLATE.get());
+        this.dropSelf(GCBlocks.WILLOW_TRAPDOOR.get());
+        this.dropSelf(GCBlocks.WILLOW_FENCE.get());
+        this.dropSelf(GCBlocks.WILLOW_FENCE_GATE.get());
+        this.dropSelf(GCBlocks.WILLOW_WALL.get());
+
+        this.add(GCBlocks.WILLOW_SLAB.get(),
+                block -> createSlabItemTable(GCBlocks.WILLOW_SLAB.get()));
+        this.add(GCBlocks.WILLOW_DOOR.get(),
+                block -> createDoorTable(GCBlocks.WILLOW_DOOR.get()));
     }
 
     @Override

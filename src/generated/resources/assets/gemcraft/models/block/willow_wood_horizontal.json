@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "gemcraft:block/willow_wood_top",
+    "side": "gemcraft:block/willow_wood"
+  }
+}

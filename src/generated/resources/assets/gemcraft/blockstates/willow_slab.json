@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "gemcraft:block/willow_slab"
+    },
+    "type=double": {
+      "model": "gemcraft:block/willow_planks"
+    },
+    "type=top": {
+      "model": "gemcraft:block/willow_slab_top"
+    }
+  }
+}
