@@ -34,10 +34,17 @@ public class GCItemModelProvider extends ItemModelProvider {
         simpleItem(GCItems.ROCK_CANDY);
 
         simpleBlockItem(GCBlocks.WILLOW_DOOR);
+        alternateBlockItem(GCBlocks.WILLOW_WOOD);
 
         fenceItem(GCBlocks.WILLOW_FENCE, GCBlocks.WILLOW_PLANKS);
         buttonItem(GCBlocks.WILLOW_BUTTON, GCBlocks.WILLOW_PLANKS);
         wallItem(GCBlocks.WILLOW_WALL, GCBlocks.WILLOW_PLANKS);
+        trapdoorItem(GCBlocks.WILLOW_TRAPDOOR);
+
+        alternateBlockItem(GCBlocks.WILLOW_STAIRS);
+        alternateBlockItem(GCBlocks.WILLOW_PRESSURE_PLATE);
+        alternateBlockItem(GCBlocks.WILLOW_FENCE_GATE);
+        alternateBlockItem(GCBlocks.WILLOW_SLAB);
 
     }
 
@@ -51,6 +58,16 @@ public class GCItemModelProvider extends ItemModelProvider {
         return withExistingParent(item.getId().getPath(),
                 new ResourceLocation("item/generated")).texture("layer0",
                 new ResourceLocation(GemCraft.MODID, "item/" + item.getId().getPath()));
+    }
+
+    public void alternateBlockItem(RegistryObject<Block> block){
+        this.withExistingParent(GemCraft.MODID + ":" + ForgeRegistries.BLOCKS.getKey(block.get()).getPath(),
+                modLoc("block/" + ForgeRegistries.BLOCKS.getKey(block.get()).getPath()));
+    }
+
+    public void trapdoorItem(RegistryObject<Block> block){
+        this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(),
+                modLoc("block/" + ForgeRegistries.BLOCKS.getKey(block.get()).getPath() + "_bottom"));
     }
 
     public void fenceItem(RegistryObject<Block> block, RegistryObject<Block> baseBlock){
