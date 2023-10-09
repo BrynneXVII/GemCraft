@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "gemcraft:item/basic_staff_2d"
+  }
+}

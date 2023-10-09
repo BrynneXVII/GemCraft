@@ -37,6 +37,9 @@ public class GCItems {
     public static final RegistryObject<Item>  ROCK_CANDY = ITEMS.register("rock_candy",
             () -> new Item(new Item.Properties().food(GCFood.ROCK_CANDY)));
 
+    public static final RegistryObject<Item>  BASIC_STAFF = ITEMS.register("basic_staff",
+            () -> new Item(new Item.Properties().stacksTo(1)));
+
     //item register method
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);

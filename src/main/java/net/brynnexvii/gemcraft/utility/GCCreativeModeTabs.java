@@ -65,6 +65,7 @@ public class GCCreativeModeTabs {
                                 pOutput.accept(GCBlocks.WILLOW_TRAPDOOR.get());
 
                                 pOutput.accept(GCItems.ROCK_CANDY.get());
+                                pOutput.accept(GCItems.BASIC_STAFF.get());
 
                         }).build());
         public static void register(IEventBus eventBus){
