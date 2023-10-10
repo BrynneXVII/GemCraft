@@ -1,5 +1,6 @@
-// 1.20.1	2023-10-07T01:17:10.1959361	Tags for minecraft:block mod id gemcraft
+// 1.20.1	2023-10-09T23:55:11.5478295	Tags for minecraft:block mod id gemcraft
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/forge/tags/blocks/needs_netherite_tool.json
+09dc1370bee752a3763f21b3834c0c17e77c73ce data/gemcraft/tags/blocks/gem_ores.json
 f3c24bf7460c427c00f911e66bbfe8fb13ff9ac5 data/gemcraft/tags/blocks/green_interacting_flowers.json
 6f02943824dd84a66642203b8d101620bfe1abad data/gemcraft/tags/blocks/red_interacting_flowers.json
 85f4a6f81128f89d2f1a48f4e67b21cb2f5350ba data/gemcraft/tags/blocks/white_interacting_flowers.json

@@ -13,6 +13,7 @@ public class GCTags {
         public static final TagKey<Block> RED_INTERACTING_FLOWERS = tag("red_interacting_flowers");
         public static final TagKey<Block> GREEN_INTERACTING_FLOWERS = tag("green_interacting_flowers");
         public static final TagKey<Block> WHITE_INTERACTING_FLOWERS = tag("white_interacting_flowers");
+        public static final TagKey<Block> GEM_ORES = tag("gem_ores");
 
         //helper method to find tags
         private static TagKey<Block> tag(String name){
@@ -21,7 +22,7 @@ public class GCTags {
     }
 
     public static class Items {
-
+        public static final TagKey<Item> RAW_GEMS = tag("raw_gems");
 
         private static TagKey<Item> tag(String name){
             return ItemTags.create(new ResourceLocation(GemCraft.MODID, name));

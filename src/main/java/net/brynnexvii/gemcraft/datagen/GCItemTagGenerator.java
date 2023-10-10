@@ -1,10 +1,13 @@
 package net.brynnexvii.gemcraft.datagen;
 
 import net.brynnexvii.gemcraft.GemCraft;
+import net.brynnexvii.gemcraft.item.GCItems;
+import net.brynnexvii.gemcraft.utility.GCTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.Nullable;
 
@@ -17,6 +20,10 @@ public class GCItemTagGenerator extends ItemTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider pProvider) {
+        this.tag(GCTags.Items.RAW_GEMS)
+                .add(GCItems.RAW_DIAMOND.get(),
+                        GCItems.RAW_EMERALD.get(),
+                        GCItems.RAW_RUBY.get());
 
     }
 }

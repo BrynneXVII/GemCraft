@@ -21,6 +21,22 @@ public class GCBlockTagGenerator extends BlockTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider pProvider) {
+        //Gemcraft Misc Tags
+        //--------------------------------------------------
+        this.tag(GCTags.Blocks.GEM_ORES)
+                .add(Blocks.DIAMOND_ORE,
+                        Blocks.DEEPSLATE_DIAMOND_ORE,
+                        GCBlocks.NETHER_DIAMOND_ORE.get(),
+                        GCBlocks.END_STONE_DIAMOND_ORE.get(),
+                        Blocks.EMERALD_ORE,
+                        Blocks.DEEPSLATE_EMERALD_ORE,
+                        GCBlocks.NETHER_EMERALD_ORE.get(),
+                        GCBlocks.END_STONE_EMERALD_ORE.get(),
+                        GCBlocks.RUBY_ORE.get(),
+                        GCBlocks.DEEPSLATE_RUBY_ORE.get(),
+                        GCBlocks.NETHER_RUBY_ORE.get(),
+                        GCBlocks.END_STONE_RUBY_ORE.get());
+
         //Gem Powder Flower Tags
         //--------------------------------------------------
         this.tag(GCTags.Blocks.GREEN_INTERACTING_FLOWERS)

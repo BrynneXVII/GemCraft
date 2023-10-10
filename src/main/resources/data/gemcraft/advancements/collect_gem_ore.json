@@ -1,0 +1,31 @@
+{
+  "parent": "gemcraft:starting_gemcraft",
+  "criteria": {
+    "requirement": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "gemcraft:gem_ores"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.gemcraft.base.collect_gem_ore.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "gemcraft:ruby_ore"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.gemcraft.base.collect_gem_ore.title"
+    }
+  },
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,43 @@
+{
+  "parent": "gemcraft:starting_gemcraft",
+  "criteria": {
+    "requirement": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "gemcraft:raw_diamond"
+            ]
+          },
+          {
+            "items": [
+              "gemcraft:raw_emerald"
+            ]
+          },
+          {
+            "items": [
+              "gemcraft:raw_ruby"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.gemcraft.base.collect_all_raw_gems.description"
+    },
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "item": "gemcraft:raw_emerald"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.gemcraft.base.collect_all_raw_gems.title"
+    }
+  },
+  "sends_telemetry_event": true
+}

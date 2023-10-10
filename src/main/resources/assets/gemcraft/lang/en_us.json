@@ -41,5 +41,12 @@
   "gemcraft.diamond_powder.base_tool_tip": "Crushed raw diamond. Can be used to .....",
   "gemcraft.emerald_powder.base_tool_tip": "Crushed raw emerald. Can be used to .....",
 
+  "advancements.gemcraft.base.starting_gemcraft.title": "Starting GemCraft",
+  "advancements.gemcraft.base.starting_gemcraft.description": "Starting your journey to harnessing the power from raw gems by obtaining one raw gem.",
+  "advancements.gemcraft.base.collect_all_raw_gems.title": "Certified Rockhound",
+  "advancements.gemcraft.base.collect_all_raw_gems.description": "Collect all raw gem types.",
+  "advancements.gemcraft.base.collect_gem_ore.title": "A Penny Saved...",
+  "advancements.gemcraft.base.collect_gem_ore.description": "Collect a gem ore block. Save it for a more FORTUNATE time.",
+
   "gccreativetab.gem_tab": "Cut Gems"
 }

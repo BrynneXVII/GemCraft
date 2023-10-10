@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "gemcraft:raw_ruby"
+    },
+    "title": {
+      "translate": "advancements.gemcraft.base.starting_gemcraft.title"
+    },
+    "description": {
+      "translate": "advancements.gemcraft.base.starting_gemcraft.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "background": "gemcraft:textures/block/willow_planks.png"
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "gemcraft:raw_ruby"
+            ]
+          }
+        ]
+      }
+    }
+  }
+
+}
