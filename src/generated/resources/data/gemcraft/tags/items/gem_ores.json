@@ -1,0 +1,16 @@
+{
+  "values": [
+    "minecraft:diamond_ore",
+    "minecraft:deepslate_diamond_ore",
+    "gemcraft:nether_diamond_ore",
+    "gemcraft:end_stone_diamond_ore",
+    "minecraft:emerald_ore",
+    "minecraft:deepslate_emerald_ore",
+    "gemcraft:nether_emerald_ore",
+    "gemcraft:end_stone_emerald_ore",
+    "gemcraft:ruby_ore",
+    "gemcraft:deepslate_ruby_ore",
+    "gemcraft:nether_ruby_ore",
+    "gemcraft:end_stone_ruby_ore"
+  ]
+}

@@ -27,5 +27,8 @@
       "translate": "advancements.gemcraft.base.collect_gem_ore.title"
     }
   },
+  "rewards": {
+    "experience": 10
+  },
   "sends_telemetry_event": true
 }

@@ -39,5 +39,11 @@
       "translate": "advancements.gemcraft.base.collect_all_raw_gems.title"
     }
   },
+  "rewards": {
+    "experience": 100,
+    "loot": [
+      "gemcraft:advancements/collect_all_raw_gems"
+    ]
+  },
   "sends_telemetry_event": true
 }
