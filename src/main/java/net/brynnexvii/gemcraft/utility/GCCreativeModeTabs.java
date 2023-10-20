@@ -53,6 +53,9 @@ public class GCCreativeModeTabs {
                                 pOutput.accept(GCBlocks.WILLOW_LOG.get());
                                 pOutput.accept(GCBlocks.STRIPPED_WILLOW_LOG.get());
                                 pOutput.accept(GCBlocks.WILLOW_WOOD.get());
+                                pOutput.accept(GCBlocks.STRIPPED_WILLOW_WOOD.get());
+                                pOutput.accept(GCBlocks.WILLOW_LEAVES.get());
+                                pOutput.accept(GCBlocks.WILLOW_SAPLING.get());
                                 pOutput.accept(GCBlocks.WILLOW_PLANKS.get());
                                 pOutput.accept(GCBlocks.WILLOW_STAIRS.get());
                                 pOutput.accept(GCBlocks.WILLOW_SLAB.get());

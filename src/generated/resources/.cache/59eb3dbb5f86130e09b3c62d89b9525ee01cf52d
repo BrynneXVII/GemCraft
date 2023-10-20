@@ -1,4 +1,4 @@
-// 1.20.1	2023-10-07T01:17:10.1969372	Loot Tables
+// 1.20.1	2023-10-20T00:38:33.3299161	Loot Tables
 c6aeeef5d9c5e784ce00c84b90f8adb73f44c658 data/gemcraft/loot_tables/blocks/deepslate_ruby_ore.json
 5b830cef9871e923be500c738c62a1ee975e77a7 data/gemcraft/loot_tables/blocks/end_stone_diamond_ore.json
 beebdce62abf1d108c3f7bc9a1890fc38234c384 data/gemcraft/loot_tables/blocks/end_stone_emerald_ore.json
@@ -9,13 +9,16 @@ ed357742a933acc0030a691931d33aef2b064199 data/gemcraft/loot_tables/blocks/nether
 5014c2d1a5bb92ed7185daac781615c12b2b5108 data/gemcraft/loot_tables/blocks/ruby_block.json
 b741d4c49abedc979ce1bc4912d13239c1f10334 data/gemcraft/loot_tables/blocks/ruby_ore.json
 0859a693200b0d1a5763ca439f71827632905926 data/gemcraft/loot_tables/blocks/stripped_willow_log.json
+0bf44b7b7b6b55768ca03b853037a2abe99fd4ba data/gemcraft/loot_tables/blocks/stripped_willow_wood.json
 1483ecf2ca3c12b34851b2ba4de59d8ddba3f6f4 data/gemcraft/loot_tables/blocks/willow_button.json
 04da902c26020dfd9d08bca4d570c0be83ce1ac7 data/gemcraft/loot_tables/blocks/willow_door.json
 b4278519b3ce3ed300bbc1ef2e95eab093160487 data/gemcraft/loot_tables/blocks/willow_fence.json
 40fe2e75ded288ca191620f7120b940dbb21e2b3 data/gemcraft/loot_tables/blocks/willow_fence_gate.json
+70b157cda56932b55f5db5d3299b877efcaf34aa data/gemcraft/loot_tables/blocks/willow_leaves.json
 93f702e30aaaa301c22a2e5d5ae595b67497f0b8 data/gemcraft/loot_tables/blocks/willow_log.json
 4f11114be3b1c8e1d2a96f36a05c3d64b6b08f26 data/gemcraft/loot_tables/blocks/willow_planks.json
 2bad0077e6fc6a0e98f758ffbd35723d22672868 data/gemcraft/loot_tables/blocks/willow_pressure_plate.json
+0627acbc87acc6550f4bca6736bddc03a65b50c2 data/gemcraft/loot_tables/blocks/willow_sapling.json
 c29766771139b3f18e8d7242f318515653b36740 data/gemcraft/loot_tables/blocks/willow_slab.json
 7e8b3fed49ab7e943c745bb8c3006e804a168c1d data/gemcraft/loot_tables/blocks/willow_stairs.json
 f0106f1b84341168e0a76e06359e30352641b20b data/gemcraft/loot_tables/blocks/willow_trapdoor.json

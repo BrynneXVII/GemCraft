@@ -1,4 +1,4 @@
-// 1.20.1	2023-10-09T16:53:50.4150381	Item Models: gemcraft
+// 1.20.1	2023-10-20T00:38:33.3309173	Item Models: gemcraft
 ccb4be144069e60fcdb3251a80efe61bab9be29c assets/gemcraft/models/item/brilliant_diamond.json
 67a6e64fe03a4804bf3908a49ec0749b71163461 assets/gemcraft/models/item/brilliant_emerald.json
 101591f9cbe92d3129e593932220aacedbab38d7 assets/gemcraft/models/item/brilliant_ruby.json
@@ -15,6 +15,7 @@ b56a705b831427de1e799c70a4994cc93089aa4c assets/gemcraft/models/item/willow_door
 b66330f49cc99b3ef5ead00c1773bda1272c0bcd assets/gemcraft/models/item/willow_fence.json
 422be0adc07a341c8c73886f6387f43fc4e1c581 assets/gemcraft/models/item/willow_fence_gate.json
 67ab720d4469a2a96b18189a8fafcfbe4e7513bb assets/gemcraft/models/item/willow_pressure_plate.json
+1089a0425e1f915a6e358df333438fea23624207 assets/gemcraft/models/item/willow_sapling.json
 1062b2fb4a79a6b659c8d0f74813e7df3017bea3 assets/gemcraft/models/item/willow_slab.json
 afb1ef63e3755412b51598ddcb4718600689081d assets/gemcraft/models/item/willow_stairs.json
 d3ad72a8c627413f989e93bb3c1ad08225b6a11c assets/gemcraft/models/item/willow_trapdoor.json

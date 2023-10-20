@@ -93,5 +93,15 @@ public class GCBlockTagGenerator extends BlockTagsProvider {
                 .add(GCBlocks.WILLOW_FENCE_GATE.get());
         this.tag(BlockTags.WALLS)
                 .add(GCBlocks.WILLOW_WALL.get());
+
+        //Wood Tags
+        //--------------------------------------------------
+        this.tag(BlockTags.LOGS_THAT_BURN)
+                .add(GCBlocks.WILLOW_LOG.get(),
+                        GCBlocks.STRIPPED_WILLOW_LOG.get(),
+                        GCBlocks.WILLOW_WOOD.get(),
+                        GCBlocks.STRIPPED_WILLOW_WOOD.get());
+        this.tag(BlockTags.PLANKS)
+                .add(GCBlocks.WILLOW_PLANKS.get());
     }
 }

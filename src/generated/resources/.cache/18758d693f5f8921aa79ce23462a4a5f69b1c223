@@ -1,3 +1,6 @@
-// 1.20.1	2023-10-11T01:37:05.5332976	Tags for minecraft:item mod id gemcraft
+// 1.20.1	2023-10-20T00:59:34.9649092	Tags for minecraft:item mod id gemcraft
 09dc1370bee752a3763f21b3834c0c17e77c73ce data/gemcraft/tags/items/gem_ores.json
 3247b371bba4dfa9520c24b929d614a825d55ee9 data/gemcraft/tags/items/raw_gems.json
+5a1f1f1cd94ccf47b062a5c82d0b47f192ffa7d3 data/minecraft/tags/items/logs_that_burn.json
+00691efe4d1de79b560c4109e72438a6b33fa0b0 data/minecraft/tags/items/planks.json
+f0e8b28db812acdb6b8207dc7ed8291744e6d493 data/minecraft/tags/items/saplings.json

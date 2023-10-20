@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:block/cube_column",
   "textures": {
-    "end": "gemcraft:block/stripped_willow_log_top",
+    "end": "gemcraft:block/stripped_willow_log",
     "side": "gemcraft:block/stripped_willow_log"
   }
 }

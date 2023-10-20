@@ -7,6 +7,8 @@ import net.brynnexvii.gemcraft.utility.GCTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
+import net.minecraft.tags.BlockTags;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.data.ExistingFileHelper;
@@ -40,5 +42,18 @@ public class GCItemTagGenerator extends ItemTagsProvider {
                     GCBlocks.NETHER_RUBY_ORE.get().asItem(),
                     GCBlocks.END_STONE_RUBY_ORE.get().asItem());
 
+        //Wood Tags
+        //--------------------------------------------------
+        this.tag(ItemTags.LOGS_THAT_BURN)
+                .add(GCBlocks.WILLOW_LOG.get().asItem(),
+                        GCBlocks.STRIPPED_WILLOW_LOG.get().asItem(),
+                        GCBlocks.WILLOW_WOOD.get().asItem(),
+                        GCBlocks.STRIPPED_WILLOW_WOOD.get().asItem());
+
+        this.tag(ItemTags.PLANKS)
+                .add(GCBlocks.WILLOW_PLANKS.get().asItem());
+
+        this.tag(ItemTags.SAPLINGS)
+                .add(GCBlocks.WILLOW_SAPLING.get().asItem());
     }
 }
