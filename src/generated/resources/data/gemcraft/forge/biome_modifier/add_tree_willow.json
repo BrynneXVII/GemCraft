@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#minecraft:is_overworld",
+  "features": "gemcraft:willow_placed",
+  "step": "vegetal_decoration"
+}

@@ -30,6 +30,7 @@ public class DataGenerators {
         GCBlockTagGenerator blockTagGenerator = generator.addProvider(event.includeServer(),
                 new GCBlockTagGenerator(packOutput, lookupProvider, existingFileHelper));
         generator.addProvider(event.includeServer(), new GCItemTagGenerator(packOutput, lookupProvider, blockTagGenerator.contentsGetter(), existingFileHelper));
-    }
 
+        generator.addProvider(event.includeServer(), new GCWorldGenProvider(packOutput, lookupProvider));
+    }
 }

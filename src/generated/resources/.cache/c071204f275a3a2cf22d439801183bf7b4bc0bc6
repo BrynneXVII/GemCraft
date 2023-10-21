@@ -1,11 +1,15 @@
-// 1.20.1	2023-10-20T00:59:34.9639083	Tags for minecraft:block mod id gemcraft
+// 1.20.1	2023-10-20T22:52:27.1584413	Tags for minecraft:block mod id gemcraft
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/forge/tags/blocks/needs_netherite_tool.json
 09dc1370bee752a3763f21b3834c0c17e77c73ce data/gemcraft/tags/blocks/gem_ores.json
 f3c24bf7460c427c00f911e66bbfe8fb13ff9ac5 data/gemcraft/tags/blocks/green_interacting_flowers.json
 6f02943824dd84a66642203b8d101620bfe1abad data/gemcraft/tags/blocks/red_interacting_flowers.json
 85f4a6f81128f89d2f1a48f4e67b21cb2f5350ba data/gemcraft/tags/blocks/white_interacting_flowers.json
+5a1f1f1cd94ccf47b062a5c82d0b47f192ffa7d3 data/gemcraft/tags/blocks/willow_logs.json
+829456aa76635ac1e2f0d2887be24c6402779713 data/minecraft/tags/blocks/buttons.json
+466917135b615c4c1283f4537806e605f16c9154 data/minecraft/tags/blocks/doors.json
 38fb7d86a58604d83eae2d10a90fe6d17f9b2cb4 data/minecraft/tags/blocks/fences.json
 626b7fff5383b11bc1bdf90704d154dc90146f81 data/minecraft/tags/blocks/fence_gates.json
+1b7bc8a4e9725a73e499a184563d737771a96aba data/minecraft/tags/blocks/leaves.json
 5a1f1f1cd94ccf47b062a5c82d0b47f192ffa7d3 data/minecraft/tags/blocks/logs_that_burn.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/blocks/mineable/axe.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/blocks/mineable/hoe.json
@@ -14,5 +18,18 @@ f3c24bf7460c427c00f911e66bbfe8fb13ff9ac5 data/gemcraft/tags/blocks/green_interac
 e1c545775d3a86464afec2ed68ed26e24c009765 data/minecraft/tags/blocks/needs_diamond_tool.json
 79c2e982b32d10d44e62bfba9ef87d073a9e07c1 data/minecraft/tags/blocks/needs_iron_tool.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/blocks/needs_stone_tool.json
+e5b49cbb0283183f27384c5ec906bd2b34f3149b data/minecraft/tags/blocks/overworld_natural_logs.json
 00691efe4d1de79b560c4109e72438a6b33fa0b0 data/minecraft/tags/blocks/planks.json
+d962c2d284721a3379a609bc8ab373a442aa3fc0 data/minecraft/tags/blocks/pressure_plates.json
+f0e8b28db812acdb6b8207dc7ed8291744e6d493 data/minecraft/tags/blocks/saplings.json
+f7869fa56fe88bc7b7c435ad5e46555a36f373e2 data/minecraft/tags/blocks/slabs.json
+7110fcac31129234968280e0d13f658ea6066520 data/minecraft/tags/blocks/stairs.json
+d9a14d6f4f202c4f29aefdcb91ded1bc8388bf16 data/minecraft/tags/blocks/trapdoors.json
 ec243a6565defc95509d88ac1a0db28d12644cf4 data/minecraft/tags/blocks/walls.json
+829456aa76635ac1e2f0d2887be24c6402779713 data/minecraft/tags/blocks/wooden_buttons.json
+466917135b615c4c1283f4537806e605f16c9154 data/minecraft/tags/blocks/wooden_doors.json
+38fb7d86a58604d83eae2d10a90fe6d17f9b2cb4 data/minecraft/tags/blocks/wooden_fences.json
+d962c2d284721a3379a609bc8ab373a442aa3fc0 data/minecraft/tags/blocks/wooden_pressure_plates.json
+f7869fa56fe88bc7b7c435ad5e46555a36f373e2 data/minecraft/tags/blocks/wooden_slabs.json
+7110fcac31129234968280e0d13f658ea6066520 data/minecraft/tags/blocks/wooden_stairs.json
+d9a14d6f4f202c4f29aefdcb91ded1bc8388bf16 data/minecraft/tags/blocks/wooden_trapdoors.json

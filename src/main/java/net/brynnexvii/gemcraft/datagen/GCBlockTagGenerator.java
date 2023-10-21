@@ -89,10 +89,36 @@ public class GCBlockTagGenerator extends BlockTagsProvider {
         //--------------------------------------------------
         this.tag(BlockTags.FENCES)
                 .add(GCBlocks.WILLOW_FENCE.get());
+        this.tag(BlockTags.WOODEN_FENCES)
+                .add(GCBlocks.WILLOW_FENCE.get());
         this.tag(BlockTags.FENCE_GATES)
                 .add(GCBlocks.WILLOW_FENCE_GATE.get());
         this.tag(BlockTags.WALLS)
                 .add(GCBlocks.WILLOW_WALL.get());
+        this.tag(BlockTags.BUTTONS)
+                .add(GCBlocks.WILLOW_BUTTON.get());
+        this.tag(BlockTags.WOODEN_BUTTONS)
+                .add(GCBlocks.WILLOW_BUTTON.get());
+        this.tag(BlockTags.TRAPDOORS)
+                .add(GCBlocks.WILLOW_TRAPDOOR.get());
+        this.tag(BlockTags.WOODEN_TRAPDOORS)
+                .add(GCBlocks.WILLOW_TRAPDOOR.get());
+        this.tag(BlockTags.PRESSURE_PLATES)
+                .add(GCBlocks.WILLOW_PRESSURE_PLATE.get());
+        this.tag(BlockTags.WOODEN_PRESSURE_PLATES)
+                .add(GCBlocks.WILLOW_PRESSURE_PLATE.get());
+        this.tag(BlockTags.DOORS)
+                .add(GCBlocks.WILLOW_DOOR.get());
+        this.tag(BlockTags.WOODEN_DOORS)
+                .add(GCBlocks.WILLOW_DOOR.get());
+        this.tag(BlockTags.SLABS)
+                .add(GCBlocks.WILLOW_SLAB.get());
+        this.tag(BlockTags.WOODEN_SLABS)
+                .add(GCBlocks.WILLOW_SLAB.get());
+        this.tag(BlockTags.STAIRS)
+                .add(GCBlocks.WILLOW_STAIRS.get());
+        this.tag(BlockTags.WOODEN_STAIRS)
+                .add(GCBlocks.WILLOW_STAIRS.get());
 
         //Wood Tags
         //--------------------------------------------------
@@ -101,7 +127,19 @@ public class GCBlockTagGenerator extends BlockTagsProvider {
                         GCBlocks.STRIPPED_WILLOW_LOG.get(),
                         GCBlocks.WILLOW_WOOD.get(),
                         GCBlocks.STRIPPED_WILLOW_WOOD.get());
+        this.tag(BlockTags.OVERWORLD_NATURAL_LOGS)
+                .add(GCBlocks.WILLOW_LOG.get());
         this.tag(BlockTags.PLANKS)
                 .add(GCBlocks.WILLOW_PLANKS.get());
+
+        this.tag(GCTags.Blocks.WILLOW_LOGS)
+                .add(GCBlocks.WILLOW_LOG.get(),
+                        GCBlocks.STRIPPED_WILLOW_LOG.get(),
+                        GCBlocks.WILLOW_WOOD.get(),
+                        GCBlocks.STRIPPED_WILLOW_WOOD.get());
+        this.tag(BlockTags.LEAVES)
+                .add(GCBlocks.WILLOW_LEAVES.get());
+        this.tag(BlockTags.SAPLINGS)
+                .add(GCBlocks.WILLOW_SAPLING.get());
     }
 }

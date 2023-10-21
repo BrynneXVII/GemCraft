@@ -2,6 +2,7 @@ package net.brynnexvii.gemcraft.block;
 
 import net.brynnexvii.gemcraft.GemCraft;
 import net.brynnexvii.gemcraft.item.GCItems;
+import net.brynnexvii.gemcraft.worldgen.tree.WillowTreeGrower;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.sounds.SoundEvents;
@@ -51,14 +52,16 @@ public class GCBlocks {
 
     //------------------------------------------------------------------------------------------------------------------
     //<editor-fold desc="Log and Wood Blocks">
-    public static final RegistryObject<Block> WILLOW_LOG = registerBlock("willow_log",
-            () -> new GCFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)));
+    //Define the stripped versions first so the normal ones can reference them in their registry objects
     public static final RegistryObject<Block> STRIPPED_WILLOW_LOG = registerBlock("stripped_willow_log",
-            () -> new GCFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_SPRUCE_LOG)));
-    public static final RegistryObject<Block> WILLOW_WOOD = registerBlock("willow_wood",
-            () -> new GCFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)));
+            () -> new GCFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)));
+    public static final RegistryObject<Block> WILLOW_LOG = registerBlock("willow_log",
+            () -> new GCFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG), GCBlocks.STRIPPED_WILLOW_LOG.get()));
     public static final RegistryObject<Block> STRIPPED_WILLOW_WOOD = registerBlock("stripped_willow_wood",
             () -> new GCFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD)));
+    public static final RegistryObject<Block> WILLOW_WOOD = registerBlock("willow_wood",
+            () -> new GCFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD), GCBlocks.STRIPPED_WILLOW_WOOD.get()));
+
     //</editor-fold>
 
     //------------------------------------------------------------------------------------------------------------------
@@ -86,7 +89,7 @@ public class GCBlocks {
     //<editor-fold desc="Saplings">
 
     public static final RegistryObject<Block> WILLOW_SAPLING = registerBlock("willow_sapling",
-            () -> new SaplingBlock(null, BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+            () -> new SaplingBlock(new WillowTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
     //</editor-fold>
 
     //------------------------------------------------------------------------------------------------------------------

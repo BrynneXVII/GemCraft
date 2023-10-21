@@ -1,4 +1,5 @@
-// 1.20.1	2023-10-01T23:58:25.9447011	Recipes
+// 1.20.1	2023-10-20T22:52:27.1594084	Recipes
+85aa39678a69adda82d103c70bb9fc81c3374fac data/gemcraft/advancements/recipes/building_blocks/willow_planks.json
 bbe35b3c8662dad33776779528a51f351f055c94 data/gemcraft/advancements/recipes/misc/diamond_from_blasting_raw_diamond.json
 96751522bcc5bdc7557a33f5ef534ad8f6508927 data/gemcraft/advancements/recipes/misc/diamond_from_smelting_raw_diamond.json
 c574312ec59c3dcd41ff482824713b211f572255 data/gemcraft/advancements/recipes/misc/emerald_from_blasting_raw_emerald.json
@@ -15,3 +16,4 @@ a6fe660c3435eee415ffe853f74eb184310770a8 data/gemcraft/recipes/emerald_from_smel
 403df8dd1822f19e274376f17df9dfb6f6da6a27 data/gemcraft/recipes/ruby_block.json
 e0f1eb46ee2a9d60c07a055b35f003fb4f11c466 data/gemcraft/recipes/ruby_from_blasting_raw_ruby.json
 be79b6e0eec4d07178e1acc608685abb34a22200 data/gemcraft/recipes/ruby_from_smelting_raw_ruby.json
+e18e9f891d57bfcabc7549ae6e5fc3ab68871fb8 data/gemcraft/recipes/willow_planks.json

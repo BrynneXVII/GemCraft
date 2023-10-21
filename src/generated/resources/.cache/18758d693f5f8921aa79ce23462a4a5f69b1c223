@@ -1,6 +1,22 @@
-// 1.20.1	2023-10-20T00:59:34.9649092	Tags for minecraft:item mod id gemcraft
+// 1.20.1	2023-10-20T22:52:27.1604147	Tags for minecraft:item mod id gemcraft
 09dc1370bee752a3763f21b3834c0c17e77c73ce data/gemcraft/tags/items/gem_ores.json
 3247b371bba4dfa9520c24b929d614a825d55ee9 data/gemcraft/tags/items/raw_gems.json
+5a1f1f1cd94ccf47b062a5c82d0b47f192ffa7d3 data/gemcraft/tags/items/willow_logs.json
+829456aa76635ac1e2f0d2887be24c6402779713 data/minecraft/tags/items/buttons.json
+466917135b615c4c1283f4537806e605f16c9154 data/minecraft/tags/items/doors.json
+38fb7d86a58604d83eae2d10a90fe6d17f9b2cb4 data/minecraft/tags/items/fences.json
+38fb7d86a58604d83eae2d10a90fe6d17f9b2cb4 data/minecraft/tags/items/fence_gates.json
+1b7bc8a4e9725a73e499a184563d737771a96aba data/minecraft/tags/items/leaves.json
 5a1f1f1cd94ccf47b062a5c82d0b47f192ffa7d3 data/minecraft/tags/items/logs_that_burn.json
 00691efe4d1de79b560c4109e72438a6b33fa0b0 data/minecraft/tags/items/planks.json
 f0e8b28db812acdb6b8207dc7ed8291744e6d493 data/minecraft/tags/items/saplings.json
+f7869fa56fe88bc7b7c435ad5e46555a36f373e2 data/minecraft/tags/items/slabs.json
+7110fcac31129234968280e0d13f658ea6066520 data/minecraft/tags/items/stairs.json
+d9a14d6f4f202c4f29aefdcb91ded1bc8388bf16 data/minecraft/tags/items/trapdoors.json
+ec243a6565defc95509d88ac1a0db28d12644cf4 data/minecraft/tags/items/walls.json
+829456aa76635ac1e2f0d2887be24c6402779713 data/minecraft/tags/items/wooden_buttons.json
+466917135b615c4c1283f4537806e605f16c9154 data/minecraft/tags/items/wooden_doors.json
+38fb7d86a58604d83eae2d10a90fe6d17f9b2cb4 data/minecraft/tags/items/wooden_fences.json
+f7869fa56fe88bc7b7c435ad5e46555a36f373e2 data/minecraft/tags/items/wooden_slabs.json
+7110fcac31129234968280e0d13f658ea6066520 data/minecraft/tags/items/wooden_stairs.json
+d9a14d6f4f202c4f29aefdcb91ded1bc8388bf16 data/minecraft/tags/items/wooden_trapdoors.json

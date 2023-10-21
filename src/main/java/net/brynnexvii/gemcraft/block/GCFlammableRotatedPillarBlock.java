@@ -2,31 +2,30 @@ package net.brynnexvii.gemcraft.block;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.world.item.AxeItem;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.common.ToolAction;
+import net.minecraftforge.common.ToolActions;
 import org.jetbrains.annotations.Nullable;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.Optional;
+
 
 public class GCFlammableRotatedPillarBlock extends RotatedPillarBlock {
+    protected final Optional<Block> blockAfterStrip;
 
-    /*private static Map<Block, Block> logToStrippedMapping = new HashMap<>(); //maps strippable logs to their stripped counterparts
-    static{
-        logToStrippedMapping.put(GCBlocks.WILLOW_LOG.get(), GCBlocks.STRIPPED_WILLOW_LOG.get());
-        logToStrippedMapping.put(GCBlocks.WILLOW_WOOD.get(), GCBlocks.STRIPPED_WILLOW_WOOD.get());
-    };*/
-
+    public GCFlammableRotatedPillarBlock(Properties pProperties, Block strippedBlock) {
+        super(pProperties);
+        this.blockAfterStrip = Optional.of(strippedBlock);
+    }
 
     public GCFlammableRotatedPillarBlock(Properties pProperties) {
         super(pProperties);
-        //logToStrippedMapping.put(GCBlocks.WILLOW_LOG.get(), GCBlocks.STRIPPED_WILLOW_LOG.get());
-        //logToStrippedMapping.put(GCBlocks.WILLOW_WOOD.get(), GCBlocks.STRIPPED_WILLOW_WOOD.get());
+        this.blockAfterStrip = Optional.empty();
     }
 
     @Override
@@ -46,22 +45,15 @@ public class GCFlammableRotatedPillarBlock extends RotatedPillarBlock {
 
     @Override
     public @Nullable BlockState getToolModifiedState(BlockState state, UseOnContext context, ToolAction toolAction, boolean simulate) {
-        if(context.getItemInHand().getItem() instanceof AxeItem){
-            if(state.is(GCBlocks.WILLOW_LOG.get())){
-                return GCBlocks.STRIPPED_WILLOW_LOG.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
-            }
+        ItemStack stack = context.getItemInHand();
 
-            if(state.is(GCBlocks.WILLOW_WOOD.get())){
-                return GCBlocks.STRIPPED_WILLOW_WOOD.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
-            }
+        if (!stack.canPerformAction(toolAction))
+            return null;
 
-            /*System.out.println("Here1");
-            if(logToStrippedMapping.containsKey(state.getBlock())){
-                System.out.println("Here2");
-                return logToStrippedMapping.get(state.getBlock()).defaultBlockState().setValue(AXIS, state.getValue(AXIS));
-            }*/
-
+        if (ToolActions.AXE_STRIP == toolAction && blockAfterStrip.isPresent()) {
+            return blockAfterStrip.get().defaultBlockState().setValue(RotatedPillarBlock.AXIS, state.getValue(RotatedPillarBlock.AXIS));
         }
+
         return super.getToolModifiedState(state, context, toolAction, simulate);
     }
 }

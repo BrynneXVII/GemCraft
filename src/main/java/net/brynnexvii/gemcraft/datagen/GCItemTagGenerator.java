@@ -55,5 +55,46 @@ public class GCItemTagGenerator extends ItemTagsProvider {
 
         this.tag(ItemTags.SAPLINGS)
                 .add(GCBlocks.WILLOW_SAPLING.get().asItem());
+
+        this.tag(GCTags.Items.WILLOW_LOGS)
+                .add(GCBlocks.WILLOW_LOG.get().asItem(),
+                        GCBlocks.STRIPPED_WILLOW_LOG.get().asItem(),
+                        GCBlocks.WILLOW_WOOD.get().asItem(),
+                        GCBlocks.STRIPPED_WILLOW_WOOD.get().asItem());
+
+        this.tag(ItemTags.LEAVES)
+                .add(GCBlocks.WILLOW_LEAVES.get().asItem());
+
+        //Special Blocks
+        //--------------------------------------------------
+        this.tag(ItemTags.BUTTONS)
+                .add(GCBlocks.WILLOW_BUTTON.get().asItem());
+        this.tag(ItemTags.WOODEN_BUTTONS)
+                .add(GCBlocks.WILLOW_BUTTON.get().asItem());
+        this.tag(ItemTags.DOORS)
+                .add(GCBlocks.WILLOW_DOOR.get().asItem());
+        this.tag(ItemTags.WOODEN_DOORS)
+                .add(GCBlocks.WILLOW_DOOR.get().asItem());
+        this.tag(ItemTags.FENCES)
+                .add(GCBlocks.WILLOW_FENCE.get().asItem());
+        this.tag(ItemTags.WOODEN_FENCES)
+                .add(GCBlocks.WILLOW_FENCE.get().asItem());
+        this.tag(ItemTags.FENCE_GATES)
+                .add(GCBlocks.WILLOW_FENCE.get().asItem());
+        this.tag(ItemTags.SLABS)
+                .add(GCBlocks.WILLOW_SLAB.get().asItem());
+        this.tag(ItemTags.WOODEN_SLABS)
+                .add(GCBlocks.WILLOW_SLAB.get().asItem());
+        this.tag(ItemTags.STAIRS)
+                .add(GCBlocks.WILLOW_STAIRS.get().asItem());
+        this.tag(ItemTags.WOODEN_STAIRS)
+                .add(GCBlocks.WILLOW_STAIRS.get().asItem());
+        this.tag(ItemTags.TRAPDOORS)
+                .add(GCBlocks.WILLOW_TRAPDOOR.get().asItem());
+        this.tag(ItemTags.WOODEN_TRAPDOORS)
+                .add(GCBlocks.WILLOW_TRAPDOOR.get().asItem());
+        this.tag(ItemTags.WALLS)
+                .add(GCBlocks.WILLOW_WALL.get().asItem());
+
     }
 }

@@ -3,6 +3,7 @@ package net.brynnexvii.gemcraft.datagen;
 import net.brynnexvii.gemcraft.GemCraft;
 import net.brynnexvii.gemcraft.block.GCBlocks;
 import net.brynnexvii.gemcraft.item.GCItems;
+import net.brynnexvii.gemcraft.utility.GCTags;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.Items;
@@ -28,6 +29,10 @@ public class GCRecipeProvider extends RecipeProvider implements IConditionBuilde
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, GCItems.RUBY.get(), 9)
                 .requires(GCBlocks.RUBY_BLOCK.get())
                 .unlockedBy(getHasName(GCBlocks.RUBY_BLOCK.get()), has(GCBlocks.RUBY_BLOCK.get()))
+                .save(pWriter);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, GCBlocks.WILLOW_PLANKS.get(), 4)
+                .requires(GCTags.Items.WILLOW_LOGS)
+                .unlockedBy("has_willow_logs", has(GCTags.Items .WILLOW_LOGS))
                 .save(pWriter);
 
         //Shaped Recipes
