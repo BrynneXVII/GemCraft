@@ -3,7 +3,7 @@ package net.brynnexvii.gemcraft.datagen;
 import net.brynnexvii.gemcraft.GemCraft;
 import net.brynnexvii.gemcraft.worldgen.GCBiomeModifiers;
 import net.brynnexvii.gemcraft.worldgen.GCConfiguredFeatures;
-import net.brynnexvii.gemcraft.worldgen.tree.GCPlacedFeatures;
+import net.brynnexvii.gemcraft.worldgen.GCPlacedFeatures;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.RegistrySetBuilder;
 import net.minecraft.core.registries.Registries;

@@ -48,6 +48,8 @@ public class GCItemModelProvider extends ItemModelProvider {
 
         saplingItem(GCBlocks.WILLOW_SAPLING);
 
+        complexBlock(GCBlocks.BASIC_ALCHEMICAL_CAULDRON.get());
+
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item){
@@ -87,10 +89,14 @@ public class GCItemModelProvider extends ItemModelProvider {
                 .texture("wall", new ResourceLocation(GemCraft.MODID, "block/" + ForgeRegistries.BLOCKS.getKey(baseBlock.get()).getPath()));
     }
 
-
     private ItemModelBuilder saplingItem(RegistryObject<Block> block) {
         return withExistingParent(block.getId().getPath(),
                 new ResourceLocation("item/generated")).texture("layer0",
                 new ResourceLocation(GemCraft.MODID, "block/" + block.getId().getPath()));
+    }
+
+    private ItemModelBuilder complexBlock(Block block){
+        return withExistingParent(ForgeRegistries.BLOCKS.getKey(block).getPath(),
+                new ResourceLocation(GemCraft.MODID, "block/" + ForgeRegistries.BLOCKS.getKey(block).getPath()));
     }
 }

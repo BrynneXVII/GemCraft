@@ -59,6 +59,8 @@ public class GCBlockLootTables extends BlockLootSubProvider {
 
         this.add(GCBlocks.WILLOW_LEAVES.get(), block ->
                 createLeavesDrops(block, GCBlocks.WILLOW_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+
+        this.dropSelf(GCBlocks.BASIC_ALCHEMICAL_CAULDRON.get());
     }
 
     @Override

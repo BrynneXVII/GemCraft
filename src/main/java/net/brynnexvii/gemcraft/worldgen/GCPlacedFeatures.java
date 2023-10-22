@@ -1,4 +1,4 @@
-package net.brynnexvii.gemcraft.worldgen.tree;
+package net.brynnexvii.gemcraft.worldgen;
 
 import net.brynnexvii.gemcraft.GemCraft;
 import net.brynnexvii.gemcraft.block.GCBlocks;

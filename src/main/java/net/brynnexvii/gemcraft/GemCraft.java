@@ -2,6 +2,7 @@ package net.brynnexvii.gemcraft;
 
 import com.mojang.logging.LogUtils;
 import net.brynnexvii.gemcraft.block.GCBlocks;
+import net.brynnexvii.gemcraft.block.entity.GCBlockEntities;
 import net.brynnexvii.gemcraft.item.GCItems;
 import net.brynnexvii.gemcraft.utility.GCCreativeModeTabs;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -34,6 +35,7 @@ public class GemCraft
         GCCreativeModeTabs.register(modEventBus);
         GCItems.register(modEventBus);
         GCBlocks.register(modEventBus);
+        GCBlockEntities.register(modEventBus);
 
 
         modEventBus.addListener(this::commonSetup);

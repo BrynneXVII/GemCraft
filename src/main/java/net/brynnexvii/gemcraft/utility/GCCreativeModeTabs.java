@@ -70,6 +70,8 @@ public class GCCreativeModeTabs {
                                 pOutput.accept(GCItems.ROCK_CANDY.get());
                                 pOutput.accept(GCItems.BASIC_STAFF.get());
 
+                                pOutput.accept(GCBlocks.BASIC_ALCHEMICAL_CAULDRON.get());
+
                         }).build());
         public static void register(IEventBus eventBus){
 

@@ -31,6 +31,8 @@ public class GCBlockStateProvider extends BlockStateProvider {
         blockWithItem(GCBlocks.END_STONE_RUBY_ORE);
         blockWithItem(GCBlocks.WILLOW_PLANKS);
 
+        blockItem(GCBlocks.BASIC_ALCHEMICAL_CAULDRON);
+
         blockWithItem(GCBlocks.NETHER_DIAMOND_ORE);
         blockWithItem(GCBlocks.END_STONE_DIAMOND_ORE);
         blockWithItem(GCBlocks.NETHER_EMERALD_ORE);

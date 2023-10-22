@@ -40,6 +40,10 @@
   "block.gemcraft.willow_door": "Willow Door",
   "block.gemcraft.willow_trapdoor": "Willow Trap Door",
 
+  "block.gemcraft.basic_alchemical_cauldron": "Basic Alchemical Cauldron",
+
+  "gemcraft.basic_alchemical_cauldron.display_name": "Basic Alchemical Cauldron,",
+
   "gemcraft.ruby_powder.base_tool_tip": "Crushed raw ruby. Can be used to .....",
   "gemcraft.diamond_powder.base_tool_tip": "Crushed raw diamond. Can be used to .....",
   "gemcraft.emerald_powder.base_tool_tip": "Crushed raw emerald. Can be used to .....",
