@@ -42,6 +42,11 @@ public class GCItemTagGenerator extends ItemTagsProvider {
                     GCBlocks.NETHER_RUBY_ORE.get().asItem(),
                     GCBlocks.END_STONE_RUBY_ORE.get().asItem());
 
+        this.tag(GCTags.Items.JEWEL_POWDERS)
+                .add(GCItems.DIAMOND_POWDER.get(),
+                        GCItems.EMERALD_POWDER.get(),
+                        GCItems.RUBY_POWDER.get());
+
         //Wood Tags
         //--------------------------------------------------
         this.tag(ItemTags.LOGS_THAT_BURN)

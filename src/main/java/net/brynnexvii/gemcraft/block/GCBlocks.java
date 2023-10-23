@@ -255,7 +255,7 @@ public class GCBlocks {
     //<editor-fold desc="Trapdoors">
 
     public static final RegistryObject<Block> BASIC_ALCHEMICAL_CAULDRON = registerBlock("basic_alchemical_cauldron",
-            () -> new BasicAlchemicalCauldron(BlockBehaviour.Properties.copy(Blocks.CAULDRON).noOcclusion());
+            () -> new BasicAlchemicalCauldron(BlockBehaviour.Properties.copy(Blocks.CAULDRON).noOcclusion()));
     //</editor-fold>
 
     //------------------------------------------------------------------------------------------------------------------

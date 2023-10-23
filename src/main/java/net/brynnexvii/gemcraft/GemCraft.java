@@ -4,6 +4,7 @@ import com.mojang.logging.LogUtils;
 import net.brynnexvii.gemcraft.block.GCBlocks;
 import net.brynnexvii.gemcraft.block.entity.GCBlockEntities;
 import net.brynnexvii.gemcraft.item.GCItems;
+import net.brynnexvii.gemcraft.screen.GCMenuTypes;
 import net.brynnexvii.gemcraft.utility.GCCreativeModeTabs;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -35,7 +36,9 @@ public class GemCraft
         GCCreativeModeTabs.register(modEventBus);
         GCItems.register(modEventBus);
         GCBlocks.register(modEventBus);
+
         GCBlockEntities.register(modEventBus);
+        GCMenuTypes.register(modEventBus);
 
 
         modEventBus.addListener(this::commonSetup);
