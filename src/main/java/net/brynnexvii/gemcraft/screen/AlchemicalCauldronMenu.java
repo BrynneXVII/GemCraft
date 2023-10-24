@@ -34,6 +34,19 @@ public abstract class AlchemicalCauldronMenu extends AbstractContainerMenu {
         addDataSlots(data);
     }
 
+
+    public boolean isCrafting(){
+        return data.get(0) > 0;
+    }
+
+    public int getScaledProgress(){
+        int progress = this.data.get(0);
+        int maxProgress = this.data.get(1);
+        int progressArrowSize = 24; //length of arrow
+
+        return maxProgress != 0 && progress != 0 ? progress * progressArrowSize / maxProgress : 0;
+    }
+
     // CREDIT GOES TO: diesieben07 | https://github.com/diesieben07/SevenCommons
     // must assign a slot number to each of the slots used by the GUI.
     // For this container, we can see both the tile inventory's slots as well as the player inventory slots and the hotbar.
@@ -102,4 +115,5 @@ public abstract class AlchemicalCauldronMenu extends AbstractContainerMenu {
             this.addSlot(new Slot(playerInventory, i, 8 + i * 18, 142));
         }
     }
+
 }

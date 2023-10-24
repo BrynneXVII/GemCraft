@@ -4,8 +4,10 @@ import com.mojang.logging.LogUtils;
 import net.brynnexvii.gemcraft.block.GCBlocks;
 import net.brynnexvii.gemcraft.block.entity.GCBlockEntities;
 import net.brynnexvii.gemcraft.item.GCItems;
+import net.brynnexvii.gemcraft.screen.BasicAlchemicalCauldronScreen;
 import net.brynnexvii.gemcraft.screen.GCMenuTypes;
 import net.brynnexvii.gemcraft.utility.GCCreativeModeTabs;
+import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -80,7 +82,11 @@ public class GemCraft
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
-            
+            event.enqueueWork(() -> {
+
+                MenuScreens.register(GCMenuTypes.BASIC_ALCHEMICAL_CAULDRON_MENU.get(), BasicAlchemicalCauldronScreen::new);
+
+            });
         }
     }
 }
