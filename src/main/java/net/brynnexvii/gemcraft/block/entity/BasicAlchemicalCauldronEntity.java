@@ -7,6 +7,7 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.items.ItemStackHandler;
@@ -35,8 +36,10 @@ public class BasicAlchemicalCauldronEntity extends AlchemicalCauldronEntity {
         super(GCBlockEntities.BASIC_ALCHEMICAL_CAULDRON_BLOCK_ENTITY.get(), pPos, pBlockState, new int[]{0}, new int[]{1}, new int[]{2});
     }
 
-    protected ItemStackHandler setItemHandler(){
-        return this.itemHandler;
+    protected ItemStackHandler getItemHandler(){
+        System.out.println("got here");
+        //System.out.println(itemHandler.isItemValid(0, new ItemStack(Items.ACACIA_FENCE)));
+        return itemHandler;
     }
 
     @Nullable

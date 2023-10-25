@@ -29,9 +29,9 @@ public class BasicAlchemicalCauldronMenu extends AlchemicalCauldronMenu{
 
     protected void setSlots(){ //should this be void?
         this.blockEntity.getCapability(ForgeCapabilities.ITEM_HANDLER).ifPresent(iItemHandler -> {
-            this.addSlot(new SlotItemHandler(iItemHandler, 0, 45, 30)); //numbers are gui dependant, top left corner of each slot
-            this.addSlot(new SlotItemHandler(iItemHandler, 1, 82, 10));
-            this.addSlot(new SlotItemHandler(iItemHandler, 2, 111, 30));
+            this.addSlot(new SlotItemHandler(iItemHandler, 0, 46, 36)); //numbers are gui dependant, top left corner of each slot
+            this.addSlot(new SlotItemHandler(iItemHandler, 1, 83, 16));
+            this.addSlot(new SlotItemHandler(iItemHandler, 2, 112, 36));
         });
     }
 }

@@ -8,11 +8,18 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.player.Inventory;
 
-public class AlchemicalCauldronScreen extends AbstractContainerScreen<? extends AlchemicalCauldronMenu> { //rendering class, pretty much just on the client
+public abstract class AlchemicalCauldronScreen<T extends AlchemicalCauldronMenu> extends AbstractContainerScreen<T> { //rendering class, pretty much just on the client
     protected final ResourceLocation TEXTURE;
-    public AlchemicalCauldronScreen(AlchemicalCauldronMenu pMenu, Inventory pPlayerInventory, Component pTitle, ResourceLocation texture) {
+    public AlchemicalCauldronScreen(T pMenu, Inventory pPlayerInventory, Component pTitle, ResourceLocation texture) {
         super(pMenu, pPlayerInventory, pTitle);
         this.TEXTURE = texture;
+    }
+
+    @Override
+    protected void init() {
+        super.init();
+        //this.inventoryLabelY = 10000 moves inventory label off-screen since y co-ord is large
+        //this.titleLabelY can do the same with the title
     }
 
     @Override
@@ -28,10 +35,13 @@ public class AlchemicalCauldronScreen extends AbstractContainerScreen<? extends 
         renderProgressArrow(pGuiGraphics, x, y);
     }
 
-    private void renderProgressArrow(GuiGraphics guiGraphics, int x, int y){
-        if(menu.isCrafting()){
-            guiGraphics.blit(this.TEXTURE, x + 79, y + 34, 176, 0, menu.getScaledProgress()); //where draw xy, where get xy, how big xy
-        }
+    protected abstract void renderProgressArrow(GuiGraphics guiGraphics, int x, int y);
+
+    @Override
+    public void render(GuiGraphics pGuiGraphics, int pMouseX, int pMouseY, float pPartialTick) {
+        renderBackground(pGuiGraphics);
+        super.render(pGuiGraphics, pMouseX, pMouseY, pPartialTick);
+        renderTooltip(pGuiGraphics, pMouseX, pMouseY);
     }
 
 }

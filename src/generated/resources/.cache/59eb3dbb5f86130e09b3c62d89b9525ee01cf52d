@@ -1,4 +1,5 @@
-// 1.20.1	2023-10-20T00:38:33.3299161	Loot Tables
+// 1.20.1	2023-10-24T23:16:28.5111815	Loot Tables
+379db3db19d1418add6294dae75031c0cfb95e80 data/gemcraft/loot_tables/blocks/basic_alchemical_cauldron.json
 c6aeeef5d9c5e784ce00c84b90f8adb73f44c658 data/gemcraft/loot_tables/blocks/deepslate_ruby_ore.json
 5b830cef9871e923be500c738c62a1ee975e77a7 data/gemcraft/loot_tables/blocks/end_stone_diamond_ore.json
 beebdce62abf1d108c3f7bc9a1890fc38234c384 data/gemcraft/loot_tables/blocks/end_stone_emerald_ore.json

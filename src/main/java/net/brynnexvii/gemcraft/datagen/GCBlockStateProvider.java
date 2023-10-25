@@ -31,7 +31,8 @@ public class GCBlockStateProvider extends BlockStateProvider {
         blockWithItem(GCBlocks.END_STONE_RUBY_ORE);
         blockWithItem(GCBlocks.WILLOW_PLANKS);
 
-        blockItem(GCBlocks.BASIC_ALCHEMICAL_CAULDRON);
+        //horizontalBlock(GCBlocks.BASIC_ALCHEMICAL_CAULDRON.get(), new ModelFile.UncheckedModelFile(modLoc("block/basic_alchemical_cauldron")));
+        altBlockWithItem(GCBlocks.BASIC_ALCHEMICAL_CAULDRON);
 
         blockWithItem(GCBlocks.NETHER_DIAMOND_ORE);
         blockWithItem(GCBlocks.END_STONE_DIAMOND_ORE);
@@ -80,5 +81,9 @@ public class GCBlockStateProvider extends BlockStateProvider {
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
         simpleBlockWithItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));
+    }
+
+    private void altBlockWithItem(RegistryObject<Block> blockRegistryObject) {
+        simpleBlockWithItem(blockRegistryObject.get(), new ModelFile.UncheckedModelFile(modLoc("block/" + ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath())));
     }
 }

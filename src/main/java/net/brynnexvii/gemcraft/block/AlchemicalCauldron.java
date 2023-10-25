@@ -57,13 +57,13 @@ public abstract class AlchemicalCauldron extends BaseEntityBlock {
                         this.waterLevel = max(this.maxWaterlevel, this.waterLevel + 1000);
                         //empty bucket!
                         return InteractionResult.SUCCESS;
-                    } else if (pPlayer.getItemInHand(pHand).is((Predicate<Holder<Item>>) Potions.WATER)) { //this may not work
+                    } /*else if (pPlayer.getItemInHand(pHand).is((Predicate<Holder<Item>>) Potions.WATER)) { //this may not work
                         System.out.println("Filled with water bottle");
                         pLevel.playSound(null, pPos, SoundEvents.BOTTLE_EMPTY, SoundSource.BLOCKS, 1f, 1f);
                         this.waterLevel = max(this.maxWaterlevel, this.waterLevel + 333);
                         //empty bottle
                         return InteractionResult.SUCCESS;
-                    }
+                    }*/
                 }
             }
 

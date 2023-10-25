@@ -2,6 +2,7 @@ package net.brynnexvii.gemcraft.block.entity;
 
 import net.brynnexvii.gemcraft.GemCraft;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.Containers;
@@ -16,6 +17,8 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraftforge.common.capabilities.Capability;
+import net.minecraftforge.common.capabilities.ForgeCapabilities;
 import net.minecraftforge.common.util.LazyOptional;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
@@ -36,7 +39,7 @@ public abstract class AlchemicalCauldronEntity extends BlockEntity implements Me
 
     public AlchemicalCauldronEntity(BlockEntityType<?> pType, BlockPos pPos, BlockState pBlockState, int [] input_slots, int [] jewel_powder_slots, int [] output_slots) {
         super(pType, pPos, pBlockState);
-        this.itemHandler = setItemHandler();
+        this.itemHandler = this.getItemHandler();
         this.INPUT_SLOTS = input_slots;
         this.JEWEL_POWDER_SLOTS = jewel_powder_slots;
         this.OUTPUT_SLOTS = output_slots;
@@ -65,12 +68,12 @@ public abstract class AlchemicalCauldronEntity extends BlockEntity implements Me
         };
     }
 
-    protected abstract ItemStackHandler setItemHandler();
+    protected abstract ItemStackHandler getItemHandler();
 
     @Override
     public Component getDisplayName() {
-        return Component.literal("Basic Alch Cauld");
-        //return Component.translatable(GemCraft.MODID + "." + this.getBlockState().getBlock().getName()); ***SEE IF THIS WORKS LATER
+        return Component.literal("Basic Alchemical Cauldron!");
+        //return Component.translatable(GemCraft.MODID + "." + this.getBlockState().getBlock().getName()); //***SEE IF THIS WORKS LATER
     }
 
     @Nullable
@@ -87,6 +90,15 @@ public abstract class AlchemicalCauldronEntity extends BlockEntity implements Me
     public void invalidateCaps() {
         super.invalidateCaps();
         lazyItemHandler.invalidate();
+    }
+
+    @Override
+    public @NotNull <T> LazyOptional<T> getCapability(@NotNull Capability<T> cap, @Nullable Direction side) {
+        if(cap == ForgeCapabilities.ITEM_HANDLER){
+            return lazyItemHandler.cast();
+        }
+
+        return super.getCapability(cap, side);
     }
 
     @Override
