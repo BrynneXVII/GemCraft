@@ -6,6 +6,7 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.entity.BlockEntityType;
@@ -15,7 +16,10 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 public class BasicAlchemicalCauldronEntity extends AlchemicalCauldronEntity {
-    private final ItemStackHandler itemHandler = new ItemStackHandler(3) { //how many slots in your inventory
+    private class BasicAlchemicalCauldronItemStackHandler extends ItemStackHandler {
+        public BasicAlchemicalCauldronItemStackHandler (int size){
+            super(size);
+        }
         @Override
         protected void onContentsChanged(int slot) {
             setChanged();
@@ -30,15 +34,17 @@ public class BasicAlchemicalCauldronEntity extends AlchemicalCauldronEntity {
                 default -> super.isItemValid(slot, stack);
             };
         }
-    };
+    }
+
+    private final ItemStackHandler itemHandler;
 
     public BasicAlchemicalCauldronEntity(BlockPos pPos, BlockState pBlockState) {
         super(GCBlockEntities.BASIC_ALCHEMICAL_CAULDRON_BLOCK_ENTITY.get(), pPos, pBlockState, new int[]{0}, new int[]{1}, new int[]{2});
+        itemHandler = new BasicAlchemicalCauldronItemStackHandler(3);
     }
 
+    @Override
     protected ItemStackHandler getItemHandler(){
-        System.out.println("got here");
-        //System.out.println(itemHandler.isItemValid(0, new ItemStack(Items.ACACIA_FENCE)));
         return itemHandler;
     }
 

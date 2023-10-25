@@ -26,7 +26,6 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 public abstract class AlchemicalCauldronEntity extends BlockEntity implements MenuProvider {
-    private final ItemStackHandler itemHandler;
     protected final int [] INPUT_SLOTS;
     protected final int [] JEWEL_POWDER_SLOTS;
     protected final int [] OUTPUT_SLOTS;
@@ -39,7 +38,6 @@ public abstract class AlchemicalCauldronEntity extends BlockEntity implements Me
 
     public AlchemicalCauldronEntity(BlockEntityType<?> pType, BlockPos pPos, BlockState pBlockState, int [] input_slots, int [] jewel_powder_slots, int [] output_slots) {
         super(pType, pPos, pBlockState);
-        this.itemHandler = this.getItemHandler();
         this.INPUT_SLOTS = input_slots;
         this.JEWEL_POWDER_SLOTS = jewel_powder_slots;
         this.OUTPUT_SLOTS = output_slots;
@@ -83,7 +81,7 @@ public abstract class AlchemicalCauldronEntity extends BlockEntity implements Me
     @Override
     public void onLoad() {
         super.onLoad();
-        lazyItemHandler = LazyOptional.of(() -> itemHandler);
+        lazyItemHandler = LazyOptional.of(this::getItemHandler);
     }
 
     @Override
@@ -103,20 +101,20 @@ public abstract class AlchemicalCauldronEntity extends BlockEntity implements Me
 
     @Override
     protected void saveAdditional(CompoundTag pTag) {
-        pTag.put("inventory", itemHandler.serializeNBT());
+        pTag.put("inventory", getItemHandler().serializeNBT());
         super.saveAdditional(pTag);
     }
 
     @Override
     public void load(CompoundTag pTag) {
         super.load(pTag);
-        itemHandler.deserializeNBT(pTag.getCompound("inventory"));
+        getItemHandler().deserializeNBT(pTag.getCompound("inventory"));
     }
 
     public void drops() {
-        SimpleContainer inventory = new SimpleContainer(itemHandler.getSlots());
-        for(int i = 0; i < itemHandler.getSlots(); i++){
-            inventory.setItem(i, itemHandler.getStackInSlot(i));
+        SimpleContainer inventory = new SimpleContainer(getItemHandler().getSlots());
+        for(int i = 0; i < getItemHandler().getSlots(); i++){
+            inventory.setItem(i, getItemHandler().getStackInSlot(i));
         }
 
         Containers.dropContents(this.level, this.worldPosition, inventory);
