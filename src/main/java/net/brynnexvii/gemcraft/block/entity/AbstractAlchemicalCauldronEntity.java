@@ -1,6 +1,5 @@
 package net.brynnexvii.gemcraft.block.entity;
 
-import net.brynnexvii.gemcraft.GemCraft;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;
@@ -12,7 +11,6 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.ContainerData;
-import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;
@@ -25,7 +23,7 @@ import net.minecraftforge.items.ItemStackHandler;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-public abstract class AlchemicalCauldronEntity extends BlockEntity implements MenuProvider {
+public abstract class AbstractAlchemicalCauldronEntity extends BlockEntity implements MenuProvider {
     protected final int [] INPUT_SLOTS;
     protected final int [] JEWEL_POWDER_SLOTS;
     protected final int [] OUTPUT_SLOTS;
@@ -36,7 +34,7 @@ public abstract class AlchemicalCauldronEntity extends BlockEntity implements Me
     private int maxProg = 100; //max processing duration, can adapt to be based on individual recipes
 
 
-    public AlchemicalCauldronEntity(BlockEntityType<?> pType, BlockPos pPos, BlockState pBlockState, int [] input_slots, int [] jewel_powder_slots, int [] output_slots) {
+    public AbstractAlchemicalCauldronEntity(BlockEntityType<?> pType, BlockPos pPos, BlockState pBlockState, int [] input_slots, int [] jewel_powder_slots, int [] output_slots) {
         super(pType, pPos, pBlockState);
         this.INPUT_SLOTS = input_slots;
         this.JEWEL_POWDER_SLOTS = jewel_powder_slots;
@@ -45,8 +43,8 @@ public abstract class AlchemicalCauldronEntity extends BlockEntity implements Me
             @Override
             public int get(int pIndex) {
                 return switch (pIndex){
-                    case 0 -> AlchemicalCauldronEntity.this.progress;
-                    case 1 -> AlchemicalCauldronEntity.this.maxProg;
+                    case 0 -> AbstractAlchemicalCauldronEntity.this.progress;
+                    case 1 -> AbstractAlchemicalCauldronEntity.this.maxProg;
                     default -> 0;
                 };
             }
@@ -54,9 +52,9 @@ public abstract class AlchemicalCauldronEntity extends BlockEntity implements Me
             @Override
             public void set(int pIndex, int pValue) {
                 switch (pIndex){
-                    case 0 -> AlchemicalCauldronEntity.this.progress = pValue;
-                    case 1 -> AlchemicalCauldronEntity.this.maxProg = pValue;
-                };
+                    case 0 -> AbstractAlchemicalCauldronEntity.this.progress = pValue;
+                    case 1 -> AbstractAlchemicalCauldronEntity.this.maxProg = pValue;
+                }
             }
 
             @Override

@@ -7,7 +7,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.player.Inventory;
 
 
-public class BasicAlchemicalCauldronScreen extends AlchemicalCauldronScreen<BasicAlchemicalCauldronMenu> {
+public class BasicAlchemicalCauldronScreen extends AbstractAlchemicalCauldronScreen<BasicAlchemicalCauldronMenu> {
     private static final ResourceLocation TEXTURE = new ResourceLocation(GemCraft.MODID, "textures/gui/basic_alchemical_cauldron_gui.png");
     public BasicAlchemicalCauldronScreen(BasicAlchemicalCauldronMenu pMenu, Inventory pPlayerInventory, Component pTitle) {
         super(pMenu, pPlayerInventory, pTitle, TEXTURE);

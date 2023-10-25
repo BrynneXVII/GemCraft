@@ -6,16 +6,13 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
-import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.items.ItemStackHandler;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-public class BasicAlchemicalCauldronEntity extends AlchemicalCauldronEntity {
+public class BasicAlchemicalCauldronEntity extends AbstractAlchemicalCauldronEntity {
     private class BasicAlchemicalCauldronItemStackHandler extends ItemStackHandler {
         public BasicAlchemicalCauldronItemStackHandler (int size){
             super(size);

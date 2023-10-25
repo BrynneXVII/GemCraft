@@ -8,9 +8,9 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.player.Inventory;
 
-public abstract class AlchemicalCauldronScreen<T extends AlchemicalCauldronMenu> extends AbstractContainerScreen<T> { //rendering class, pretty much just on the client
+public abstract class AbstractAlchemicalCauldronScreen<T extends AbstractAlchemicalCauldronMenu> extends AbstractContainerScreen<T> { //rendering class, pretty much just on the client
     protected final ResourceLocation TEXTURE;
-    public AlchemicalCauldronScreen(T pMenu, Inventory pPlayerInventory, Component pTitle, ResourceLocation texture) {
+    public AbstractAlchemicalCauldronScreen(T pMenu, Inventory pPlayerInventory, Component pTitle, ResourceLocation texture) {
         super(pMenu, pPlayerInventory, pTitle);
         this.TEXTURE = texture;
     }

@@ -12,7 +12,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.Nullable;
 
-public class BasicAlchemicalCauldron extends AlchemicalCauldron {
+public class BasicAlchemicalCauldron extends AbstractAlchemicalCauldron {
     private static final VoxelShape SHAPE = Block.box(3, 0, 3, 13, 7.5, 13);
     public BasicAlchemicalCauldron(Properties pProperties) {
         super(pProperties, 1000, SHAPE);

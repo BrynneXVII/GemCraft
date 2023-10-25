@@ -1,22 +1,17 @@
 package net.brynnexvii.gemcraft.block;
 
-import net.brynnexvii.gemcraft.block.entity.AlchemicalCauldronEntity;
-import net.brynnexvii.gemcraft.block.entity.GCBlockEntities;
+import net.brynnexvii.gemcraft.block.entity.AbstractAlchemicalCauldronEntity;
 import net.minecraft.core.BlockPos;
-import net.minecraft.core.Holder;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
-import net.minecraft.world.item.alchemy.Potions;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.BaseEntityBlock;
-import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.RenderShape;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityTicker;
@@ -25,20 +20,17 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
-import net.minecraftforge.items.ItemStackHandler;
 import net.minecraftforge.network.NetworkHooks;
 import org.jetbrains.annotations.Nullable;
 
-import java.util.function.Predicate;
-
 import static java.lang.Math.max;
 
-public abstract class AlchemicalCauldron extends BaseEntityBlock {
+public abstract class AbstractAlchemicalCauldron extends BaseEntityBlock {
     public final VoxelShape SHAPE; //collision box
     protected final int maxWaterlevel;
     private int waterLevel = 0;
 
-    public AlchemicalCauldron(Properties pProperties, int maxWater, VoxelShape shape) {
+    public AbstractAlchemicalCauldron(Properties pProperties, int maxWater, VoxelShape shape) {
         super(pProperties);
         this.maxWaterlevel = maxWater;
         this.SHAPE = shape;
@@ -68,8 +60,8 @@ public abstract class AlchemicalCauldron extends BaseEntityBlock {
             }
 
             BlockEntity entity = pLevel.getBlockEntity(pPos);
-            if(entity instanceof AlchemicalCauldronEntity){
-                NetworkHooks.openScreen(((ServerPlayer) pPlayer), (AlchemicalCauldronEntity) entity, pPos);
+            if(entity instanceof AbstractAlchemicalCauldronEntity){
+                NetworkHooks.openScreen(((ServerPlayer) pPlayer), (AbstractAlchemicalCauldronEntity) entity, pPos);
             } else {
                 throw new IllegalStateException("Our container provider is missing!");
             }
@@ -93,8 +85,8 @@ public abstract class AlchemicalCauldron extends BaseEntityBlock {
     public void onRemove(BlockState pState, Level pLevel, BlockPos pPos, BlockState pNewState, boolean pIsMoving) {
         if(pState.getBlock() != pNewState.getBlock()){
             BlockEntity blockEntity = pLevel.getBlockEntity(pPos);
-            if(blockEntity instanceof AlchemicalCauldronEntity){
-                ((AlchemicalCauldronEntity) blockEntity).drops();
+            if(blockEntity instanceof AbstractAlchemicalCauldronEntity){
+                ((AbstractAlchemicalCauldronEntity) blockEntity).drops();
             }
         }
         super.onRemove(pState, pLevel, pPos, pNewState, pIsMoving);

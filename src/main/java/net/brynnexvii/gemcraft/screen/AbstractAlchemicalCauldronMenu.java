@@ -1,6 +1,6 @@
 package net.brynnexvii.gemcraft.screen;
 
-import net.brynnexvii.gemcraft.block.entity.AlchemicalCauldronEntity;
+import net.brynnexvii.gemcraft.block.entity.AbstractAlchemicalCauldronEntity;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
@@ -8,20 +8,19 @@ import net.minecraft.world.inventory.*;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
-import net.minecraftforge.common.capabilities.ForgeCapabilities;
 
-public abstract class AlchemicalCauldronMenu extends AbstractContainerMenu {
-    public final AlchemicalCauldronEntity blockEntity;
+public abstract class AbstractAlchemicalCauldronMenu extends AbstractContainerMenu {
+    public final AbstractAlchemicalCauldronEntity blockEntity;
     protected final Level level;
     private final ContainerData data;
-    public AlchemicalCauldronMenu(int pContainerId, Inventory inv, FriendlyByteBuf extraData, int te_inventory_slot_count, MenuType<?> menuType) {
+    public AbstractAlchemicalCauldronMenu(int pContainerId, Inventory inv, FriendlyByteBuf extraData, int te_inventory_slot_count, MenuType<?> menuType) {
         this(pContainerId, inv, inv.player.level().getBlockEntity(extraData.readBlockPos()), new SimpleContainerData(2), te_inventory_slot_count, menuType);
     }
 
-    public AlchemicalCauldronMenu(int pContainerId, Inventory inv, BlockEntity entity, ContainerData data, int te_inventory_slot_count, MenuType<?> menuType){
+    public AbstractAlchemicalCauldronMenu(int pContainerId, Inventory inv, BlockEntity entity, ContainerData data, int te_inventory_slot_count, MenuType<?> menuType){
         super(menuType, pContainerId);
         checkContainerSize(inv, te_inventory_slot_count); //????should this be te_... or just be 4?
-        blockEntity = ((AlchemicalCauldronEntity) entity);
+        blockEntity = ((AbstractAlchemicalCauldronEntity) entity);
         this.level = inv.player.level();
         this.data = data;
         this.TE_INVENTORY_SLOT_COUNT = te_inventory_slot_count;
