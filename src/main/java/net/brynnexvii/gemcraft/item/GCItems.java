@@ -1,6 +1,7 @@
 package net.brynnexvii.gemcraft.item;
 
 import net.brynnexvii.gemcraft.GemCraft;
+import net.brynnexvii.gemcraft.item.herbs.MintItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -39,6 +40,8 @@ public class GCItems {
 
     public static final RegistryObject<Item>  BASIC_STAFF = ITEMS.register("basic_staff",
             () -> new Item(new Item.Properties().stacksTo(1)));
+
+    public static final RegistryObject<Item> MINT = ITEMS.register("mint", () -> new MintItem(new Item.Properties()));
 
     //item register method
     public static void register(IEventBus eventBus){

@@ -1,31 +1,22 @@
-package net.brynnexvii.gemcraft.item;
+package net.brynnexvii.gemcraft.item.herbs;
 
-import net.brynnexvii.gemcraft.utility.GCTags;
 import net.minecraft.network.chat.Component;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.state.BlockState;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class RubyPowderItem extends AbstractJewelPowderItem {
+public class AbstractHerbItem extends Item {
 
-    public RubyPowderItem(Properties pProperties) {
+    public AbstractHerbItem(Properties pProperties) {
         super(pProperties);
     }
 
     @Override
     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
-        pTooltipComponents.add(Component.translatable("gemcraft.ruby_powder.base_tool_tip"));
         super.appendHoverText(pStack, pLevel, pTooltipComponents, pIsAdvanced);
     }
-
-    @Override
-    protected boolean isInteractingFlower(BlockState state){
-        return state.is(GCTags.Blocks.RED_INTERACTING_FLOWERS);
-    }
-
-
 }

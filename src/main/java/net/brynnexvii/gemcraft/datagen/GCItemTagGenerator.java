@@ -47,6 +47,11 @@ public class GCItemTagGenerator extends ItemTagsProvider {
                         GCItems.EMERALD_POWDER.get(),
                         GCItems.RUBY_POWDER.get());
 
+        //Herbs
+        //--------------------------------------------------
+        this.tag(GCTags.Items.HERBS)
+                .add(GCItems.MINT.get());
+
         //Wood Tags
         //--------------------------------------------------
         this.tag(ItemTags.LOGS_THAT_BURN)

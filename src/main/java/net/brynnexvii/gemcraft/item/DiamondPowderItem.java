@@ -10,7 +10,7 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class DiamondPowderItem extends JewelPowderItem {
+public class DiamondPowderItem extends AbstractJewelPowderItem {
     public DiamondPowderItem(Properties pProperties) {
         super(pProperties);
     }

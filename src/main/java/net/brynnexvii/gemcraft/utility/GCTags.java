@@ -27,6 +27,7 @@ public class GCTags {
         public static final TagKey<Item> GEM_ORES = tag("gem_ores");
         public static final TagKey<Item> JEWEL_POWDERS = tag("jewel_powders");
         public static final TagKey<Item> WILLOW_LOGS = tag("willow_logs");
+        public static final TagKey<Item> HERBS = tag("herbs");
 
         private static TagKey<Item> tag(String name){
             return ItemTags.create(new ResourceLocation(GemCraft.MODID, name));

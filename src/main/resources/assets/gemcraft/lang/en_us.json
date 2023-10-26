@@ -10,8 +10,14 @@
   "item.gemcraft.diamond_powder": "Diamond Powder",
   "item.gemcraft.ruby_powder": "Ruby Powder",
 
+  "item.gemcraft.mint": "Mint Leaves",
+
   "item.gemcraft.rock_candy": "Rock Candy",
   "item.gemcraft.basic_staff": "Basic Staff",
+
+  "item.minecraft.potion.effect.glowing_potion": "Glowing Potion",
+  "item.minecraft.splash_potion.effect.glowing_potion": "Glowing Splash Potion",
+  "item.minecraft.lingering_potion.effect.glowing_potion": "Glowing Lingering Potion",
 
   "block.gemcraft.ruby_ore": "Ruby Ore",
   "block.gemcraft.deepslate_ruby_ore": "Deepslate Ruby Ore",
@@ -47,6 +53,7 @@
   "gemcraft.ruby_powder.base_tool_tip": "Crushed raw ruby. Can be used to .....",
   "gemcraft.diamond_powder.base_tool_tip": "Crushed raw diamond. Can be used to .....",
   "gemcraft.emerald_powder.base_tool_tip": "Crushed raw emerald. Can be used to .....",
+  "gemcraft.mint.base_tool_tip": "Mint leaves. Can be used in a cauldron to .....",
 
   "advancements.gemcraft.base.starting_gemcraft.title": "Starting GemCraft",
   "advancements.gemcraft.base.starting_gemcraft.description": "Starting your journey to harnessing the power from raw gems by obtaining one raw gem.",
@@ -55,5 +62,6 @@
   "advancements.gemcraft.base.collect_gem_ore.title": "A Penny Saved...",
   "advancements.gemcraft.base.collect_gem_ore.description": "Collect a gem ore block. Save it for a more FORTUNATE time.",
 
-  "gccreativetab.gem_tab": "Cut Gems"
+  "gccreativetab.gem_tab": "Cut Gems",
+  "gccreativetab.alchemy_tab": "Herbs and Alchemy Components"
 }

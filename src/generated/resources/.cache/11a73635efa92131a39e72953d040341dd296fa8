@@ -1,10 +1,11 @@
-// 1.20.1	2023-10-24T23:16:28.5121829	Item Models: gemcraft
+// 1.20.1	2023-10-25T23:41:51.6814829	Item Models: gemcraft
 2a2ce703142d035c370af1ec2d723fe2dc83b9ec assets/gemcraft/models/item/basic_alchemical_cauldron.json
 ccb4be144069e60fcdb3251a80efe61bab9be29c assets/gemcraft/models/item/brilliant_diamond.json
 67a6e64fe03a4804bf3908a49ec0749b71163461 assets/gemcraft/models/item/brilliant_emerald.json
 101591f9cbe92d3129e593932220aacedbab38d7 assets/gemcraft/models/item/brilliant_ruby.json
 980befbcfd6164ed3b5758b2689d0b2dbd5fe4f8 assets/gemcraft/models/item/diamond_powder.json
 b359957c57e853dfff46893cd9aa7a592c65e689 assets/gemcraft/models/item/emerald_powder.json
+82938af3e84bd77ca58e29823ecaf9547347ae5b assets/gemcraft/models/item/mint.json
 3c92bb613313558f7c16291c142be282fa4db1f9 assets/gemcraft/models/item/raw_diamond.json
 5d8914bcd1a5110f2ee1d48602c927d0304e6291 assets/gemcraft/models/item/raw_emerald.json
 8dc3e3353fe53c9f83daf9f2d8f866b5f6721265 assets/gemcraft/models/item/raw_ruby.json

@@ -73,6 +73,19 @@ public class GCCreativeModeTabs {
                                 pOutput.accept(GCBlocks.BASIC_ALCHEMICAL_CAULDRON.get());
 
                         }).build());
+
+        public static final RegistryObject<CreativeModeTab> ALCHEMY_TAB = CREATIVE_MODE_TABS.register("alchemy_tab",
+                () -> CreativeModeTab.builder().icon(() -> new ItemStack(GCItems.MINT.get()))
+                        .title(Component.translatable("gccreativetab.alchemy_tab"))
+                        .displayItems((pParameters, pOutput) -> {
+                                pOutput.accept(GCItems.DIAMOND_POWDER.get());
+                                pOutput.accept(GCItems.EMERALD_POWDER.get());
+                                pOutput.accept(GCItems.RUBY_POWDER.get());
+
+                                pOutput.accept(GCItems.MINT.get());
+
+                        }).build());
+
         public static void register(IEventBus eventBus){
 
             CREATIVE_MODE_TABS.register(eventBus);

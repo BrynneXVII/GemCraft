@@ -1,7 +1,6 @@
 package net.brynnexvii.gemcraft.item;
 
 import net.minecraft.core.BlockPos;
-import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
@@ -14,12 +13,10 @@ import net.minecraft.world.level.block.state.BlockState;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
 
-public abstract class JewelPowderItem extends Item {
-    public JewelPowderItem(Properties pProperties) {
+public abstract class AbstractJewelPowderItem extends Item {
+    public AbstractJewelPowderItem(Properties pProperties) {
         super(pProperties);
     }
 
