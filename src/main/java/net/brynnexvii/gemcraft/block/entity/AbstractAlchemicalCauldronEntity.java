@@ -1,5 +1,6 @@
 package net.brynnexvii.gemcraft.block.entity;
 
+import net.brynnexvii.gemcraft.item.GCItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;
@@ -11,6 +12,10 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.ContainerData;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.alchemy.Potion;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;
@@ -119,7 +124,65 @@ public abstract class AbstractAlchemicalCauldronEntity extends BlockEntity imple
     }
 
     public void tick(Level level, BlockPos pPos, BlockState pState) {
+        if(isOutputSlotEmptyOrReceivable() && hasRecipe()){
+            increaseCraftingProcess();
+            setChanged(level, pPos, pState);
 
+            if(hasProgressFinished()){
+                craftItem();
+                resetProgress();
+            }
+        } else {
+            resetProgress();
+        }
+    }
+
+    private void craftItem() {//will adapt later
+        this.getItemHandler().extractItem(INPUT_SLOTS[0], 1, false);
+        this.getItemHandler().extractItem(JEWEL_POWDER_SLOTS[0], 1, false);
+        this.getItemHandler().setStackInSlot(OUTPUT_SLOTS[0], new ItemStack(Items.DIAMOND, this.getItemHandler().getStackInSlot(OUTPUT_SLOTS[0]).getCount() + 1));
+    }
+
+    private void resetProgress() {
+        this.progress = 0;
+    }
+
+    private boolean hasProgressFinished() {
+        return this.progress >= this.maxProg;
+    }
+
+    private void increaseCraftingProcess() {
+        this.progress++;
+    }
+
+    private boolean hasRecipe() { //will adapt later
+        return canInsertAmountIntoOutputSlot(1) && canInsertItemIntoOutputSlot(Items.DIAMOND) && hasRecipeItemInInputAndPowderSlots();
+    }
+
+    private boolean hasRecipeItemInInputAndPowderSlots() {//will adapt later
+        return this.getItemHandler().getStackInSlot(INPUT_SLOTS[0]).getItem() == GCItems.RAW_DIAMOND.get() &&
+                this.getItemHandler().getStackInSlot(JEWEL_POWDER_SLOTS[0]).getItem() == GCItems.DIAMOND_POWDER.get();
+    }
+
+    private boolean canInsertItemIntoOutputSlot(Item item) {//will adapt later
+        return this.getItemHandler().getStackInSlot(OUTPUT_SLOTS[0]).is(item) || this.getItemHandler().getStackInSlot(OUTPUT_SLOTS[0]).isEmpty();
+    }
+
+    private boolean canInsertAmountIntoOutputSlot(int count) {//will adapt later
+        return this.getItemHandler().getStackInSlot(OUTPUT_SLOTS[0]).getMaxStackSize() >= this.getItemHandler().getStackInSlot(OUTPUT_SLOTS[0]).getCount() + count;
+    }
+
+    private boolean isOutputSlotEmptyOrReceivable() {
+        boolean isItEmpty = true;
+        boolean isItReceivable = true;
+        for (int outputSlot : OUTPUT_SLOTS) {
+            isItEmpty = isItEmpty && this.getItemHandler().getStackInSlot(outputSlot).isEmpty();
+            if (this.getItemHandler().getStackInSlot(outputSlot).getCount() == this.getItemHandler().getStackInSlot(outputSlot).getMaxStackSize()) {
+                isItReceivable = false;
+            }
+
+        }
+        return isItEmpty || isItReceivable;
     }
 
 }
