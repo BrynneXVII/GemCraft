@@ -1,4 +1,4 @@
-package net.brynnexvii.gemcraft.potion;
+package net.brynnexvii.gemcraft.potion.brewing;
 
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.world.item.Item;

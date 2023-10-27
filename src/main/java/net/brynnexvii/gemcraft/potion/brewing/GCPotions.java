@@ -1,7 +1,6 @@
-package net.brynnexvii.gemcraft.potion;
+package net.brynnexvii.gemcraft.potion.brewing;
 
 import net.brynnexvii.gemcraft.GemCraft;
-import net.minecraft.client.renderer.EffectInstance;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.alchemy.Potion;

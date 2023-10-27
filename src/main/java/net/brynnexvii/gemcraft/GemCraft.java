@@ -3,9 +3,10 @@ package net.brynnexvii.gemcraft;
 import com.mojang.logging.LogUtils;
 import net.brynnexvii.gemcraft.block.GCBlocks;
 import net.brynnexvii.gemcraft.block.entity.GCBlockEntities;
+import net.brynnexvii.gemcraft.effect.GCEffects;
 import net.brynnexvii.gemcraft.item.GCItems;
-import net.brynnexvii.gemcraft.potion.BetterBrewingRecipe;
-import net.brynnexvii.gemcraft.potion.GCPotions;
+import net.brynnexvii.gemcraft.potion.brewing.BetterBrewingRecipe;
+import net.brynnexvii.gemcraft.potion.brewing.GCPotions;
 import net.brynnexvii.gemcraft.screen.BasicAlchemicalCauldronScreen;
 import net.brynnexvii.gemcraft.screen.GCMenuTypes;
 import net.brynnexvii.gemcraft.utility.GCCreativeModeTabs;
@@ -15,7 +16,6 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.item.alchemy.Potions;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.common.brewing.BrewingRecipe;
 import net.minecraftforge.common.brewing.BrewingRecipeRegistry;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
@@ -46,6 +46,7 @@ public class GemCraft
         GCBlocks.register(modEventBus);
 
         GCPotions.register(modEventBus);
+        GCEffects.register(modEventBus);
 
         GCBlockEntities.register(modEventBus);
         GCMenuTypes.register(modEventBus);
