@@ -33,6 +33,7 @@ public class GCItemModelProvider extends ItemModelProvider {
         simpleItem(GCItems.RUBY_POWDER);
         simpleItem(GCItems.ROCK_CANDY);
         simpleItem(GCItems.MINT);
+        simpleItem(GCItems.PARSNIP);
 
         simpleBlockItem(GCBlocks.WILLOW_DOOR);
         alternateBlockItem(GCBlocks.WILLOW_WOOD);

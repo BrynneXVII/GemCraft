@@ -1,0 +1,31 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "gemcraft:block/parsnip_stage0"
+    },
+    "age=1": {
+      "model": "gemcraft:block/parsnip_stage0"
+    },
+    "age=2": {
+      "model": "gemcraft:block/parsnip_stage0"
+    },
+    "age=3": {
+      "model": "gemcraft:block/parsnip_stage1"
+    },
+    "age=4": {
+      "model": "gemcraft:block/parsnip_stage1"
+    },
+    "age=5": {
+      "model": "gemcraft:block/parsnip_stage2"
+    },
+    "age=6": {
+      "model": "gemcraft:block/parsnip_stage2"
+    },
+    "age=7": {
+      "model": "gemcraft:block/parsnip_stage2"
+    },
+    "age=8": {
+      "model": "gemcraft:block/parsnip_stage3"
+    }
+  }
+}

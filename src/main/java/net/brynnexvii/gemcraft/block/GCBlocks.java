@@ -1,6 +1,7 @@
 package net.brynnexvii.gemcraft.block;
 
 import net.brynnexvii.gemcraft.GemCraft;
+import net.brynnexvii.gemcraft.block.crops.ParsnipCropBlock;
 import net.brynnexvii.gemcraft.item.GCItems;
 import net.brynnexvii.gemcraft.worldgen.tree.WillowTreeGrower;
 import net.minecraft.core.BlockPos;
@@ -252,10 +253,17 @@ public class GCBlocks {
     //</editor-fold>
 
     //------------------------------------------------------------------------------------------------------------------
-    //<editor-fold desc="Trapdoors">
+    //<editor-fold desc="Cauldrons">
 
     public static final RegistryObject<Block> BASIC_ALCHEMICAL_CAULDRON = registerBlock("basic_alchemical_cauldron",
             () -> new BasicAlchemicalCauldron(BlockBehaviour.Properties.copy(Blocks.CAULDRON).noOcclusion()));
+    //</editor-fold>
+
+    //------------------------------------------------------------------------------------------------------------------
+    //<editor-fold desc="Crops">
+    //registered differently because you cannot just set it down anywhere
+    public static final RegistryObject<Block> PARSNIP_CROP = BLOCKS.register("parsnip_crop",
+            () -> new ParsnipCropBlock(BlockBehaviour.Properties.copy(Blocks.CARROTS).noOcclusion().noCollission()));
     //</editor-fold>
 
     //------------------------------------------------------------------------------------------------------------------

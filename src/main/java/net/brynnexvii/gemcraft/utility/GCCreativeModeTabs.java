@@ -16,7 +16,7 @@ import net.minecraftforge.registries.RegistryObject;
 public class GCCreativeModeTabs {
         public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, GemCraft.MODID);
 
-        public static final RegistryObject<CreativeModeTab> GEM_TAB = CREATIVE_MODE_TABS.register("gem_tab",
+        public static final RegistryObject<CreativeModeTab> GEMCRAFT_TAB = CREATIVE_MODE_TABS.register("gemcraft_tab",
                 () -> CreativeModeTab.builder().icon(() -> new ItemStack(GCItems.RAW_EMERALD.get()))
                         .title(Component.translatable("gccreativetab.gem_tab"))
                         .displayItems((pParameters, pOutput) -> {
@@ -67,8 +67,10 @@ public class GCCreativeModeTabs {
                                 pOutput.accept(GCBlocks.WILLOW_DOOR.get());
                                 pOutput.accept(GCBlocks.WILLOW_TRAPDOOR.get());
 
-                                pOutput.accept(GCItems.ROCK_CANDY.get());
                                 pOutput.accept(GCItems.BASIC_STAFF.get());
+                                pOutput.accept(GCItems.ROCK_CANDY.get());
+                                pOutput.accept(GCItems.MINT.get());
+                                pOutput.accept(GCItems.PARSNIP.get());
 
                                 pOutput.accept(GCBlocks.BASIC_ALCHEMICAL_CAULDRON.get());
 

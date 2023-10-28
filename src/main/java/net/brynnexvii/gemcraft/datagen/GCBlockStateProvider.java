@@ -2,14 +2,20 @@ package net.brynnexvii.gemcraft.datagen;
 
 import net.brynnexvii.gemcraft.GemCraft;
 import net.brynnexvii.gemcraft.block.GCBlocks;
+import net.brynnexvii.gemcraft.block.crops.GCCropBlock;
+import net.brynnexvii.gemcraft.block.crops.ParsnipCropBlock;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.*;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
+import net.minecraftforge.client.model.generators.ConfiguredModel;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+
+import java.util.function.Function;
 
 public class GCBlockStateProvider extends BlockStateProvider {
     public GCBlockStateProvider(PackOutput output, ExistingFileHelper exFileHelper) {
@@ -59,6 +65,7 @@ public class GCBlockStateProvider extends BlockStateProvider {
         doorBlockWithRenderType(((DoorBlock) GCBlocks.WILLOW_DOOR.get()), modLoc("block/willow_door_bottom"), modLoc("block/willow_door_top"), "cutout");
         trapdoorBlockWithRenderType(((TrapDoorBlock) GCBlocks.WILLOW_TRAPDOOR.get()), modLoc("block/willow_trapdoor"), true, "cutout");
 
+        makeCrop((GCCropBlock) GCBlocks.PARSNIP_CROP.get(), "parsnip_stage", "parsnip_stage", new int[] {0, 3, 5, 8, ParsnipCropBlock.MAX_AGE + 1});
     }
 
     private void blockItem(RegistryObject<Block> blockRegistryObject, String appendix) {
@@ -85,5 +92,25 @@ public class GCBlockStateProvider extends BlockStateProvider {
 
     private void altBlockWithItem(RegistryObject<Block> blockRegistryObject) {
         simpleBlockWithItem(blockRegistryObject.get(), new ModelFile.UncheckedModelFile(modLoc("block/" + ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath())));
+    }
+
+    public void makeCrop(CropBlock block, String modelName, String textureName, int[] ageBreakpoints) {
+        Function<BlockState, ConfiguredModel[]> function = state -> states(state, block, modelName, textureName, ageBreakpoints);
+
+        getVariantBuilder(block).forAllStates(function);
+    }
+
+    private ConfiguredModel[] states(BlockState state, CropBlock block, String modelName, String textureName, int[] ageBreakpoints) {
+        ConfiguredModel[] models = new ConfiguredModel[1];
+        int age = state.getValue(((GCCropBlock) block).getAgeProperty());
+        for(int i = 1; i < ageBreakpoints.length; i++){
+            if(age < ageBreakpoints[i]){
+                models[0] = new ConfiguredModel(models().crop(modelName + (i-1),
+                        new ResourceLocation(GemCraft.MODID, "block/" + textureName + (i-1))).renderType("cutout"));
+                break;
+            }
+        }
+
+        return models;
     }
 }

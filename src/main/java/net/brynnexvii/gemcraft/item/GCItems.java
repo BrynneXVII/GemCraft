@@ -1,7 +1,9 @@
 package net.brynnexvii.gemcraft.item;
 
 import net.brynnexvii.gemcraft.GemCraft;
+import net.brynnexvii.gemcraft.block.GCBlocks;
 import net.brynnexvii.gemcraft.item.herbs.MintItem;
+import net.minecraft.world.item.ItemNameBlockItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -42,6 +44,9 @@ public class GCItems {
             () -> new Item(new Item.Properties().stacksTo(1)));
 
     public static final RegistryObject<Item> MINT = ITEMS.register("mint", () -> new MintItem(new Item.Properties()));
+
+    public static final RegistryObject<Item> PARSNIP = ITEMS.register("parsnip",
+            () -> new ItemNameBlockItem(GCBlocks.PARSNIP_CROP.get(), new Item.Properties().food(GCFood.PARSNIP)));
 
     //item register method
     public static void register(IEventBus eventBus){

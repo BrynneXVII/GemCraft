@@ -12,6 +12,8 @@
 
   "item.gemcraft.mint": "Mint Leaves",
 
+  "item.gemcraft.parsnip": "Parsnip",
+
   "item.gemcraft.rock_candy": "Rock Candy",
   "item.gemcraft.basic_staff": "Basic Staff",
 
@@ -64,6 +66,6 @@
   "advancements.gemcraft.base.collect_gem_ore.title": "A Penny Saved...",
   "advancements.gemcraft.base.collect_gem_ore.description": "Collect a gem ore block. Save it for a more FORTUNATE time.",
 
-  "gccreativetab.gem_tab": "Cut Gems",
+  "gccreativetab.gemcraft_tab": "Gemcraft",
   "gccreativetab.alchemy_tab": "Herbs and Alchemy Components"
 }

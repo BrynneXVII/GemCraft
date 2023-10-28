@@ -1,4 +1,4 @@
-// 1.20.1	2023-10-25T00:24:36.1379313	Block States: gemcraft
+// 1.20.1	2023-10-27T23:56:33.9060361	Block States: gemcraft
 a72b5059257e0d19e7a139c894bc1e3d375d423e assets/gemcraft/blockstates/basic_alchemical_cauldron.json
 354b92124212a94c3544343c91228f8a83609dd2 assets/gemcraft/blockstates/deepslate_ruby_ore.json
 ee623ec03d8fd8eeb3cd68658505bd3900c3bdb4 assets/gemcraft/blockstates/end_stone_diamond_ore.json
@@ -7,6 +7,7 @@ ee623ec03d8fd8eeb3cd68658505bd3900c3bdb4 assets/gemcraft/blockstates/end_stone_d
 6b1edd35d371387cb0be6cbad7a231e45d2005bb assets/gemcraft/blockstates/nether_diamond_ore.json
 9fdfca757a690d2142d1c95d9d56988f222127a0 assets/gemcraft/blockstates/nether_emerald_ore.json
 997642df01e88964a2215fe3645a9ab52cc01893 assets/gemcraft/blockstates/nether_ruby_ore.json
+37a3a86c908dbf42fadfa857f922e56e6bb70349 assets/gemcraft/blockstates/parsnip_crop.json
 ad5e6399ca8e26684bcaa841e372a8127f6cbffc assets/gemcraft/blockstates/ruby_block.json
 f8a62f5e50b62b76e9ef0475efe8723e48f0ecfb assets/gemcraft/blockstates/ruby_ore.json
 1a0bf2dfa27a33bb3418e412d0458bcd2f1681a3 assets/gemcraft/blockstates/stripped_willow_log.json
@@ -32,6 +33,10 @@ a43b52c056b922c36e6c468b369aea15cb8a910d assets/gemcraft/blockstates/willow_stai
 44b9ef9edac8a77cd166fa1953e5561f4a59aac5 assets/gemcraft/models/block/nether_diamond_ore.json
 a520bc3317a58c176587b7db7693b136f11a6d67 assets/gemcraft/models/block/nether_emerald_ore.json
 2827b0458a776d4a4cc9f88e77628a3e718f24c1 assets/gemcraft/models/block/nether_ruby_ore.json
+5c9ec659c906648eb3f2452888a67598446aa7cf assets/gemcraft/models/block/parsnip_stage0.json
+042d20569fde442a93a035e1f391d9c74a7d8837 assets/gemcraft/models/block/parsnip_stage1.json
+35c0ab28811678825c0fa371b2495faa5350c683 assets/gemcraft/models/block/parsnip_stage2.json
+06af954a247619d53175d613c102114c015a9424 assets/gemcraft/models/block/parsnip_stage3.json
 a75c7d673ee47a98509906778c0d82283177844f assets/gemcraft/models/block/ruby_block.json
 dba0ae6e45dba4209ea81c2eeeafae19eb758a75 assets/gemcraft/models/block/ruby_ore.json
 81729e726c32704a2f84ef5451678ae31bf6f1ce assets/gemcraft/models/block/stripped_willow_log.json

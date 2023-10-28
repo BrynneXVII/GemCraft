@@ -14,6 +14,7 @@ import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.alchemy.Potions;
+import net.minecraft.world.level.block.ComposterBlock;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.brewing.BrewingRecipeRegistry;
@@ -64,6 +65,8 @@ public class GemCraft
     private void commonSetup(final FMLCommonSetupEvent event)
     {
         event.enqueueWork(() -> {
+            ComposterBlock.COMPOSTABLES.put(GCItems.PARSNIP.get(), 0.68F);
+
             BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(Potions.AWKWARD, Items.GLOW_INK_SAC, GCPotions.GLOWING_POTION.get()));
         });
     }
@@ -72,9 +75,11 @@ public class GemCraft
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
-            event.accept(GCItems.BRILLIANT_DIAMOND);
-            event.accept(GCItems.BRILLIANT_RUBY);
-            event.accept(GCItems.BRILLIANT_EMERALD);
+            //event.accept(GCItems.BRILLIANT_DIAMOND);
+            //event.accept(GCItems.BRILLIANT_RUBY);
+            //event.accept(GCItems.BRILLIANT_EMERALD);
+        } else if (event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
+            event.accept(GCItems.PARSNIP);
         }
     }
 
