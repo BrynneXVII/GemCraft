@@ -18,7 +18,7 @@ public class GCCreativeModeTabs {
 
         public static final RegistryObject<CreativeModeTab> GEMCRAFT_TAB = CREATIVE_MODE_TABS.register("gemcraft_tab",
                 () -> CreativeModeTab.builder().icon(() -> new ItemStack(GCItems.RAW_EMERALD.get()))
-                        .title(Component.translatable("gccreativetab.gem_tab"))
+                        .title(Component.translatable("gccreativetab.gemcraft_tab"))
                         .displayItems((pParameters, pOutput) -> {
                                 pOutput.accept(Blocks.DIAMOND_ORE);
                                 pOutput.accept(Blocks.DEEPSLATE_DIAMOND_ORE);
@@ -71,6 +71,7 @@ public class GCCreativeModeTabs {
                                 pOutput.accept(GCItems.ROCK_CANDY.get());
                                 pOutput.accept(GCItems.MINT.get());
                                 pOutput.accept(GCItems.PARSNIP.get());
+                                pOutput.accept(GCBlocks.VIOLET_LILY.get());
 
                                 pOutput.accept(GCBlocks.BASIC_ALCHEMICAL_CAULDRON.get());
 

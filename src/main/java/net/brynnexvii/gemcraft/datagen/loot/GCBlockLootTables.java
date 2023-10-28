@@ -73,6 +73,9 @@ public class GCBlockLootTables extends BlockLootSubProvider {
 
         this.dropSelf(GCBlocks.BASIC_ALCHEMICAL_CAULDRON.get());
 
+        this.dropSelf(GCBlocks.VIOLET_LILY.get());
+        this.add(GCBlocks.POTTED_VIOLET_LILY.get(), createPotFlowerItemTable(GCBlocks.VIOLET_LILY.get()));
+
         LootItemCondition.Builder parsnipLootItemConditionBuilder = LootItemBlockStatePropertyCondition
                 .hasBlockStateProperties(GCBlocks.PARSNIP_CROP.get()).setProperties(StatePropertiesPredicate.Builder.properties()
                         .hasProperty(ParsnipCropBlock.AGE, 8));

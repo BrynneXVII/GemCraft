@@ -8,6 +8,8 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.valueproviders.UniformInt;
+import net.minecraft.world.effect.MobEffect;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.BlockGetter;
@@ -264,6 +266,16 @@ public class GCBlocks {
     //registered differently because you cannot just set it down anywhere
     public static final RegistryObject<Block> PARSNIP_CROP = BLOCKS.register("parsnip_crop",
             () -> new ParsnipCropBlock(BlockBehaviour.Properties.copy(Blocks.CARROTS).noOcclusion().noCollission()));
+    //</editor-fold>
+
+    //------------------------------------------------------------------------------------------------------------------
+    //<editor-fold desc="Flowers">
+
+    public static final RegistryObject<Block> VIOLET_LILY = registerBlock("violet_lily",
+            () -> new FlowerBlock(() -> MobEffects.DIG_SPEED, 60, BlockBehaviour.Properties.copy(Blocks.LILY_OF_THE_VALLEY)));
+    public static final RegistryObject<Block> POTTED_VIOLET_LILY = BLOCKS.register("potted_violet_lily",
+            () -> new FlowerPotBlock((() -> (FlowerPotBlock) Blocks.FLOWER_POT), VIOLET_LILY, BlockBehaviour.Properties.copy(Blocks.POTTED_LILY_OF_THE_VALLEY)));
+
     //</editor-fold>
 
     //------------------------------------------------------------------------------------------------------------------

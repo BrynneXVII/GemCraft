@@ -65,6 +65,8 @@ public class GCBlockStateProvider extends BlockStateProvider {
         doorBlockWithRenderType(((DoorBlock) GCBlocks.WILLOW_DOOR.get()), modLoc("block/willow_door_bottom"), modLoc("block/willow_door_top"), "cutout");
         trapdoorBlockWithRenderType(((TrapDoorBlock) GCBlocks.WILLOW_TRAPDOOR.get()), modLoc("block/willow_trapdoor"), true, "cutout");
 
+        simpleBlock(GCBlocks.VIOLET_LILY.get(), models().cross(blockTexture(GCBlocks.VIOLET_LILY.get()).getPath(), blockTexture(GCBlocks.VIOLET_LILY.get())).renderType("cutout"));
+
         makeCrop((GCCropBlock) GCBlocks.PARSNIP_CROP.get(), "parsnip_stage", "parsnip_stage", new int[] {0, 3, 5, 8, ParsnipCropBlock.MAX_AGE + 1});
     }
 

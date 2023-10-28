@@ -1,4 +1,4 @@
-// 1.20.1	2023-10-27T23:56:33.9060361	Block States: gemcraft
+// 1.20.1	2023-10-28T00:58:01.4122289	Block States: gemcraft
 a72b5059257e0d19e7a139c894bc1e3d375d423e assets/gemcraft/blockstates/basic_alchemical_cauldron.json
 354b92124212a94c3544343c91228f8a83609dd2 assets/gemcraft/blockstates/deepslate_ruby_ore.json
 ee623ec03d8fd8eeb3cd68658505bd3900c3bdb4 assets/gemcraft/blockstates/end_stone_diamond_ore.json
@@ -12,6 +12,7 @@ ad5e6399ca8e26684bcaa841e372a8127f6cbffc assets/gemcraft/blockstates/ruby_block.
 f8a62f5e50b62b76e9ef0475efe8723e48f0ecfb assets/gemcraft/blockstates/ruby_ore.json
 1a0bf2dfa27a33bb3418e412d0458bcd2f1681a3 assets/gemcraft/blockstates/stripped_willow_log.json
 052e5b737f1cc6083948f9f4778e68ee624632e6 assets/gemcraft/blockstates/stripped_willow_wood.json
+93c8817abfd665a23fe7ede31256dddf1386e4be assets/gemcraft/blockstates/violet_lily.json
 5e96d2f4ac3991ac68fb6c90e3d262d0062fdd65 assets/gemcraft/blockstates/willow_button.json
 c4140bb0eaf0413db7404bbdc8ef5a323d96af20 assets/gemcraft/blockstates/willow_door.json
 d46338376045837cc2871083b988d5ce3458390c assets/gemcraft/blockstates/willow_fence.json
@@ -43,6 +44,7 @@ dba0ae6e45dba4209ea81c2eeeafae19eb758a75 assets/gemcraft/models/block/ruby_ore.j
 f0101f84ebfec5a8f345e4163ad798fa1c62a9b6 assets/gemcraft/models/block/stripped_willow_log_horizontal.json
 5c9f3ca62c87af280f281880f9e558171aeaaec3 assets/gemcraft/models/block/stripped_willow_wood.json
 d4818144da9a36153adf1989866fd7398f68c495 assets/gemcraft/models/block/stripped_willow_wood_horizontal.json
+2c3223ba4a2cf83ebc9302755c32eeaf6c3829fb assets/gemcraft/models/block/violet_lily.json
 775dedfb6e0e4ba6ede9b131b8b5ab1c93ad8890 assets/gemcraft/models/block/willow_button.json
 40ef550241d6a7ff3ec953a7b9ab8a6e0a952b66 assets/gemcraft/models/block/willow_button_pressed.json
 09734e7d51574e7bd86b2f0a19afc1f7afa4e11f assets/gemcraft/models/block/willow_door_bottom_left.json

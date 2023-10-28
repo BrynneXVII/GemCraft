@@ -50,6 +50,8 @@ public class GCItemModelProvider extends ItemModelProvider {
 
         saplingItem(GCBlocks.WILLOW_SAPLING);
 
+        simpleBlockItem(GCBlocks.VIOLET_LILY);
+
         complexBlock(GCBlocks.BASIC_ALCHEMICAL_CAULDRON.get());
 
     }

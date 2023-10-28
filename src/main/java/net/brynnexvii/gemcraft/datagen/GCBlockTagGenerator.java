@@ -21,6 +21,9 @@ public class GCBlockTagGenerator extends BlockTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider pProvider) {
+        this.tag(BlockTags.SMALL_FLOWERS)
+                .add(GCBlocks.VIOLET_LILY.get());
+
         //Gemcraft Misc Tags
         //--------------------------------------------------
         this.tag(GCTags.Blocks.GEM_ORES)

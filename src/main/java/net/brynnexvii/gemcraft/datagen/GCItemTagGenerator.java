@@ -47,6 +47,9 @@ public class GCItemTagGenerator extends ItemTagsProvider {
                         GCItems.EMERALD_POWDER.get(),
                         GCItems.RUBY_POWDER.get());
 
+        this.tag(ItemTags.SMALL_FLOWERS)
+                .add(GCBlocks.VIOLET_LILY.get().asItem());
+
         //Herbs
         //--------------------------------------------------
         this.tag(GCTags.Items.HERBS)

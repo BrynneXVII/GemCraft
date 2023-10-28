@@ -1,4 +1,4 @@
-// 1.20.1	2023-10-27T23:56:33.9050354	Loot Tables
+// 1.20.1	2023-10-28T01:15:51.9569738	Loot Tables
 379db3db19d1418add6294dae75031c0cfb95e80 data/gemcraft/loot_tables/blocks/basic_alchemical_cauldron.json
 c6aeeef5d9c5e784ce00c84b90f8adb73f44c658 data/gemcraft/loot_tables/blocks/deepslate_ruby_ore.json
 5b830cef9871e923be500c738c62a1ee975e77a7 data/gemcraft/loot_tables/blocks/end_stone_diamond_ore.json
@@ -8,10 +8,12 @@ ed357742a933acc0030a691931d33aef2b064199 data/gemcraft/loot_tables/blocks/nether
 94014c786f8dac096bca35440d603ab10bd08dfe data/gemcraft/loot_tables/blocks/nether_emerald_ore.json
 8099dcfe36299e5fe98b268be2b4db5a8f27d48b data/gemcraft/loot_tables/blocks/nether_ruby_ore.json
 8b8874bf801e83a3b6fef56601d339a533963aa9 data/gemcraft/loot_tables/blocks/parsnip_crop.json
+fa889c4fd30f0344f6c5ecc734489226ca1c51e4 data/gemcraft/loot_tables/blocks/potted_violet_lily.json
 5014c2d1a5bb92ed7185daac781615c12b2b5108 data/gemcraft/loot_tables/blocks/ruby_block.json
 b741d4c49abedc979ce1bc4912d13239c1f10334 data/gemcraft/loot_tables/blocks/ruby_ore.json
 0859a693200b0d1a5763ca439f71827632905926 data/gemcraft/loot_tables/blocks/stripped_willow_log.json
 0bf44b7b7b6b55768ca03b853037a2abe99fd4ba data/gemcraft/loot_tables/blocks/stripped_willow_wood.json
+c880fce6af5a166b970c62096b9dcb64513d5e40 data/gemcraft/loot_tables/blocks/violet_lily.json
 1483ecf2ca3c12b34851b2ba4de59d8ddba3f6f4 data/gemcraft/loot_tables/blocks/willow_button.json
 04da902c26020dfd9d08bca4d570c0be83ce1ac7 data/gemcraft/loot_tables/blocks/willow_door.json
 b4278519b3ce3ed300bbc1ef2e95eab093160487 data/gemcraft/loot_tables/blocks/willow_fence.json
