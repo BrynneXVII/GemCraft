@@ -1,6 +1,7 @@
 package net.brynnexvii.gemcraft.block.entity;
 
 import net.brynnexvii.gemcraft.item.GCItems;
+import net.brynnexvii.gemcraft.recipe.AbstractAlchemicalCauldronRecipe;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;
@@ -27,6 +28,8 @@ import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
+
+import java.util.Optional;
 
 public abstract class AbstractAlchemicalCauldronEntity extends BlockEntity implements MenuProvider {
     protected final int [] INPUT_SLOTS;
@@ -137,10 +140,15 @@ public abstract class AbstractAlchemicalCauldronEntity extends BlockEntity imple
         }
     }
 
-    private void craftItem() {//will adapt later
+    private void craftItem() {//will adapt later for multiple outputs
+        Optional<? extends AbstractAlchemicalCauldronRecipe> recipe = getCurrentRecipe();
+
+        ItemStack resultItem = recipe.get().getResultItem(getLevel().registryAccess());
+
         this.getItemHandler().extractItem(INPUT_SLOTS[0], 1, false);
         this.getItemHandler().extractItem(JEWEL_POWDER_SLOTS[0], 1, false);
-        this.getItemHandler().setStackInSlot(OUTPUT_SLOTS[0], new ItemStack(Items.DIAMOND, this.getItemHandler().getStackInSlot(OUTPUT_SLOTS[0]).getCount() + 1));
+
+        this.getItemHandler().setStackInSlot(OUTPUT_SLOTS[0], new ItemStack(resultItem.getItem(), this.getItemHandler().getStackInSlot(OUTPUT_SLOTS[0]).getCount() + resultItem.getCount()));
     }
 
     private void resetProgress() {
@@ -155,14 +163,17 @@ public abstract class AbstractAlchemicalCauldronEntity extends BlockEntity imple
         this.progress++;
     }
 
-    private boolean hasRecipe() { //will adapt later
-        return canInsertAmountIntoOutputSlot(1) && canInsertItemIntoOutputSlot(Items.DIAMOND) && hasRecipeItemInInputAndPowderSlots();
-    }
+    protected boolean hasRecipe() { //will adapt later for multiple results
+        Optional<? extends AbstractAlchemicalCauldronRecipe> recipe = getCurrentRecipe();
 
-    private boolean hasRecipeItemInInputAndPowderSlots() {//will adapt later
-        return this.getItemHandler().getStackInSlot(INPUT_SLOTS[0]).getItem() == GCItems.RAW_DIAMOND.get() &&
-                this.getItemHandler().getStackInSlot(JEWEL_POWDER_SLOTS[0]).getItem() == GCItems.DIAMOND_POWDER.get();
+        if(recipe.isEmpty()){
+            return false;
+        }
+
+        ItemStack resultItem = recipe.get().getResultItem(getLevel().registryAccess());
+        return canInsertAmountIntoOutputSlot(resultItem.getCount()) && canInsertItemIntoOutputSlot(resultItem.getItem());
     }
+    protected abstract Optional<? extends AbstractAlchemicalCauldronRecipe> getCurrentRecipe();
 
     private boolean canInsertItemIntoOutputSlot(Item item) {//will adapt later
         return this.getItemHandler().getStackInSlot(OUTPUT_SLOTS[0]).is(item) || this.getItemHandler().getStackInSlot(OUTPUT_SLOTS[0]).isEmpty();

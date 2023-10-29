@@ -1,16 +1,21 @@
 package net.brynnexvii.gemcraft.block.entity;
 
+import net.brynnexvii.gemcraft.recipe.BasicAlchemicalCauldronRecipe;
 import net.brynnexvii.gemcraft.screen.BasicAlchemicalCauldronMenu;
 import net.brynnexvii.gemcraft.utility.GCTags;
 import net.minecraft.core.BlockPos;
+import net.minecraft.world.SimpleContainer;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.items.ItemStackHandler;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
+
+import java.util.Optional;
 
 public class BasicAlchemicalCauldronEntity extends AbstractAlchemicalCauldronEntity {
     private class BasicAlchemicalCauldronItemStackHandler extends ItemStackHandler {
@@ -49,6 +54,15 @@ public class BasicAlchemicalCauldronEntity extends AbstractAlchemicalCauldronEnt
     @Override
     public AbstractContainerMenu createMenu(int pContainerId, Inventory pPlayerInventory, Player pPlayer){
         return new BasicAlchemicalCauldronMenu(pContainerId, pPlayerInventory, this, this.data);
+    }
+
+    protected Optional<BasicAlchemicalCauldronRecipe> getCurrentRecipe(){
+        SimpleContainer inventory = new SimpleContainer(this.getItemHandler().getSlots());
+        for(int i = 0; i < this.getItemHandler().getSlots(); i++){
+            inventory.setItem(i, this.getItemHandler().getStackInSlot(i));
+        }
+
+        return this.level.getRecipeManager().getRecipeFor(BasicAlchemicalCauldronRecipe.Type.INSTANCE, inventory, level);
     }
 
 }

@@ -1,0 +1,18 @@
+{
+  "type": "gemcraft:basic_alchemical_cauldron",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:sugar"
+    }
+  ],
+  "jewel_powder": [
+    {
+      "item": "gemcraft:diamond_powder"
+    }
+  ],
+  "output": {
+    "item": "gemcraft:rock_candy",
+    "count": 2
+  }
+}

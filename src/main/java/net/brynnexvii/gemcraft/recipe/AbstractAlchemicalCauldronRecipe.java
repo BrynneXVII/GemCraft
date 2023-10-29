@@ -14,10 +14,18 @@ import net.minecraft.world.level.Level;
 public abstract class AbstractAlchemicalCauldronRecipe implements Recipe<SimpleContainer> {
     private final NonNullList<Ingredient> inputItems;
     private final NonNullList<Ingredient> jewelPowderItems; //may not need?
-    private final NonNullList<ItemStack> outputItems;
+    //private final NonNullList<ItemStack> outputItems;
+    private final ItemStack outputItems;
     private final ResourceLocation id;
 
+    /*
     public AbstractAlchemicalCauldronRecipe(ResourceLocation id, NonNullList<Ingredient> inputItems, NonNullList<Ingredient> jewelPowderItems, NonNullList<ItemStack> outputItems) {
+        this.id = id;
+        this.inputItems = inputItems;
+        this.jewelPowderItems = jewelPowderItems;
+        this.outputItems = outputItems;
+    }*/
+    public AbstractAlchemicalCauldronRecipe(ResourceLocation id, NonNullList<Ingredient> inputItems, NonNullList<Ingredient> jewelPowderItems, ItemStack outputItems) {
         this.id = id;
         this.inputItems = inputItems;
         this.jewelPowderItems = jewelPowderItems;
@@ -29,12 +37,12 @@ public abstract class AbstractAlchemicalCauldronRecipe implements Recipe<SimpleC
             return false;
         }
 
-        return inputItems.get(0).test(pContainer.getItem(0));
+        return inputItems.get(0).test(pContainer.getItem(0)) && jewelPowderItems.get(0).test(pContainer.getItem(1));
     }
 
     @Override
     public ItemStack assemble(SimpleContainer pContainer, RegistryAccess pRegistryAccess) { //this is just basic, needs updating
-        return outputItems.get(0).copy();
+        return outputItems.copy();
     }
 
     @Override
@@ -44,12 +52,16 @@ public abstract class AbstractAlchemicalCauldronRecipe implements Recipe<SimpleC
 
     @Override
     public ItemStack getResultItem(RegistryAccess pRegistryAccess) {//this is just basic, needs updating
-        return outputItems.get(0).copy();
+        return outputItems.copy();
     }
 
     @Override
     public NonNullList<Ingredient> getIngredients() {//this is just basic, needs updating
         return this.inputItems;
+    }
+
+    public NonNullList<Ingredient> getJewelPowders() {//this is just basic, needs updating
+        return this.jewelPowderItems;
     }
 
     @Override

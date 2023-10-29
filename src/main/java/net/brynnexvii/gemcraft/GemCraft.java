@@ -7,6 +7,7 @@ import net.brynnexvii.gemcraft.effect.GCEffects;
 import net.brynnexvii.gemcraft.item.GCItems;
 import net.brynnexvii.gemcraft.potion.brewing.BetterBrewingRecipe;
 import net.brynnexvii.gemcraft.potion.brewing.GCPotions;
+import net.brynnexvii.gemcraft.recipe.GCRecipes;
 import net.brynnexvii.gemcraft.screen.BasicAlchemicalCauldronScreen;
 import net.brynnexvii.gemcraft.screen.GCMenuTypes;
 import net.brynnexvii.gemcraft.utility.GCCreativeModeTabs;
@@ -55,6 +56,7 @@ public class GemCraft
         GCBlockEntities.register(modEventBus);
         GCMenuTypes.register(modEventBus);
 
+        GCRecipes.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
