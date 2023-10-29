@@ -1,5 +1,6 @@
 package net.brynnexvii.gemcraft.block.entity;
 
+import net.brynnexvii.gemcraft.item.GCItems;
 import net.brynnexvii.gemcraft.recipe.BasicAlchemicalCauldronRecipe;
 import net.brynnexvii.gemcraft.screen.BasicAlchemicalCauldronMenu;
 import net.brynnexvii.gemcraft.utility.GCTags;
@@ -32,7 +33,8 @@ public class BasicAlchemicalCauldronEntity extends AbstractAlchemicalCauldronEnt
             return switch (slot) {
                 case 0 -> true; //1st slot is, say, the ingredient input
                 case 1 -> stack.is(GCTags.Items.JEWEL_POWDERS); //2nd slot for jewel powder reagent (can also use stack.getItem() == )
-                case 2 -> false; //output
+                case 2 -> false;
+                case 3 -> stack.getItem() == GCItems.GLASS_VIAL.get(); //output
                 default -> super.isItemValid(slot, stack);
             };
         }
@@ -41,8 +43,8 @@ public class BasicAlchemicalCauldronEntity extends AbstractAlchemicalCauldronEnt
     private final ItemStackHandler itemHandler;
 
     public BasicAlchemicalCauldronEntity(BlockPos pPos, BlockState pBlockState) {
-        super(GCBlockEntities.BASIC_ALCHEMICAL_CAULDRON_BLOCK_ENTITY.get(), pPos, pBlockState, new int[]{0}, new int[]{1}, new int[]{2});
-        itemHandler = new BasicAlchemicalCauldronItemStackHandler(3);
+        super(GCBlockEntities.BASIC_ALCHEMICAL_CAULDRON_BLOCK_ENTITY.get(), pPos, pBlockState, new int[]{0}, new int[]{1}, new int[]{2}, 3);
+        itemHandler = new BasicAlchemicalCauldronItemStackHandler(4);
     }
 
     @Override

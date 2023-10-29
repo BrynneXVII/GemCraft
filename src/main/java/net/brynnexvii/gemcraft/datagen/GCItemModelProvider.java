@@ -34,6 +34,9 @@ public class GCItemModelProvider extends ItemModelProvider {
         simpleItem(GCItems.ROCK_CANDY);
         simpleItem(GCItems.MINT);
         simpleItem(GCItems.PARSNIP);
+        simpleItem(GCItems.GLASS_VIAL);
+        simpleItem(GCItems.WEAK_REASSURANCE_ELIXIR);
+        simpleItem(GCItems.MIDDLING_REASSURANCE_ELIXIR);
 
         simpleBlockItem(GCBlocks.WILLOW_DOOR);
         alternateBlockItem(GCBlocks.WILLOW_WOOD);

@@ -3,6 +3,7 @@ package net.brynnexvii.gemcraft.item;
 import net.brynnexvii.gemcraft.GemCraft;
 import net.brynnexvii.gemcraft.block.GCBlocks;
 import net.brynnexvii.gemcraft.item.herbs.MintItem;
+import net.brynnexvii.gemcraft.potion.alchemy.ReassuranceElixir;
 import net.minecraft.world.item.ItemNameBlockItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -47,6 +48,15 @@ public class GCItems {
 
     public static final RegistryObject<Item> PARSNIP = ITEMS.register("parsnip",
             () -> new ItemNameBlockItem(GCBlocks.PARSNIP_CROP.get(), new Item.Properties().food(GCFood.PARSNIP)));
+
+    public static final RegistryObject<Item>  GLASS_VIAL = ITEMS.register("glass_vial",
+            () -> new Item(new Item.Properties()));
+
+    //--------- Alchemical Elixirs
+    public static final RegistryObject<Item> WEAK_REASSURANCE_ELIXIR = ITEMS.register("weak_reassurance_elixir",
+            () -> new ReassuranceElixir(new Item.Properties(), 0, 0, 90));
+    public static final RegistryObject<Item> MIDDLING_REASSURANCE_ELIXIR = ITEMS.register("middling_reassurance_elixir",
+            () -> new ReassuranceElixir(new Item.Properties(), 2, 2, 90));
 
     //item register method
     public static void register(IEventBus eventBus){

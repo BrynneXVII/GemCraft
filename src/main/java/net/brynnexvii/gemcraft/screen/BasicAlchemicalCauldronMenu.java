@@ -13,11 +13,11 @@ import net.minecraftforge.items.SlotItemHandler;
 public class BasicAlchemicalCauldronMenu extends AbstractAlchemicalCauldronMenu {
 
     public BasicAlchemicalCauldronMenu(int pContainerId, Inventory inv, FriendlyByteBuf extraData) {
-        super(pContainerId, inv, extraData, 3, GCMenuTypes.BASIC_ALCHEMICAL_CAULDRON_MENU.get());
+        super(pContainerId, inv, extraData, 4, GCMenuTypes.BASIC_ALCHEMICAL_CAULDRON_MENU.get());
     }
 
     public BasicAlchemicalCauldronMenu(int pContainerId, Inventory inv, BlockEntity entity, ContainerData data){
-        super(pContainerId, inv, entity, data, 3, GCMenuTypes.BASIC_ALCHEMICAL_CAULDRON_MENU.get());
+        super(pContainerId, inv, entity, data, 4, GCMenuTypes.BASIC_ALCHEMICAL_CAULDRON_MENU.get());
     }
 
     @Override
@@ -30,6 +30,7 @@ public class BasicAlchemicalCauldronMenu extends AbstractAlchemicalCauldronMenu 
             this.addSlot(new SlotItemHandler(iItemHandler, 0, 46, 36)); //numbers are gui dependant, top left corner of each slot
             this.addSlot(new SlotItemHandler(iItemHandler, 1, 83, 16));
             this.addSlot(new SlotItemHandler(iItemHandler, 2, 112, 36));
+            this.addSlot(new SlotItemHandler(iItemHandler, 3, 152, 62));
         });
     }
 }

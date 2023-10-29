@@ -10,9 +10,11 @@ import org.jetbrains.annotations.Nullable;
 import java.util.List;
 
 public class AbstractHerbItem extends Item {
+    protected final int[] MagicalAspects;
 
-    public AbstractHerbItem(Properties pProperties) {
+    public AbstractHerbItem(Properties pProperties, int[] aspects) {
         super(pProperties);
+        this.MagicalAspects = aspects;
     }
 
     @Override

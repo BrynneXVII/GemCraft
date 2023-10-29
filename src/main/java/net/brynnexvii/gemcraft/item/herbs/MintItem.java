@@ -9,8 +9,10 @@ import org.jetbrains.annotations.Nullable;
 import java.util.List;
 
 public class MintItem extends AbstractHerbItem {
+    // calming, soothing, grounded
+
     public MintItem(Properties pProperties) {
-        super(pProperties);
+        super(pProperties, new int[]{3, 4}); //aligned with water and earth
     }
 
     @Override

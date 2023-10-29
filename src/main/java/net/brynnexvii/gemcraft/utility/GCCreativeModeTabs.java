@@ -69,6 +69,9 @@ public class GCCreativeModeTabs {
 
                                 pOutput.accept(GCItems.BASIC_STAFF.get());
                                 pOutput.accept(GCItems.ROCK_CANDY.get());
+                                pOutput.accept(GCItems.GLASS_VIAL.get());
+                                pOutput.accept(GCItems.WEAK_REASSURANCE_ELIXIR.get());
+                                pOutput.accept(GCItems.MIDDLING_REASSURANCE_ELIXIR.get());
                                 pOutput.accept(GCItems.MINT.get());
                                 pOutput.accept(GCItems.PARSNIP.get());
                                 pOutput.accept(GCBlocks.VIOLET_LILY.get());
@@ -85,7 +88,11 @@ public class GCCreativeModeTabs {
                                 pOutput.accept(GCItems.EMERALD_POWDER.get());
                                 pOutput.accept(GCItems.RUBY_POWDER.get());
 
+                                pOutput.accept(GCItems.GLASS_VIAL.get());
                                 pOutput.accept(GCItems.MINT.get());
+
+                                pOutput.accept(GCItems.WEAK_REASSURANCE_ELIXIR.get());
+                                pOutput.accept(GCItems.MIDDLING_REASSURANCE_ELIXIR.get());
 
                         }).build());
 

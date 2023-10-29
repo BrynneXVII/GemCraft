@@ -35,6 +35,7 @@ public abstract class AbstractAlchemicalCauldronEntity extends BlockEntity imple
     protected final int [] INPUT_SLOTS;
     protected final int [] JEWEL_POWDER_SLOTS;
     protected final int [] OUTPUT_SLOTS;
+    protected final int VIAL_SLOT;
     protected LazyOptional<IItemHandler> lazyItemHandler = LazyOptional.empty();
 
     protected final ContainerData data;
@@ -42,11 +43,12 @@ public abstract class AbstractAlchemicalCauldronEntity extends BlockEntity imple
     private int maxProg = 100; //max processing duration, can adapt to be based on individual recipes
 
 
-    public AbstractAlchemicalCauldronEntity(BlockEntityType<?> pType, BlockPos pPos, BlockState pBlockState, int [] input_slots, int [] jewel_powder_slots, int [] output_slots) {
+    public AbstractAlchemicalCauldronEntity(BlockEntityType<?> pType, BlockPos pPos, BlockState pBlockState, int [] input_slots, int [] jewel_powder_slots, int [] output_slots, int vial_slot) {
         super(pType, pPos, pBlockState);
         this.INPUT_SLOTS = input_slots;
         this.JEWEL_POWDER_SLOTS = jewel_powder_slots;
         this.OUTPUT_SLOTS = output_slots;
+        this.VIAL_SLOT = vial_slot;
         this.data = new ContainerData() {
             @Override
             public int get(int pIndex) {
@@ -147,6 +149,7 @@ public abstract class AbstractAlchemicalCauldronEntity extends BlockEntity imple
 
         this.getItemHandler().extractItem(INPUT_SLOTS[0], 1, false);
         this.getItemHandler().extractItem(JEWEL_POWDER_SLOTS[0], 1, false);
+        this.getItemHandler().extractItem(VIAL_SLOT, 1, false);
 
         this.getItemHandler().setStackInSlot(OUTPUT_SLOTS[0], new ItemStack(resultItem.getItem(), this.getItemHandler().getStackInSlot(OUTPUT_SLOTS[0]).getCount() + resultItem.getCount()));
     }
@@ -171,9 +174,13 @@ public abstract class AbstractAlchemicalCauldronEntity extends BlockEntity imple
         }
 
         ItemStack resultItem = recipe.get().getResultItem(getLevel().registryAccess());
-        return canInsertAmountIntoOutputSlot(resultItem.getCount()) && canInsertItemIntoOutputSlot(resultItem.getItem());
+        return canInsertAmountIntoOutputSlot(resultItem.getCount()) && canInsertItemIntoOutputSlot(resultItem.getItem()) && hasVials();
     }
     protected abstract Optional<? extends AbstractAlchemicalCauldronRecipe> getCurrentRecipe();
+
+    private boolean hasVials(){
+        return this.getItemHandler().getStackInSlot(VIAL_SLOT).is(GCItems.GLASS_VIAL.get());
+    }
 
     private boolean canInsertItemIntoOutputSlot(Item item) {//will adapt later
         return this.getItemHandler().getStackInSlot(OUTPUT_SLOTS[0]).is(item) || this.getItemHandler().getStackInSlot(OUTPUT_SLOTS[0]).isEmpty();
