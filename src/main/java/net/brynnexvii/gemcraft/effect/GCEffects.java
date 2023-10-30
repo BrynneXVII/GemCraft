@@ -17,6 +17,9 @@ public class GCEffects {
             () -> new SuperJumpEffect(MobEffectCategory.NEUTRAL, 0xFDDA0D)
                     .addAttributeModifier(Attributes.JUMP_STRENGTH, "7107DE5E-7CE8-4030-940E-514C1F160890", 2D, AttributeModifier.Operation.MULTIPLY_TOTAL)); //this jump is for horses -_-
 
+    public static final RegistryObject<MobEffect> NATURE_GROWTH_EFFECT_2r_20f = MOB_EFFECTS.register("nature_growth_effect_2r_20f",
+            () -> new NatureGrowthEffect(MobEffectCategory.NEUTRAL, 0x32CD32, 2, 20));
+
     public static void register(IEventBus eventBus){
         MOB_EFFECTS.register(eventBus);
     }
