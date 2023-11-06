@@ -1,4 +1,4 @@
-package net.brynnexvii.gemcraft.item;
+package net.brynnexvii.gemcraft.item.gems;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;

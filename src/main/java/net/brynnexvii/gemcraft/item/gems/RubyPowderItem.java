@@ -1,4 +1,4 @@
-package net.brynnexvii.gemcraft.item;
+package net.brynnexvii.gemcraft.item.gems;
 
 import net.brynnexvii.gemcraft.utility.GCTags;
 import net.minecraft.network.chat.Component;
@@ -10,19 +10,22 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class DiamondPowderItem extends AbstractJewelPowderItem {
-    public DiamondPowderItem(Properties pProperties) {
+public class RubyPowderItem extends AbstractJewelPowderItem {
+
+    public RubyPowderItem(Properties pProperties) {
         super(pProperties);
     }
 
     @Override
     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
-        pTooltipComponents.add(Component.translatable("gemcraft.diamond_powder.base_tool_tip"));
+        pTooltipComponents.add(Component.translatable("gemcraft.ruby_powder.base_tool_tip"));
         super.appendHoverText(pStack, pLevel, pTooltipComponents, pIsAdvanced);
     }
 
     @Override
-    protected boolean isInteractingFlower(BlockState state) {
-        return state.is(GCTags.Blocks.WHITE_INTERACTING_FLOWERS);
+    protected boolean isInteractingFlower(BlockState state){
+        return state.is(GCTags.Blocks.RED_INTERACTING_FLOWERS);
     }
+
+
 }

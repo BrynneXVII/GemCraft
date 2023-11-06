@@ -22,15 +22,35 @@ public class GCItemModelProvider extends ItemModelProvider {
     @Override
     protected void registerModels() {
         simpleItem(GCItems.BRILLIANT_DIAMOND);
-        simpleItem(GCItems.RAW_DIAMOND);
         simpleItem(GCItems.DIAMOND_POWDER);
         simpleItem(GCItems.BRILLIANT_EMERALD);
-        simpleItem(GCItems.RAW_EMERALD);
         simpleItem(GCItems.EMERALD_POWDER);
         simpleItem(GCItems.BRILLIANT_RUBY);
-        simpleItem(GCItems.RAW_RUBY);
         simpleItem(GCItems.RUBY);
         simpleItem(GCItems.RUBY_POWDER);
+
+        simpleItem(GCItems.RAW_GARNET);
+        simpleItem(GCItems.RAW_SPHALERITE);
+        simpleItem(GCItems.RAW_RUBY);
+        simpleItem(GCItems.RAW_GOLDEN_BERYL);
+        simpleItem(GCItems.RAW_CITRINE);
+        simpleItem(GCItems.RAW_TOPAZ);
+        simpleItem(GCItems.RAW_JADE);
+        simpleItem(GCItems.RAW_PERIDOT);
+        simpleItem(GCItems.RAW_EMERALD);
+        simpleItem(GCItems.RAW_AQUAMARINE);
+        simpleItem(GCItems.RAW_IOLITE);
+        simpleItem(GCItems.RAW_SAPPHIRE);
+        simpleItem(GCItems.RAW_AMETHYST);
+        simpleItem(GCItems.RAW_CHAROITE);
+        simpleItem(GCItems.RAW_TANZANITE);
+        simpleItem(GCItems.RAW_ALBITE);
+        simpleItem(GCItems.RAW_DENDRITIC_OPAL);
+        simpleItem(GCItems.RAW_DIAMOND);
+        simpleItem(GCItems.RAW_SMOKY_QUARTZ);
+        simpleItem(GCItems.RAW_FERBERITE);
+        simpleItem(GCItems.RAW_ONYX);
+
         simpleItem(GCItems.ROCK_CANDY);
         simpleItem(GCItems.MINT);
         simpleItem(GCItems.PARSNIP);

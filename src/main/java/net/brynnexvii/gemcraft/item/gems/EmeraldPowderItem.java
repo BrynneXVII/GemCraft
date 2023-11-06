@@ -1,4 +1,4 @@
-package net.brynnexvii.gemcraft.item;
+package net.brynnexvii.gemcraft.item.gems;
 
 import net.brynnexvii.gemcraft.utility.GCTags;
 import net.minecraft.network.chat.Component;

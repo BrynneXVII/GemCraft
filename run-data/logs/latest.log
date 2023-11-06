@@ -1,31 +1,31 @@
-[30Oct.2023 00:54:04.636] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgedatauserdev, --assetIndex, 5, --assetsDir, C:\Users\Bryony\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.2.1, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, --mod, gemcraft, --all, --output, D:\Documents\Mincraft_Modding\GemCraft\src\generated\resources, --existing, D:\Documents\Mincraft_Modding\GemCraft\src\main\resources]
-[30Oct.2023 00:54:04.639] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.4.1 by Eclipse Adoptium; OS Windows 10 arch amd64 version 10.0
-[30Oct.2023 00:54:04.720] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgedatauserdev
-[30Oct.2023 00:54:04.755] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/Bryony/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23128!/ Service=ModLauncher Env=CLIENT
-[30Oct.2023 00:54:04.942] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Bryony\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.2.1\cf7ffa37334b68b8b0d92a45cc5222f9c71394b8\javafmllanguage-1.20.1-47.2.1.jar is missing mods.toml file
-[30Oct.2023 00:54:04.945] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Bryony\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.2.1\c0396469677b986ecb5a9b262f32a7dd4bd9ef1c\lowcodelanguage-1.20.1-47.2.1.jar is missing mods.toml file
-[30Oct.2023 00:54:04.948] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Bryony\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.2.1\23935fad3965a65e9edd0a5c1c629141cbb873aa\mclanguage-1.20.1-47.2.1.jar is missing mods.toml file
-[30Oct.2023 00:54:04.950] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Bryony\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.2.1\ca36242b045010330a1cd61cadb3212a0404188\fmlcore-1.20.1-47.2.1.jar is missing mods.toml file
-[30Oct.2023 00:54:04.996] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
-[30Oct.2023 00:54:05.786] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgedatauserdev' with arguments [--gameDir, ., --assetsDir, C:\Users\Bryony\.gradle\caches\forge_gradle\assets, --assetIndex, 5, --mod, gemcraft, --all, --output, D:\Documents\Mincraft_Modding\GemCraft\src\generated\resources, --existing, D:\Documents\Mincraft_Modding\GemCraft\src\main\resources]
-[30Oct.2023 00:54:06.049] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [gemcraft]
-[30Oct.2023 00:54:08.554] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.2.1, for MC 1.20.1 with MCP 20230612.114412
-[30Oct.2023 00:54:08.557] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.2.1 Initialized
-[30Oct.2023 00:54:08.875] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Bryony/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.2.1_mapped_parchment_2023.06.26-1.20.1/forge-1.20.1-47.2.1_mapped_parchment_2023.06.26-1.20.1-recomp.jar%23191!/assets/.mcassetsroot' uses unexpected schema
-[30Oct.2023 00:54:08.875] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Bryony/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.2.1_mapped_parchment_2023.06.26-1.20.1/forge-1.20.1-47.2.1_mapped_parchment_2023.06.26-1.20.1-recomp.jar%23191!/data/.mcassetsroot' uses unexpected schema
-[30Oct.2023 00:54:08.988] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
-[30Oct.2023 00:54:09.013] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 24 ms
-[30Oct.2023 00:54:09.014] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Loot Tables
-[30Oct.2023 00:54:09.054] [main/INFO] [net.minecraft.data.DataGenerator/]: Loot Tables finished after 39 ms
-[30Oct.2023 00:54:09.054] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block States: gemcraft
-[30Oct.2023 00:54:09.175] [main/INFO] [net.minecraft.data.DataGenerator/]: Block States: gemcraft finished after 121 ms
-[30Oct.2023 00:54:09.175] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: gemcraft
-[30Oct.2023 00:54:09.181] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Models: gemcraft finished after 5 ms
-[30Oct.2023 00:54:09.181] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:block mod id gemcraft
-[30Oct.2023 00:54:09.191] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:block mod id gemcraft finished after 9 ms
-[30Oct.2023 00:54:09.191] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:item mod id gemcraft
-[30Oct.2023 00:54:09.192] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:item mod id gemcraft finished after 1 ms
-[30Oct.2023 00:54:09.192] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Registries
-[30Oct.2023 00:54:09.201] [main/INFO] [net.minecraft.data.DataGenerator/]: Registries finished after 8 ms
-[30Oct.2023 00:54:09.201] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 212 ms
-[30Oct.2023 00:54:09.206] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 234, old count: 236, new count: 235, removed stale: 0, written: 0
+[05Nov.2023 21:04:55.832] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgedatauserdev, --assetIndex, 5, --assetsDir, C:\Users\Bryony\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.2.1, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, --mod, gemcraft, --all, --output, D:\Documents\Mincraft_Modding\GemCraft\src\generated\resources, --existing, D:\Documents\Mincraft_Modding\GemCraft\src\main\resources]
+[05Nov.2023 21:04:55.837] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.4.1 by Eclipse Adoptium; OS Windows 10 arch amd64 version 10.0
+[05Nov.2023 21:04:55.916] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgedatauserdev
+[05Nov.2023 21:04:55.949] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/Bryony/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23128!/ Service=ModLauncher Env=CLIENT
+[05Nov.2023 21:04:56.150] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Bryony\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.2.1\cf7ffa37334b68b8b0d92a45cc5222f9c71394b8\javafmllanguage-1.20.1-47.2.1.jar is missing mods.toml file
+[05Nov.2023 21:04:56.152] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Bryony\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.2.1\c0396469677b986ecb5a9b262f32a7dd4bd9ef1c\lowcodelanguage-1.20.1-47.2.1.jar is missing mods.toml file
+[05Nov.2023 21:04:56.154] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Bryony\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.2.1\23935fad3965a65e9edd0a5c1c629141cbb873aa\mclanguage-1.20.1-47.2.1.jar is missing mods.toml file
+[05Nov.2023 21:04:56.157] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Bryony\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.2.1\ca36242b045010330a1cd61cadb3212a0404188\fmlcore-1.20.1-47.2.1.jar is missing mods.toml file
+[05Nov.2023 21:04:56.201] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
+[05Nov.2023 21:04:57.029] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgedatauserdev' with arguments [--gameDir, ., --assetsDir, C:\Users\Bryony\.gradle\caches\forge_gradle\assets, --assetIndex, 5, --mod, gemcraft, --all, --output, D:\Documents\Mincraft_Modding\GemCraft\src\generated\resources, --existing, D:\Documents\Mincraft_Modding\GemCraft\src\main\resources]
+[05Nov.2023 21:04:57.268] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [gemcraft]
+[05Nov.2023 21:04:59.819] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.2.1, for MC 1.20.1 with MCP 20230612.114412
+[05Nov.2023 21:04:59.821] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.2.1 Initialized
+[05Nov.2023 21:05:00.129] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Bryony/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.2.1_mapped_parchment_2023.06.26-1.20.1/forge-1.20.1-47.2.1_mapped_parchment_2023.06.26-1.20.1-recomp.jar%23191!/assets/.mcassetsroot' uses unexpected schema
+[05Nov.2023 21:05:00.129] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Bryony/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.2.1_mapped_parchment_2023.06.26-1.20.1/forge-1.20.1-47.2.1_mapped_parchment_2023.06.26-1.20.1-recomp.jar%23191!/data/.mcassetsroot' uses unexpected schema
+[05Nov.2023 21:05:00.274] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
+[05Nov.2023 21:05:00.310] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 35 ms
+[05Nov.2023 21:05:00.311] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Loot Tables
+[05Nov.2023 21:05:00.353] [main/INFO] [net.minecraft.data.DataGenerator/]: Loot Tables finished after 41 ms
+[05Nov.2023 21:05:00.353] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block States: gemcraft
+[05Nov.2023 21:05:00.483] [main/INFO] [net.minecraft.data.DataGenerator/]: Block States: gemcraft finished after 130 ms
+[05Nov.2023 21:05:00.484] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: gemcraft
+[05Nov.2023 21:05:00.493] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Models: gemcraft finished after 9 ms
+[05Nov.2023 21:05:00.493] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:block mod id gemcraft
+[05Nov.2023 21:05:00.504] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:block mod id gemcraft finished after 10 ms
+[05Nov.2023 21:05:00.504] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:item mod id gemcraft
+[05Nov.2023 21:05:00.505] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:item mod id gemcraft finished after 1 ms
+[05Nov.2023 21:05:00.505] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Registries
+[05Nov.2023 21:05:00.515] [main/INFO] [net.minecraft.data.DataGenerator/]: Registries finished after 9 ms
+[05Nov.2023 21:05:00.515] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 240 ms
+[05Nov.2023 21:05:00.522] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 252, old count: 236, new count: 253, removed stale: 0, written: 19

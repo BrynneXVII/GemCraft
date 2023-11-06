@@ -2,6 +2,10 @@ package net.brynnexvii.gemcraft.item;
 
 import net.brynnexvii.gemcraft.GemCraft;
 import net.brynnexvii.gemcraft.block.GCBlocks;
+import net.brynnexvii.gemcraft.item.gems.DiamondPowderItem;
+import net.brynnexvii.gemcraft.item.gems.EmeraldPowderItem;
+import net.brynnexvii.gemcraft.item.gems.RawGemItem;
+import net.brynnexvii.gemcraft.item.gems.RubyPowderItem;
 import net.brynnexvii.gemcraft.item.herbs.MintItem;
 import net.brynnexvii.gemcraft.potion.alchemy.ReassuranceElixir;
 import net.minecraft.world.item.ItemNameBlockItem;
@@ -18,18 +22,50 @@ public class GCItems {
     //items
     public static final RegistryObject<Item>  BRILLIANT_DIAMOND = ITEMS.register("brilliant_diamond",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item>  RAW_DIAMOND = ITEMS.register("raw_diamond",
-            () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item>  BRILLIANT_RUBY = ITEMS.register("brilliant_ruby",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item>  RUBY = ITEMS.register("ruby",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item>  RAW_RUBY = ITEMS.register("raw_ruby",
-            () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item>  BRILLIANT_EMERALD = ITEMS.register("brilliant_emerald",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item>  RAW_EMERALD = ITEMS.register("raw_emerald",
-            () -> new Item(new Item.Properties()));
+
+
+    //------------ raw gems
+    // Ignis
+    public static final RegistryObject<Item>  RAW_GARNET = ITEMS.register("raw_garnet", () -> new RawGemItem(new Item.Properties(), RawGemItem.Rarity.COMMON));
+    public static final RegistryObject<Item>  RAW_SPHALERITE = ITEMS.register("raw_sphalerite", () -> new RawGemItem(new Item.Properties(), RawGemItem.Rarity.UNCOMMON));
+    public static final RegistryObject<Item>  RAW_RUBY = ITEMS.register("raw_ruby", () -> new RawGemItem(new Item.Properties(), RawGemItem.Rarity.RARE));
+
+    // Zephyr
+    public static final RegistryObject<Item>  RAW_GOLDEN_BERYL = ITEMS.register("raw_golden_beryl", () -> new RawGemItem(new Item.Properties(), RawGemItem.Rarity.COMMON));
+    public static final RegistryObject<Item>  RAW_CITRINE = ITEMS.register("raw_citrine", () -> new RawGemItem(new Item.Properties(), RawGemItem.Rarity.UNCOMMON));
+    public static final RegistryObject<Item>  RAW_TOPAZ = ITEMS.register("raw_topaz", () -> new RawGemItem(new Item.Properties(), RawGemItem.Rarity.RARE));
+
+    // Terra
+    public static final RegistryObject<Item>  RAW_JADE = ITEMS.register("raw_jade", () -> new RawGemItem(new Item.Properties(), RawGemItem.Rarity.COMMON));
+    public static final RegistryObject<Item>  RAW_PERIDOT = ITEMS.register("raw_peridot", () -> new RawGemItem(new Item.Properties(), RawGemItem.Rarity.UNCOMMON));
+    public static final RegistryObject<Item>  RAW_EMERALD = ITEMS.register("raw_emerald", () -> new RawGemItem(new Item.Properties(), RawGemItem.Rarity.RARE));
+
+    // Mizu
+    public static final RegistryObject<Item>  RAW_AQUAMARINE = ITEMS.register("raw_aquamarine", () -> new RawGemItem(new Item.Properties(), RawGemItem.Rarity.COMMON));
+    public static final RegistryObject<Item>  RAW_IOLITE = ITEMS.register("raw_iolite", () -> new RawGemItem(new Item.Properties(), RawGemItem.Rarity.UNCOMMON));
+    public static final RegistryObject<Item>  RAW_SAPPHIRE = ITEMS.register("raw_sapphire", () -> new RawGemItem(new Item.Properties(), RawGemItem.Rarity.RARE));
+
+    // Aether
+    public static final RegistryObject<Item>  RAW_AMETHYST = ITEMS.register("raw_amethyst", () -> new RawGemItem(new Item.Properties(), RawGemItem.Rarity.COMMON));
+    public static final RegistryObject<Item>  RAW_CHAROITE = ITEMS.register("raw_charoite", () -> new RawGemItem(new Item.Properties(), RawGemItem.Rarity.UNCOMMON));
+    public static final RegistryObject<Item>  RAW_TANZANITE = ITEMS.register("raw_tanzanite", () -> new RawGemItem(new Item.Properties(), RawGemItem.Rarity.RARE));
+
+    // Lys
+    public static final RegistryObject<Item>  RAW_ALBITE = ITEMS.register("raw_albite", () -> new RawGemItem(new Item.Properties(), RawGemItem.Rarity.COMMON));
+    public static final RegistryObject<Item>  RAW_DENDRITIC_OPAL = ITEMS.register("raw_dendritic_opal", () -> new RawGemItem(new Item.Properties(), RawGemItem.Rarity.UNCOMMON));
+    public static final RegistryObject<Item>  RAW_DIAMOND = ITEMS.register("raw_diamond", () -> new RawGemItem(new Item.Properties(), RawGemItem.Rarity.RARE));
+
+    // Inanis
+    public static final RegistryObject<Item>  RAW_SMOKY_QUARTZ = ITEMS.register("raw_smoky_quartz", () -> new RawGemItem(new Item.Properties(), RawGemItem.Rarity.COMMON));
+    public static final RegistryObject<Item>  RAW_FERBERITE = ITEMS.register("raw_ferberite", () -> new RawGemItem(new Item.Properties(), RawGemItem.Rarity.UNCOMMON));
+    public static final RegistryObject<Item>  RAW_ONYX = ITEMS.register("raw_onyx", () -> new RawGemItem(new Item.Properties(), RawGemItem.Rarity.RARE));
+
 
     public static final RegistryObject<Item> RUBY_POWDER = ITEMS.register("ruby_powder",
             () -> new RubyPowderItem(new Item.Properties()));

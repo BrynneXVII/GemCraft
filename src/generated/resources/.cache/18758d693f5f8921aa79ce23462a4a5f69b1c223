@@ -1,8 +1,8 @@
-// 1.20.1	2023-10-28T01:01:18.9833244	Tags for minecraft:item mod id gemcraft
+// 1.20.1	2023-11-05T21:05:00.5174285	Tags for minecraft:item mod id gemcraft
 09dc1370bee752a3763f21b3834c0c17e77c73ce data/gemcraft/tags/items/gem_ores.json
 543bc543c5333fa625075563bd58e05b0e192ebe data/gemcraft/tags/items/herbs.json
 bbc6598d1c1df638a5f7f485b8e058b67934b4ca data/gemcraft/tags/items/jewel_powders.json
-3247b371bba4dfa9520c24b929d614a825d55ee9 data/gemcraft/tags/items/raw_gems.json
+263ba9d8f90e37046f24ab547bb725afccfbf780 data/gemcraft/tags/items/raw_gems.json
 5a1f1f1cd94ccf47b062a5c82d0b47f192ffa7d3 data/gemcraft/tags/items/willow_logs.json
 829456aa76635ac1e2f0d2887be24c6402779713 data/minecraft/tags/items/buttons.json
 466917135b615c4c1283f4537806e605f16c9154 data/minecraft/tags/items/doors.json

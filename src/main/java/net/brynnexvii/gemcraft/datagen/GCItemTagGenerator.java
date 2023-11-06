@@ -24,9 +24,27 @@ public class GCItemTagGenerator extends ItemTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider pProvider) {
         this.tag(GCTags.Items.RAW_GEMS)
-                .add(GCItems.RAW_DIAMOND.get(),
+                .add(GCItems.RAW_GARNET.get(),
+                        GCItems.RAW_SPHALERITE.get(),
+                        GCItems.RAW_RUBY.get(),
+                        GCItems.RAW_GOLDEN_BERYL.get(),
+                        GCItems.RAW_CITRINE.get(),
+                        GCItems.RAW_TOPAZ.get(),
+                        GCItems.RAW_JADE.get(),
+                        GCItems.RAW_PERIDOT.get(),
                         GCItems.RAW_EMERALD.get(),
-                        GCItems.RAW_RUBY.get());
+                        GCItems.RAW_AQUAMARINE.get(),
+                        GCItems.RAW_IOLITE.get(),
+                        GCItems.RAW_SAPPHIRE.get(),
+                        GCItems.RAW_AMETHYST.get(),
+                        GCItems.RAW_CHAROITE.get(),
+                        GCItems.RAW_TANZANITE.get(),
+                        GCItems.RAW_ALBITE.get(),
+                        GCItems.RAW_DENDRITIC_OPAL.get(),
+                        GCItems.RAW_DIAMOND.get(),
+                        GCItems.RAW_SMOKY_QUARTZ.get(),
+                        GCItems.RAW_FERBERITE.get(),
+                        GCItems.RAW_ONYX.get());
 
         this.tag(GCTags.Items.GEM_ORES)
                 .add(Blocks.DIAMOND_ORE.asItem(),

@@ -17,14 +17,35 @@ public class GCCreativeModeTabs {
         public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, GemCraft.MODID);
 
         public static final RegistryObject<CreativeModeTab> GEMCRAFT_TAB = CREATIVE_MODE_TABS.register("gemcraft_tab",
-                () -> CreativeModeTab.builder().icon(() -> new ItemStack(GCItems.RAW_EMERALD.get()))
+                () -> CreativeModeTab.builder().icon(() -> new ItemStack(GCItems.ROCK_CANDY.get()))
                         .title(Component.translatable("gccreativetab.gemcraft_tab"))
                         .displayItems((pParameters, pOutput) -> {
+                                pOutput.accept(GCItems.RAW_GARNET.get());
+                                pOutput.accept(GCItems.RAW_SPHALERITE.get());
+                                pOutput.accept(GCItems.RAW_RUBY.get());
+                                pOutput.accept(GCItems.RAW_GOLDEN_BERYL.get());
+                                pOutput.accept(GCItems.RAW_CITRINE.get());
+                                pOutput.accept(GCItems.RAW_TOPAZ.get());
+                                pOutput.accept(GCItems.RAW_JADE.get());
+                                pOutput.accept(GCItems.RAW_PERIDOT.get());
+                                pOutput.accept(GCItems.RAW_EMERALD.get());
+                                pOutput.accept(GCItems.RAW_AQUAMARINE.get());
+                                pOutput.accept(GCItems.RAW_IOLITE.get());
+                                pOutput.accept(GCItems.RAW_SAPPHIRE.get());
+                                pOutput.accept(GCItems.RAW_AMETHYST.get());
+                                pOutput.accept(GCItems.RAW_CHAROITE.get());
+                                pOutput.accept(GCItems.RAW_TANZANITE.get());
+                                pOutput.accept(GCItems.RAW_ALBITE.get());
+                                pOutput.accept(GCItems.RAW_DENDRITIC_OPAL.get());
+                                pOutput.accept(GCItems.RAW_DIAMOND.get());
+                                pOutput.accept(GCItems.RAW_SMOKY_QUARTZ.get());
+                                pOutput.accept(GCItems.RAW_FERBERITE.get());
+                                pOutput.accept(GCItems.RAW_ONYX.get());
+
                                 pOutput.accept(Blocks.DIAMOND_ORE);
                                 pOutput.accept(Blocks.DEEPSLATE_DIAMOND_ORE);
                                 pOutput.accept(GCBlocks.NETHER_DIAMOND_ORE.get());
                                 pOutput.accept(GCBlocks.END_STONE_DIAMOND_ORE.get());
-                                pOutput.accept(GCItems.RAW_DIAMOND.get());
                                 pOutput.accept(GCItems.DIAMOND_POWDER.get());
                                 pOutput.accept(Items.DIAMOND);
                                 pOutput.accept(GCItems.BRILLIANT_DIAMOND.get());
@@ -34,7 +55,6 @@ public class GCCreativeModeTabs {
                                 pOutput.accept(Blocks.DEEPSLATE_EMERALD_ORE);
                                 pOutput.accept(GCBlocks.NETHER_EMERALD_ORE.get());
                                 pOutput.accept(GCBlocks.END_STONE_EMERALD_ORE.get());
-                                pOutput.accept(GCItems.RAW_EMERALD.get());
                                 pOutput.accept(GCItems.EMERALD_POWDER.get());
                                 pOutput.accept(Items.EMERALD);
                                 pOutput.accept(GCItems.BRILLIANT_EMERALD.get());
@@ -44,7 +64,6 @@ public class GCCreativeModeTabs {
                                 pOutput.accept(GCBlocks.DEEPSLATE_RUBY_ORE.get());
                                 pOutput.accept(GCBlocks.NETHER_RUBY_ORE.get());
                                 pOutput.accept(GCBlocks.END_STONE_RUBY_ORE.get());
-                                pOutput.accept(GCItems.RAW_RUBY.get());
                                 pOutput.accept(GCItems.RUBY_POWDER.get());
                                 pOutput.accept(GCItems.RUBY.get());
                                 pOutput.accept(GCItems.BRILLIANT_RUBY.get());
@@ -95,6 +114,33 @@ public class GCCreativeModeTabs {
                                 pOutput.accept(GCItems.MIDDLING_REASSURANCE_ELIXIR.get());
 
                         }).build());
+
+    public static final RegistryObject<CreativeModeTab> GEM_TAB = CREATIVE_MODE_TABS.register("gem_tab",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(GCItems.RAW_GARNET.get()))
+                    .title(Component.translatable("gccreativetab.gem_tab"))
+                    .displayItems((pParameters, pOutput) -> {
+                            pOutput.accept(GCItems.RAW_GARNET.get());
+                            pOutput.accept(GCItems.RAW_SPHALERITE.get());
+                            pOutput.accept(GCItems.RAW_RUBY.get());
+                            pOutput.accept(GCItems.RAW_GOLDEN_BERYL.get());
+                            pOutput.accept(GCItems.RAW_CITRINE.get());
+                            pOutput.accept(GCItems.RAW_TOPAZ.get());
+                            pOutput.accept(GCItems.RAW_JADE.get());
+                            pOutput.accept(GCItems.RAW_PERIDOT.get());
+                            pOutput.accept(GCItems.RAW_EMERALD.get());
+                            pOutput.accept(GCItems.RAW_AQUAMARINE.get());
+                            pOutput.accept(GCItems.RAW_IOLITE.get());
+                            pOutput.accept(GCItems.RAW_SAPPHIRE.get());
+                            pOutput.accept(GCItems.RAW_AMETHYST.get());
+                            pOutput.accept(GCItems.RAW_CHAROITE.get());
+                            pOutput.accept(GCItems.RAW_TANZANITE.get());
+                            pOutput.accept(GCItems.RAW_ALBITE.get());
+                            pOutput.accept(GCItems.RAW_DENDRITIC_OPAL.get());
+                            pOutput.accept(GCItems.RAW_DIAMOND.get());
+                            pOutput.accept(GCItems.RAW_SMOKY_QUARTZ.get());
+                            pOutput.accept(GCItems.RAW_FERBERITE.get());
+                            pOutput.accept(GCItems.RAW_ONYX.get());
+                    }).build());
 
         public static void register(IEventBus eventBus){
 

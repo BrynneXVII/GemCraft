@@ -35,7 +35,7 @@ public class NatureGrowthEffect extends MobEffect {
                     for (int j = -RADIUS + 1; j < RADIUS; j++) {
                         BlockState currentBlock = pLivingEntity.level().getBlockState(currentPos);
                         if (currentBlock.getBlock() instanceof BonemealableBlock) {
-                            System.out.println("Got bonemealable x: " + currentPos.getX() + " z: " + currentPos.getZ());
+                            //System.out.println("Got bonemealable x: " + currentPos.getX() + " z: " + currentPos.getZ());
                             ((BonemealableBlock) currentBlock.getBlock()).performBonemeal(((ServerLevel) pLivingEntity.level()), RandomSource.create(), currentPos, currentBlock); //this may not work, wants server level, I forced a cast
                         }
                         currentPos = currentPos.offset(0, 0, 1);

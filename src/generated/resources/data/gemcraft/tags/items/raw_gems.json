@@ -1,7 +1,25 @@
 {
   "values": [
-    "gemcraft:raw_diamond",
+    "gemcraft:raw_garnet",
+    "gemcraft:raw_sphalerite",
+    "gemcraft:raw_ruby",
+    "gemcraft:raw_golden_beryl",
+    "gemcraft:raw_citrine",
+    "gemcraft:raw_topaz",
+    "gemcraft:raw_jade",
+    "gemcraft:raw_peridot",
     "gemcraft:raw_emerald",
-    "gemcraft:raw_ruby"
+    "gemcraft:raw_aquamarine",
+    "gemcraft:raw_iolite",
+    "gemcraft:raw_sapphire",
+    "gemcraft:raw_amethyst",
+    "gemcraft:raw_charoite",
+    "gemcraft:raw_tanzanite",
+    "gemcraft:raw_albite",
+    "gemcraft:raw_dendritic_opal",
+    "gemcraft:raw_diamond",
+    "gemcraft:raw_smoky_quartz",
+    "gemcraft:raw_ferberite",
+    "gemcraft:raw_onyx"
   ]
 }
