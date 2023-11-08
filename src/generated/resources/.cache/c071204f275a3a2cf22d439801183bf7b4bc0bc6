@@ -1,6 +1,6 @@
-// 1.20.1	2023-10-28T01:01:18.982323	Tags for minecraft:block mod id gemcraft
+// 1.20.1	2023-11-08T00:00:06.0439496	Tags for minecraft:block mod id gemcraft
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/forge/tags/blocks/needs_netherite_tool.json
-09dc1370bee752a3763f21b3834c0c17e77c73ce data/gemcraft/tags/blocks/gem_ores.json
+ace4de925782528cc796c0e6c26ae4809aa68be9 data/gemcraft/tags/blocks/gem_ores.json
 f3c24bf7460c427c00f911e66bbfe8fb13ff9ac5 data/gemcraft/tags/blocks/green_interacting_flowers.json
 6f02943824dd84a66642203b8d101620bfe1abad data/gemcraft/tags/blocks/red_interacting_flowers.json
 85f4a6f81128f89d2f1a48f4e67b21cb2f5350ba data/gemcraft/tags/blocks/white_interacting_flowers.json
@@ -13,10 +13,10 @@ f3c24bf7460c427c00f911e66bbfe8fb13ff9ac5 data/gemcraft/tags/blocks/green_interac
 5a1f1f1cd94ccf47b062a5c82d0b47f192ffa7d3 data/minecraft/tags/blocks/logs_that_burn.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/blocks/mineable/axe.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/blocks/mineable/hoe.json
-6f17de9ab86907a3d6bf4bfd122d64693071b1f4 data/minecraft/tags/blocks/mineable/pickaxe.json
+48b07e91632c036d247c43e51d616e315b041774 data/minecraft/tags/blocks/mineable/pickaxe.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/blocks/mineable/shovel.json
-e1c545775d3a86464afec2ed68ed26e24c009765 data/minecraft/tags/blocks/needs_diamond_tool.json
-79c2e982b32d10d44e62bfba9ef87d073a9e07c1 data/minecraft/tags/blocks/needs_iron_tool.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/blocks/needs_diamond_tool.json
+48b07e91632c036d247c43e51d616e315b041774 data/minecraft/tags/blocks/needs_iron_tool.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/blocks/needs_stone_tool.json
 e5b49cbb0283183f27384c5ec906bd2b34f3149b data/minecraft/tags/blocks/overworld_natural_logs.json
 00691efe4d1de79b560c4109e72438a6b33fa0b0 data/minecraft/tags/blocks/planks.json

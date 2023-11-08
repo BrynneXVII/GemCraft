@@ -2,6 +2,8 @@ package net.brynnexvii.gemcraft.item.gems;
 
 import net.brynnexvii.gemcraft.GemCraft;
 import net.brynnexvii.gemcraft.utility.GCClientAccess;
+import net.brynnexvii.gemcraft.utility.enums.GCAspect;
+import net.brynnexvii.gemcraft.utility.enums.GCRarity;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -14,21 +16,20 @@ import org.jetbrains.annotations.Nullable;
 import java.util.List;
 
 public class RawGemItem extends Item {
-    public enum Rarity {
-        COMMON, UNCOMMON, RARE
-    }
 
-    private final Rarity rarity;
-    public RawGemItem(Properties pProperties, Rarity rarity) {
+    private final GCRarity rarity;
+    private final GCAspect aspect;
+    public RawGemItem(Properties pProperties, GCRarity rarity, GCAspect aspect) {
         super(pProperties);
         this.rarity = rarity;
+        this.aspect = aspect;
     }
 
     @Override
     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
         Component baseTooltip = Component.translatable("item." + (pStack.getDescriptionId()).split("[.]", 2)[1] + ".tooltip");
         Component expandedTooltip = Component.translatable("item." + (pStack.getDescriptionId()).split("[.]", 2)[1] + ".expanded_tooltip");
-        DistExecutor.unsafeRunWhenOn(Dist.CLIENT, () -> () -> GCClientAccess.expandedItemTooltip(pLevel, pTooltipComponents, baseTooltip, expandedTooltip));
+        DistExecutor.unsafeRunWhenOn(Dist.CLIENT, () -> () -> GCClientAccess.expandedItemTooltip(pLevel, pTooltipComponents, baseTooltip, expandedTooltip, this.aspect));
         //super.appendHoverText(pStack, pLevel, pTooltipComponents, pIsAdvanced);
     }
 }

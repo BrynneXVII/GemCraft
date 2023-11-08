@@ -35,22 +35,70 @@ public class GCBlocks {
 
     //------------------------------------------------------------------------------------------------------------------
     //<editor-fold desc="Ore Blocks">
-    public static final RegistryObject<Block> RUBY_ORE = registerBlock("ruby_ore",
+    public static final RegistryObject<Block> IGNIS_GEM_ORE = registerBlock("ignis_gem_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE).requiresCorrectToolForDrops(), UniformInt.of(3,7)));
-    public static final RegistryObject<Block> DEEPSLATE_RUBY_ORE = registerBlock("deepslate_ruby_ore",
+    public static final RegistryObject<Block> DEEPSLATE_IGNIS_GEM_ORE = registerBlock("deepslate_ignis_gem_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_DIAMOND_ORE).requiresCorrectToolForDrops(), UniformInt.of(3,7)));
-    public static final RegistryObject<Block> NETHER_RUBY_ORE = registerBlock("nether_ruby_ore",
+    public static final RegistryObject<Block> NETHER_IGNIS_GEM_ORE = registerBlock("nether_ignis_gem_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.NETHERRACK).requiresCorrectToolForDrops(), UniformInt.of(3,7)));
-    public static final RegistryObject<Block> END_STONE_RUBY_ORE = registerBlock("end_stone_ruby_ore",
+    public static final RegistryObject<Block> END_STONE_IGNIS_GEM_ORE = registerBlock("end_stone_ignis_gem_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.END_STONE).requiresCorrectToolForDrops(), UniformInt.of(4,8)));
-    public static final RegistryObject<Block> NETHER_DIAMOND_ORE = registerBlock("nether_diamond_ore",
+
+    public static final RegistryObject<Block> ZEPHYR_GEM_ORE = registerBlock("zephyr_gem_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE).requiresCorrectToolForDrops(), UniformInt.of(3,7)));
+    public static final RegistryObject<Block> DEEPSLATE_ZEPHYR_GEM_ORE = registerBlock("deepslate_zephyr_gem_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_DIAMOND_ORE).requiresCorrectToolForDrops(), UniformInt.of(3,7)));
+    public static final RegistryObject<Block> NETHER_ZEPHYR_GEM_ORE = registerBlock("nether_zephyr_gem_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.NETHERRACK).requiresCorrectToolForDrops(), UniformInt.of(3,7)));
-    public static final RegistryObject<Block> END_STONE_DIAMOND_ORE = registerBlock("end_stone_diamond_ore",
+    public static final RegistryObject<Block> END_STONE_ZEPHYR_GEM_ORE = registerBlock("end_stone_zephyr_gem_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.END_STONE).requiresCorrectToolForDrops(), UniformInt.of(4,8)));
-    public static final RegistryObject<Block> NETHER_EMERALD_ORE = registerBlock("nether_emerald_ore",
+
+    public static final RegistryObject<Block> TERRA_GEM_ORE = registerBlock("terra_gem_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE).requiresCorrectToolForDrops(), UniformInt.of(3,7)));
+    public static final RegistryObject<Block> DEEPSLATE_TERRA_GEM_ORE = registerBlock("deepslate_terra_gem_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_DIAMOND_ORE).requiresCorrectToolForDrops(), UniformInt.of(3,7)));
+    public static final RegistryObject<Block> NETHER_TERRA_GEM_ORE = registerBlock("nether_terra_gem_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.NETHERRACK).requiresCorrectToolForDrops(), UniformInt.of(3,7)));
-    public static final RegistryObject<Block> END_STONE_EMERALD_ORE = registerBlock("end_stone_emerald_ore",
+    public static final RegistryObject<Block> END_STONE_TERRA_GEM_ORE = registerBlock("end_stone_terra_gem_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.END_STONE).requiresCorrectToolForDrops(), UniformInt.of(4,8)));
+
+    public static final RegistryObject<Block> MIZU_GEM_ORE = registerBlock("mizu_gem_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE).requiresCorrectToolForDrops(), UniformInt.of(3,7)));
+    public static final RegistryObject<Block> DEEPSLATE_MIZU_GEM_ORE = registerBlock("deepslate_mizu_gem_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_DIAMOND_ORE).requiresCorrectToolForDrops(), UniformInt.of(3,7)));
+    public static final RegistryObject<Block> NETHER_MIZU_GEM_ORE = registerBlock("nether_mizu_gem_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.NETHERRACK).requiresCorrectToolForDrops(), UniformInt.of(3,7)));
+    public static final RegistryObject<Block> END_STONE_MIZU_GEM_ORE = registerBlock("end_stone_mizu_gem_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.END_STONE).requiresCorrectToolForDrops(), UniformInt.of(4,8)));
+
+    public static final RegistryObject<Block> AETHER_GEM_ORE = registerBlock("aether_gem_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE).requiresCorrectToolForDrops(), UniformInt.of(3,7)));
+    public static final RegistryObject<Block> DEEPSLATE_AETHER_GEM_ORE = registerBlock("deepslate_aether_gem_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_DIAMOND_ORE).requiresCorrectToolForDrops(), UniformInt.of(3,7)));
+    public static final RegistryObject<Block> NETHER_AETHER_GEM_ORE = registerBlock("nether_aether_gem_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.NETHERRACK).requiresCorrectToolForDrops(), UniformInt.of(3,7)));
+    public static final RegistryObject<Block> END_STONE_AETHER_GEM_ORE = registerBlock("end_stone_aether_gem_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.END_STONE).requiresCorrectToolForDrops(), UniformInt.of(4,8)));
+
+    public static final RegistryObject<Block> LYS_GEM_ORE = registerBlock("lys_gem_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE).requiresCorrectToolForDrops(), UniformInt.of(3,7)));
+    public static final RegistryObject<Block> DEEPSLATE_LYS_GEM_ORE = registerBlock("deepslate_lys_gem_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_DIAMOND_ORE).requiresCorrectToolForDrops(), UniformInt.of(3,7)));
+    public static final RegistryObject<Block> NETHER_LYS_GEM_ORE = registerBlock("nether_lys_gem_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.NETHERRACK).requiresCorrectToolForDrops(), UniformInt.of(3,7)));
+    public static final RegistryObject<Block> END_STONE_LYS_GEM_ORE = registerBlock("end_stone_lys_gem_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.END_STONE).requiresCorrectToolForDrops(), UniformInt.of(4,8)));
+
+    public static final RegistryObject<Block> INANIS_GEM_ORE = registerBlock("inanis_gem_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE).requiresCorrectToolForDrops(), UniformInt.of(3,7)));
+    public static final RegistryObject<Block> DEEPSLATE_INANIS_GEM_ORE = registerBlock("deepslate_inanis_gem_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_DIAMOND_ORE).requiresCorrectToolForDrops(), UniformInt.of(3,7)));
+    public static final RegistryObject<Block> NETHER_INANIS_GEM_ORE = registerBlock("nether_inanis_gem_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.NETHERRACK).requiresCorrectToolForDrops(), UniformInt.of(3,7)));
+    public static final RegistryObject<Block> END_STONE_INANIS_GEM_ORE = registerBlock("end_stone_inanis_gem_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.END_STONE).requiresCorrectToolForDrops(), UniformInt.of(4,8)));
+
+
     //</editor-fold>
 
     //------------------------------------------------------------------------------------------------------------------

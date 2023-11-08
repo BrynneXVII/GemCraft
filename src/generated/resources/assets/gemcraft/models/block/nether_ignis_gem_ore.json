@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "gemcraft:block/nether_ignis_gem_ore"
+  }
+}

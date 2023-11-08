@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "gemcraft:block/nether_lys_gem_ore"
+    }
+  }
+}

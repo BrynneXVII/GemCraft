@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "gemcraft:block/nether_aether_gem_ore"
+    }
+  }
+}

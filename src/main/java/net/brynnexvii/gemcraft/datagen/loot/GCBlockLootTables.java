@@ -32,14 +32,7 @@ public class GCBlockLootTables extends BlockLootSubProvider {
     protected void generate() {
         this.dropSelf(GCBlocks.RUBY_BLOCK.get());
 
-        this.add(GCBlocks.NETHER_DIAMOND_ORE.get(),
-                block -> createOreDrop(GCBlocks.NETHER_DIAMOND_ORE.get(), GCItems.RAW_DIAMOND.get()));
-        this.add(GCBlocks.END_STONE_DIAMOND_ORE.get(),
-                block -> createOreDrop(GCBlocks.END_STONE_DIAMOND_ORE.get(), GCItems.RAW_DIAMOND.get()));
-        this.add(GCBlocks.NETHER_EMERALD_ORE.get(),
-                block -> createOreDrop(GCBlocks.NETHER_EMERALD_ORE.get(), GCItems.RAW_EMERALD.get()));
-        this.add(GCBlocks.END_STONE_EMERALD_ORE.get(),
-                block -> createOreDrop(GCBlocks.END_STONE_EMERALD_ORE.get(), GCItems.RAW_EMERALD.get()));
+        /*
         this.add(GCBlocks.RUBY_ORE.get(),
                 block -> createOreDrop(GCBlocks.RUBY_ORE.get(), GCItems.RAW_RUBY.get()));
         this.add(GCBlocks.DEEPSLATE_RUBY_ORE.get(),
@@ -48,6 +41,35 @@ public class GCBlockLootTables extends BlockLootSubProvider {
                 block -> createOreDrop(GCBlocks.NETHER_RUBY_ORE.get(), GCItems.RAW_RUBY.get()));
         this.add(GCBlocks.END_STONE_RUBY_ORE.get(),
                 block -> createOreDrop(GCBlocks.END_STONE_RUBY_ORE.get(), GCItems.RAW_RUBY.get()));
+         */
+        this.dropSelf(GCBlocks.IGNIS_GEM_ORE.get());
+        this.dropSelf(GCBlocks.DEEPSLATE_IGNIS_GEM_ORE.get());
+        this.dropSelf(GCBlocks.NETHER_IGNIS_GEM_ORE.get());
+        this.dropSelf(GCBlocks.END_STONE_IGNIS_GEM_ORE.get());
+        this.dropSelf(GCBlocks.ZEPHYR_GEM_ORE.get());
+        this.dropSelf(GCBlocks.DEEPSLATE_ZEPHYR_GEM_ORE.get());
+        this.dropSelf(GCBlocks.NETHER_ZEPHYR_GEM_ORE.get());
+        this.dropSelf(GCBlocks.END_STONE_ZEPHYR_GEM_ORE.get());
+        this.dropSelf(GCBlocks.TERRA_GEM_ORE.get());
+        this.dropSelf(GCBlocks.DEEPSLATE_TERRA_GEM_ORE.get());
+        this.dropSelf(GCBlocks.NETHER_TERRA_GEM_ORE.get());
+        this.dropSelf(GCBlocks.END_STONE_TERRA_GEM_ORE.get());
+        this.dropSelf(GCBlocks.MIZU_GEM_ORE.get());
+        this.dropSelf(GCBlocks.DEEPSLATE_MIZU_GEM_ORE.get());
+        this.dropSelf(GCBlocks.NETHER_MIZU_GEM_ORE.get());
+        this.dropSelf(GCBlocks.END_STONE_MIZU_GEM_ORE.get());
+        this.dropSelf(GCBlocks.AETHER_GEM_ORE.get());
+        this.dropSelf(GCBlocks.DEEPSLATE_AETHER_GEM_ORE.get());
+        this.dropSelf(GCBlocks.NETHER_AETHER_GEM_ORE.get());
+        this.dropSelf(GCBlocks.END_STONE_AETHER_GEM_ORE.get());
+        this.dropSelf(GCBlocks.LYS_GEM_ORE.get());
+        this.dropSelf(GCBlocks.DEEPSLATE_LYS_GEM_ORE.get());
+        this.dropSelf(GCBlocks.NETHER_LYS_GEM_ORE.get());
+        this.dropSelf(GCBlocks.END_STONE_LYS_GEM_ORE.get());
+        this.dropSelf(GCBlocks.INANIS_GEM_ORE.get());
+        this.dropSelf(GCBlocks.DEEPSLATE_INANIS_GEM_ORE.get());
+        this.dropSelf(GCBlocks.NETHER_INANIS_GEM_ORE.get());
+        this.dropSelf(GCBlocks.END_STONE_INANIS_GEM_ORE.get());
 
         this.dropSelf(GCBlocks.WILLOW_LOG.get());
         this.dropSelf(GCBlocks.STRIPPED_WILLOW_LOG.get());

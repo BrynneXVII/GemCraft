@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "gemcraft:block/mizu_gem_ore"
+    }
+  }
+}

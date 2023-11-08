@@ -31,19 +31,48 @@ public class GCBlockStateProvider extends BlockStateProvider {
         blockItem(GCBlocks.WILLOW_LEAVES);
 
         blockWithItem(GCBlocks.RUBY_BLOCK);
-        blockWithItem(GCBlocks.RUBY_ORE);
-        blockWithItem(GCBlocks.DEEPSLATE_RUBY_ORE);
-        blockWithItem(GCBlocks.NETHER_RUBY_ORE);
-        blockWithItem(GCBlocks.END_STONE_RUBY_ORE);
+
+        blockWithItem(GCBlocks.IGNIS_GEM_ORE);
+        blockWithItem(GCBlocks.DEEPSLATE_IGNIS_GEM_ORE);
+        blockWithItem(GCBlocks.NETHER_IGNIS_GEM_ORE);
+        blockWithItem(GCBlocks.END_STONE_IGNIS_GEM_ORE);
+
+        blockWithItem(GCBlocks.ZEPHYR_GEM_ORE);
+        blockWithItem(GCBlocks.DEEPSLATE_ZEPHYR_GEM_ORE);
+        blockWithItem(GCBlocks.NETHER_ZEPHYR_GEM_ORE);
+        blockWithItem(GCBlocks.END_STONE_ZEPHYR_GEM_ORE);
+
+        blockWithItem(GCBlocks.TERRA_GEM_ORE);
+        blockWithItem(GCBlocks.DEEPSLATE_TERRA_GEM_ORE);
+        blockWithItem(GCBlocks.NETHER_TERRA_GEM_ORE);
+        blockWithItem(GCBlocks.END_STONE_TERRA_GEM_ORE);
+
+        blockWithItem(GCBlocks.MIZU_GEM_ORE);
+        blockWithItem(GCBlocks.DEEPSLATE_MIZU_GEM_ORE);
+        blockWithItem(GCBlocks.NETHER_MIZU_GEM_ORE);
+        blockWithItem(GCBlocks.END_STONE_MIZU_GEM_ORE);
+
+        blockWithItem(GCBlocks.AETHER_GEM_ORE);
+        blockWithItem(GCBlocks.DEEPSLATE_AETHER_GEM_ORE);
+        blockWithItem(GCBlocks.NETHER_AETHER_GEM_ORE);
+        blockWithItem(GCBlocks.END_STONE_AETHER_GEM_ORE);
+
+        blockWithItem(GCBlocks.LYS_GEM_ORE);
+        blockWithItem(GCBlocks.DEEPSLATE_LYS_GEM_ORE);
+        blockWithItem(GCBlocks.NETHER_LYS_GEM_ORE);
+        blockWithItem(GCBlocks.END_STONE_LYS_GEM_ORE);
+
+        blockWithItem(GCBlocks.INANIS_GEM_ORE);
+        blockWithItem(GCBlocks.DEEPSLATE_INANIS_GEM_ORE);
+        blockWithItem(GCBlocks.NETHER_INANIS_GEM_ORE);
+        blockWithItem(GCBlocks.END_STONE_INANIS_GEM_ORE);
+
+
         blockWithItem(GCBlocks.WILLOW_PLANKS);
 
         //horizontalBlock(GCBlocks.BASIC_ALCHEMICAL_CAULDRON.get(), new ModelFile.UncheckedModelFile(modLoc("block/basic_alchemical_cauldron")));
         altBlockWithItem(GCBlocks.BASIC_ALCHEMICAL_CAULDRON);
 
-        blockWithItem(GCBlocks.NETHER_DIAMOND_ORE);
-        blockWithItem(GCBlocks.END_STONE_DIAMOND_ORE);
-        blockWithItem(GCBlocks.NETHER_EMERALD_ORE);
-        blockWithItem(GCBlocks.END_STONE_EMERALD_ORE);
 
         logBlock((RotatedPillarBlock) GCBlocks.WILLOW_LOG.get());
         axisBlock((RotatedPillarBlock) GCBlocks.WILLOW_WOOD.get(), blockTexture(GCBlocks.WILLOW_LOG.get()), blockTexture(GCBlocks.WILLOW_LOG.get()));

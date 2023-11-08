@@ -85,15 +85,42 @@
   "item.minecraft.splash_potion.effect.glowing_potion": "Glowing Splash Potion",
   "item.minecraft.lingering_potion.effect.glowing_potion": "Glowing Lingering Potion",
 
-  "block.gemcraft.ruby_ore": "Ruby Ore",
-  "block.gemcraft.deepslate_ruby_ore": "Deepslate Ruby Ore",
+  "block.gemcraft.ignis_gem_ore": "Ignis Gem Ore",
+  "block.gemcraft.deepslate_ignis_gem_ore": "Deepslate Ignis Gem Ore",
+  "block.gemcraft.nether_ignis_gem_ore": "Netherrack Ignis Gem Ore",
+  "block.gemcraft.end_stone_ignis_gem_ore": "End Stone Ignis Gem Ore",
+
+  "block.gemcraft.zephyr_gem_ore": "Zephyr Gem Ore",
+  "block.gemcraft.deepslate_zephyr_gem_ore": "Deepslate Zephyr Gem Ore",
+  "block.gemcraft.nether_zephyr_gem_ore": "Netherrack Zephyr Gem Ore",
+  "block.gemcraft.end_stone_zephyr_gem_ore": "End Stone Zephyr Gem Ore",
+
+  "block.gemcraft.terra_gem_ore": "Terra Gem Ore",
+  "block.gemcraft.deepslate_terra_gem_ore": "Deepslate Terra Gem Ore",
+  "block.gemcraft.nether_terra_gem_ore": "Netherrack Terra Gem Ore",
+  "block.gemcraft.end_stone_terra_gem_ore": "End Stone Terra Gem Ore",
+
+  "block.gemcraft.mizu_gem_ore": "Mizu Gem Ore",
+  "block.gemcraft.deepslate_mizu_gem_ore": "Deepslate Mizu Gem Ore",
+  "block.gemcraft.nether_mizu_gem_ore": "Netherrack Mizu Gem Ore",
+  "block.gemcraft.end_stone_mizu_gem_ore": "End Stone Mizu Gem Ore",
+
+  "block.gemcraft.aether_gem_ore": "Aether Gem Ore",
+  "block.gemcraft.deepslate_aether_gem_ore": "Deepslate Aether Gem Ore",
+  "block.gemcraft.nether_aether_gem_ore": "Netherrack Aether Gem Ore",
+  "block.gemcraft.end_stone_aether_gem_ore": "End Stone Aether Gem Ore",
+
+  "block.gemcraft.lys_gem_ore": "Lys Gem Ore",
+  "block.gemcraft.deepslate_lys_gem_ore": "Deepslate Lys Gem Ore",
+  "block.gemcraft.nether_lys_gem_ore": "Netherrack Lys Gem Ore",
+  "block.gemcraft.end_stone_lys_gem_ore": "End Stone Lys Gem Ore",
+
+  "block.gemcraft.inanis_gem_ore": "Inanis Gem Ore",
+  "block.gemcraft.deepslate_inanis_gem_ore": "Deepslate Inanis Gem Ore",
+  "block.gemcraft.nether_inanis_gem_ore": "Netherrack Inanis Gem Ore",
+  "block.gemcraft.end_stone_inanis_gem_ore": "End Stone Inanis Gem Ore",
+
   "block.gemcraft.ruby_block": "Ruby Block",
-  "block.gemcraft.end_stone_ruby_ore": "End Stone Ruby Ore",
-  "block.gemcraft.end_stone_diamond_ore": "End Stone Diamond Ore",
-  "block.gemcraft.end_stone_emerald_ore": "End Stone Emerald Ore",
-  "block.gemcraft.nether_ruby_ore": "Netherrack Ruby Ore",
-  "block.gemcraft.nether_diamond_ore": "Netherrack Diamond Ore",
-  "block.gemcraft.nether_emerald_ore": "Netherrack Emerald Ore",
 
   "block.gemcraft.willow_log": "Willow Log",
   "block.gemcraft.stripped_willow_log": "Stripped Willow Log",

@@ -29,16 +29,44 @@ public class GCBlockTagGenerator extends BlockTagsProvider {
         this.tag(GCTags.Blocks.GEM_ORES)
                 .add(Blocks.DIAMOND_ORE,
                         Blocks.DEEPSLATE_DIAMOND_ORE,
-                        GCBlocks.NETHER_DIAMOND_ORE.get(),
-                        GCBlocks.END_STONE_DIAMOND_ORE.get(),
                         Blocks.EMERALD_ORE,
                         Blocks.DEEPSLATE_EMERALD_ORE,
-                        GCBlocks.NETHER_EMERALD_ORE.get(),
-                        GCBlocks.END_STONE_EMERALD_ORE.get(),
-                        GCBlocks.RUBY_ORE.get(),
-                        GCBlocks.DEEPSLATE_RUBY_ORE.get(),
-                        GCBlocks.NETHER_RUBY_ORE.get(),
-                        GCBlocks.END_STONE_RUBY_ORE.get());
+
+                        GCBlocks.IGNIS_GEM_ORE.get(),
+                        GCBlocks.DEEPSLATE_IGNIS_GEM_ORE.get(),
+                        GCBlocks.NETHER_IGNIS_GEM_ORE.get(),
+                        GCBlocks.END_STONE_IGNIS_GEM_ORE.get(),
+
+                        GCBlocks.ZEPHYR_GEM_ORE.get(),
+                        GCBlocks.DEEPSLATE_ZEPHYR_GEM_ORE.get(),
+                        GCBlocks.NETHER_ZEPHYR_GEM_ORE.get(),
+                        GCBlocks.END_STONE_ZEPHYR_GEM_ORE.get(),
+
+                        GCBlocks.TERRA_GEM_ORE.get(),
+                        GCBlocks.DEEPSLATE_TERRA_GEM_ORE.get(),
+                        GCBlocks.NETHER_TERRA_GEM_ORE.get(),
+                        GCBlocks.END_STONE_TERRA_GEM_ORE.get(),
+
+                        GCBlocks.MIZU_GEM_ORE.get(),
+                        GCBlocks.DEEPSLATE_MIZU_GEM_ORE.get(),
+                        GCBlocks.NETHER_MIZU_GEM_ORE.get(),
+                        GCBlocks.END_STONE_MIZU_GEM_ORE.get(),
+
+                        GCBlocks.AETHER_GEM_ORE.get(),
+                        GCBlocks.DEEPSLATE_AETHER_GEM_ORE.get(),
+                        GCBlocks.NETHER_AETHER_GEM_ORE.get(),
+                        GCBlocks.END_STONE_AETHER_GEM_ORE.get(),
+
+                        GCBlocks.LYS_GEM_ORE.get(),
+                        GCBlocks.DEEPSLATE_LYS_GEM_ORE.get(),
+                        GCBlocks.NETHER_LYS_GEM_ORE.get(),
+                        GCBlocks.END_STONE_LYS_GEM_ORE.get(),
+
+                        GCBlocks.INANIS_GEM_ORE.get(),
+                        GCBlocks.DEEPSLATE_INANIS_GEM_ORE.get(),
+                        GCBlocks.NETHER_INANIS_GEM_ORE.get(),
+                        GCBlocks.END_STONE_INANIS_GEM_ORE.get()
+                        );
 
         //Gem Powder Flower Tags
         //--------------------------------------------------
@@ -61,14 +89,40 @@ public class GCBlockTagGenerator extends BlockTagsProvider {
         this.tag(BlockTags.MINEABLE_WITH_HOE);
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(GCBlocks.RUBY_BLOCK.get(),
-                        GCBlocks.RUBY_ORE.get(),
-                        GCBlocks.DEEPSLATE_RUBY_ORE.get(),
-                        GCBlocks.NETHER_RUBY_ORE.get(),
-                        GCBlocks.NETHER_DIAMOND_ORE.get(),
-                        GCBlocks.NETHER_EMERALD_ORE.get(),
-                        GCBlocks.END_STONE_DIAMOND_ORE.get(),
-                        GCBlocks.END_STONE_RUBY_ORE.get(),
-                        GCBlocks.END_STONE_EMERALD_ORE.get()
+                        GCBlocks.IGNIS_GEM_ORE.get(),
+                        GCBlocks.DEEPSLATE_IGNIS_GEM_ORE.get(),
+                        GCBlocks.NETHER_IGNIS_GEM_ORE.get(),
+                        GCBlocks.END_STONE_IGNIS_GEM_ORE.get(),
+
+                        GCBlocks.ZEPHYR_GEM_ORE.get(),
+                        GCBlocks.DEEPSLATE_ZEPHYR_GEM_ORE.get(),
+                        GCBlocks.NETHER_ZEPHYR_GEM_ORE.get(),
+                        GCBlocks.END_STONE_ZEPHYR_GEM_ORE.get(),
+
+                        GCBlocks.TERRA_GEM_ORE.get(),
+                        GCBlocks.DEEPSLATE_TERRA_GEM_ORE.get(),
+                        GCBlocks.NETHER_TERRA_GEM_ORE.get(),
+                        GCBlocks.END_STONE_TERRA_GEM_ORE.get(),
+
+                        GCBlocks.MIZU_GEM_ORE.get(),
+                        GCBlocks.DEEPSLATE_MIZU_GEM_ORE.get(),
+                        GCBlocks.NETHER_MIZU_GEM_ORE.get(),
+                        GCBlocks.END_STONE_MIZU_GEM_ORE.get(),
+
+                        GCBlocks.AETHER_GEM_ORE.get(),
+                        GCBlocks.DEEPSLATE_AETHER_GEM_ORE.get(),
+                        GCBlocks.NETHER_AETHER_GEM_ORE.get(),
+                        GCBlocks.END_STONE_AETHER_GEM_ORE.get(),
+
+                        GCBlocks.LYS_GEM_ORE.get(),
+                        GCBlocks.DEEPSLATE_LYS_GEM_ORE.get(),
+                        GCBlocks.NETHER_LYS_GEM_ORE.get(),
+                        GCBlocks.END_STONE_LYS_GEM_ORE.get(),
+
+                        GCBlocks.INANIS_GEM_ORE.get(),
+                        GCBlocks.DEEPSLATE_INANIS_GEM_ORE.get(),
+                        GCBlocks.NETHER_INANIS_GEM_ORE.get(),
+                        GCBlocks.END_STONE_INANIS_GEM_ORE.get()
                 );
         this.tag(BlockTags.MINEABLE_WITH_SHOVEL);
 
@@ -77,15 +131,41 @@ public class GCBlockTagGenerator extends BlockTagsProvider {
         this.tag(BlockTags.NEEDS_STONE_TOOL);
         this.tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(GCBlocks.RUBY_BLOCK.get(),
-                        GCBlocks.RUBY_ORE.get(),
-                        GCBlocks.DEEPSLATE_RUBY_ORE.get(),
-                        GCBlocks.NETHER_RUBY_ORE.get(),
-                        GCBlocks.NETHER_DIAMOND_ORE.get(),
-                        GCBlocks.NETHER_EMERALD_ORE.get());
-        this.tag(BlockTags.NEEDS_DIAMOND_TOOL)
-                .add(GCBlocks.END_STONE_DIAMOND_ORE.get(),
-                        GCBlocks.END_STONE_RUBY_ORE.get(),
-                        GCBlocks.END_STONE_EMERALD_ORE.get());
+                        GCBlocks.IGNIS_GEM_ORE.get(),
+                        GCBlocks.DEEPSLATE_IGNIS_GEM_ORE.get(),
+                        GCBlocks.NETHER_IGNIS_GEM_ORE.get(),
+                        GCBlocks.END_STONE_IGNIS_GEM_ORE.get(),
+
+                        GCBlocks.ZEPHYR_GEM_ORE.get(),
+                        GCBlocks.DEEPSLATE_ZEPHYR_GEM_ORE.get(),
+                        GCBlocks.NETHER_ZEPHYR_GEM_ORE.get(),
+                        GCBlocks.END_STONE_ZEPHYR_GEM_ORE.get(),
+
+                        GCBlocks.TERRA_GEM_ORE.get(),
+                        GCBlocks.DEEPSLATE_TERRA_GEM_ORE.get(),
+                        GCBlocks.NETHER_TERRA_GEM_ORE.get(),
+                        GCBlocks.END_STONE_TERRA_GEM_ORE.get(),
+
+                        GCBlocks.MIZU_GEM_ORE.get(),
+                        GCBlocks.DEEPSLATE_MIZU_GEM_ORE.get(),
+                        GCBlocks.NETHER_MIZU_GEM_ORE.get(),
+                        GCBlocks.END_STONE_MIZU_GEM_ORE.get(),
+
+                        GCBlocks.AETHER_GEM_ORE.get(),
+                        GCBlocks.DEEPSLATE_AETHER_GEM_ORE.get(),
+                        GCBlocks.NETHER_AETHER_GEM_ORE.get(),
+                        GCBlocks.END_STONE_AETHER_GEM_ORE.get(),
+
+                        GCBlocks.LYS_GEM_ORE.get(),
+                        GCBlocks.DEEPSLATE_LYS_GEM_ORE.get(),
+                        GCBlocks.NETHER_LYS_GEM_ORE.get(),
+                        GCBlocks.END_STONE_LYS_GEM_ORE.get(),
+
+                        GCBlocks.INANIS_GEM_ORE.get(),
+                        GCBlocks.DEEPSLATE_INANIS_GEM_ORE.get(),
+                        GCBlocks.NETHER_INANIS_GEM_ORE.get(),
+                        GCBlocks.END_STONE_INANIS_GEM_ORE.get());
+        this.tag(BlockTags.NEEDS_DIAMOND_TOOL);
         this.tag(Tags.Blocks.NEEDS_NETHERITE_TOOL);
 
         //Special Block Tags

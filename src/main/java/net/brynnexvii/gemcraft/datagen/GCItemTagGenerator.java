@@ -49,16 +49,44 @@ public class GCItemTagGenerator extends ItemTagsProvider {
         this.tag(GCTags.Items.GEM_ORES)
                 .add(Blocks.DIAMOND_ORE.asItem(),
                     Blocks.DEEPSLATE_DIAMOND_ORE.asItem(),
-                    GCBlocks.NETHER_DIAMOND_ORE.get().asItem(),
-                    GCBlocks.END_STONE_DIAMOND_ORE.get().asItem(),
                     Blocks.EMERALD_ORE.asItem(),
                     Blocks.DEEPSLATE_EMERALD_ORE.asItem(),
-                    GCBlocks.NETHER_EMERALD_ORE.get().asItem(),
-                    GCBlocks.END_STONE_EMERALD_ORE.get().asItem(),
-                    GCBlocks.RUBY_ORE.get().asItem(),
-                    GCBlocks.DEEPSLATE_RUBY_ORE.get().asItem(),
-                    GCBlocks.NETHER_RUBY_ORE.get().asItem(),
-                    GCBlocks.END_STONE_RUBY_ORE.get().asItem());
+
+                    GCBlocks.IGNIS_GEM_ORE.get().asItem(),
+                    GCBlocks.DEEPSLATE_IGNIS_GEM_ORE.get().asItem(),
+                    GCBlocks.NETHER_IGNIS_GEM_ORE.get().asItem(),
+                    GCBlocks.END_STONE_IGNIS_GEM_ORE.get().asItem(),
+
+                    GCBlocks.ZEPHYR_GEM_ORE.get().asItem(),
+                    GCBlocks.DEEPSLATE_ZEPHYR_GEM_ORE.get().asItem(),
+                    GCBlocks.NETHER_ZEPHYR_GEM_ORE.get().asItem(),
+                    GCBlocks.END_STONE_ZEPHYR_GEM_ORE.get().asItem(),
+
+                    GCBlocks.TERRA_GEM_ORE.get().asItem(),
+                    GCBlocks.DEEPSLATE_TERRA_GEM_ORE.get().asItem(),
+                    GCBlocks.NETHER_TERRA_GEM_ORE.get().asItem(),
+                    GCBlocks.END_STONE_TERRA_GEM_ORE.get().asItem(),
+
+                    GCBlocks.MIZU_GEM_ORE.get().asItem(),
+                    GCBlocks.DEEPSLATE_MIZU_GEM_ORE.get().asItem(),
+                    GCBlocks.NETHER_MIZU_GEM_ORE.get().asItem(),
+                    GCBlocks.END_STONE_MIZU_GEM_ORE.get().asItem(),
+
+                    GCBlocks.AETHER_GEM_ORE.get().asItem(),
+                    GCBlocks.DEEPSLATE_AETHER_GEM_ORE.get().asItem(),
+                    GCBlocks.NETHER_AETHER_GEM_ORE.get().asItem(),
+                    GCBlocks.END_STONE_AETHER_GEM_ORE.get().asItem(),
+
+                    GCBlocks.LYS_GEM_ORE.get().asItem(),
+                    GCBlocks.DEEPSLATE_LYS_GEM_ORE.get().asItem(),
+                    GCBlocks.NETHER_LYS_GEM_ORE.get().asItem(),
+                    GCBlocks.END_STONE_LYS_GEM_ORE.get().asItem(),
+
+                    GCBlocks.INANIS_GEM_ORE.get().asItem(),
+                    GCBlocks.DEEPSLATE_INANIS_GEM_ORE.get().asItem(),
+                    GCBlocks.NETHER_INANIS_GEM_ORE.get().asItem(),
+                    GCBlocks.END_STONE_INANIS_GEM_ORE.get().asItem()
+                );
 
         this.tag(GCTags.Items.JEWEL_POWDERS)
                 .add(GCItems.DIAMOND_POWDER.get(),

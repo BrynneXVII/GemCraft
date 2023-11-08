@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "gemcraft:block/terra_gem_ore"
+    }
+  }
+}

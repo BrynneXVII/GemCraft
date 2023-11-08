@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "gemcraft:block/deepslate_mizu_gem_ore"
+  }
+}
