@@ -10,22 +10,19 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class RubyPowderItem extends AbstractJewelPowderItem {
-
-    public RubyPowderItem(Properties pProperties) {
+public class TerraGemPowderItem extends AbstractJewelPowderItem {
+    public TerraGemPowderItem(Properties pProperties) {
         super(pProperties);
     }
 
     @Override
     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
-        pTooltipComponents.add(Component.translatable("gemcraft.ruby_powder.base_tool_tip"));
+        pTooltipComponents.add(Component.translatable("gemcraft.emerald_powder.base_tool_tip"));
         super.appendHoverText(pStack, pLevel, pTooltipComponents, pIsAdvanced);
     }
 
     @Override
-    protected boolean isInteractingFlower(BlockState state){
-        return state.is(GCTags.Blocks.RED_INTERACTING_FLOWERS);
+    protected boolean isInteractingFlower(BlockState state) {
+        return state.is(GCTags.Blocks.GREEN_INTERACTING_FLOWERS);
     }
-
-
 }

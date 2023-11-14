@@ -1,5 +1,8 @@
 package net.brynnexvii.gemcraft.item.gems;
 
+import net.brynnexvii.gemcraft.item.GemcraftAspectedItem;
+import net.brynnexvii.gemcraft.utility.enums.GCAspect;
+import net.brynnexvii.gemcraft.utility.enums.GCRarity;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.InteractionResult;
@@ -15,9 +18,10 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public abstract class AbstractJewelPowderItem extends Item {
-    public AbstractJewelPowderItem(Properties pProperties) {
-        super(pProperties);
+public abstract class AbstractJewelPowderItem extends GemcraftAspectedItem {
+
+    public AbstractJewelPowderItem(Properties pProperties, GCRarity rarity, GCAspect aspect) {
+        super(pProperties, rarity, aspect);
     }
 
     @Override

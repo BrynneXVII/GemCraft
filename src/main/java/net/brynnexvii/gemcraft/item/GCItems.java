@@ -2,10 +2,9 @@ package net.brynnexvii.gemcraft.item;
 
 import net.brynnexvii.gemcraft.GemCraft;
 import net.brynnexvii.gemcraft.block.GCBlocks;
-import net.brynnexvii.gemcraft.item.gems.DiamondPowderItem;
-import net.brynnexvii.gemcraft.item.gems.EmeraldPowderItem;
-import net.brynnexvii.gemcraft.item.gems.RawGemItem;
-import net.brynnexvii.gemcraft.item.gems.RubyPowderItem;
+import net.brynnexvii.gemcraft.item.gems.LysGemPowderItem;
+import net.brynnexvii.gemcraft.item.gems.TerraGemPowderItem;
+import net.brynnexvii.gemcraft.item.gems.IgnisGemPowderItem;
 import net.brynnexvii.gemcraft.item.herbs.MintItem;
 import net.brynnexvii.gemcraft.potion.alchemy.ReassuranceElixir;
 import net.brynnexvii.gemcraft.utility.enums.GCAspect;
@@ -34,47 +33,47 @@ public class GCItems {
 
     //------------ raw gems
     // Ignis
-    public static final RegistryObject<Item>  RAW_GARNET = ITEMS.register("raw_garnet", () -> new RawGemItem(new Item.Properties(), GCRarity.COMMON, GCAspect.IGNIS));
-    public static final RegistryObject<Item>  RAW_SPHALERITE = ITEMS.register("raw_sphalerite", () -> new RawGemItem(new Item.Properties(), GCRarity.UNCOMMON, GCAspect.IGNIS));
-    public static final RegistryObject<Item>  RAW_RUBY = ITEMS.register("raw_ruby", () -> new RawGemItem(new Item.Properties(), GCRarity.RARE, GCAspect.IGNIS));
+    public static final RegistryObject<Item>  RAW_GARNET = ITEMS.register("raw_garnet", () -> new GemcraftAspectedItem(new Item.Properties(), GCRarity.COMMON, GCAspect.IGNIS));
+    public static final RegistryObject<Item>  RAW_SPHALERITE = ITEMS.register("raw_sphalerite", () -> new GemcraftAspectedItem(new Item.Properties(), GCRarity.UNCOMMON, GCAspect.IGNIS));
+    public static final RegistryObject<Item>  RAW_RUBY = ITEMS.register("raw_ruby", () -> new GemcraftAspectedItem(new Item.Properties(), GCRarity.RARE, GCAspect.IGNIS));
 
     // Zephyr
-    public static final RegistryObject<Item>  RAW_GOLDEN_BERYL = ITEMS.register("raw_golden_beryl", () -> new RawGemItem(new Item.Properties(), GCRarity.COMMON, GCAspect.ZEPHYR));
-    public static final RegistryObject<Item>  RAW_CITRINE = ITEMS.register("raw_citrine", () -> new RawGemItem(new Item.Properties(), GCRarity.UNCOMMON, GCAspect.ZEPHYR));
-    public static final RegistryObject<Item>  RAW_TOPAZ = ITEMS.register("raw_topaz", () -> new RawGemItem(new Item.Properties(), GCRarity.RARE, GCAspect.ZEPHYR));
+    public static final RegistryObject<Item>  RAW_GOLDEN_BERYL = ITEMS.register("raw_golden_beryl", () -> new GemcraftAspectedItem(new Item.Properties(), GCRarity.COMMON, GCAspect.ZEPHYR));
+    public static final RegistryObject<Item>  RAW_CITRINE = ITEMS.register("raw_citrine", () -> new GemcraftAspectedItem(new Item.Properties(), GCRarity.UNCOMMON, GCAspect.ZEPHYR));
+    public static final RegistryObject<Item>  RAW_TOPAZ = ITEMS.register("raw_topaz", () -> new GemcraftAspectedItem(new Item.Properties(), GCRarity.RARE, GCAspect.ZEPHYR));
 
     // Terra
-    public static final RegistryObject<Item>  RAW_JADE = ITEMS.register("raw_jade", () -> new RawGemItem(new Item.Properties(), GCRarity.COMMON, GCAspect.TERRA));
-    public static final RegistryObject<Item>  RAW_PERIDOT = ITEMS.register("raw_peridot", () -> new RawGemItem(new Item.Properties(), GCRarity.UNCOMMON, GCAspect.TERRA));
-    public static final RegistryObject<Item>  RAW_EMERALD = ITEMS.register("raw_emerald", () -> new RawGemItem(new Item.Properties(), GCRarity.RARE, GCAspect.TERRA));
+    public static final RegistryObject<Item>  RAW_JADE = ITEMS.register("raw_jade", () -> new GemcraftAspectedItem(new Item.Properties(), GCRarity.COMMON, GCAspect.TERRA));
+    public static final RegistryObject<Item>  RAW_PERIDOT = ITEMS.register("raw_peridot", () -> new GemcraftAspectedItem(new Item.Properties(), GCRarity.UNCOMMON, GCAspect.TERRA));
+    public static final RegistryObject<Item>  RAW_EMERALD = ITEMS.register("raw_emerald", () -> new GemcraftAspectedItem(new Item.Properties(), GCRarity.RARE, GCAspect.TERRA));
 
     // Mizu
-    public static final RegistryObject<Item>  RAW_AQUAMARINE = ITEMS.register("raw_aquamarine", () -> new RawGemItem(new Item.Properties(), GCRarity.COMMON, GCAspect.MIZU));
-    public static final RegistryObject<Item>  RAW_IOLITE = ITEMS.register("raw_iolite", () -> new RawGemItem(new Item.Properties(), GCRarity.UNCOMMON, GCAspect.MIZU));
-    public static final RegistryObject<Item>  RAW_SAPPHIRE = ITEMS.register("raw_sapphire", () -> new RawGemItem(new Item.Properties(), GCRarity.RARE, GCAspect.MIZU));
+    public static final RegistryObject<Item>  RAW_AQUAMARINE = ITEMS.register("raw_aquamarine", () -> new GemcraftAspectedItem(new Item.Properties(), GCRarity.COMMON, GCAspect.MIZU));
+    public static final RegistryObject<Item>  RAW_IOLITE = ITEMS.register("raw_iolite", () -> new GemcraftAspectedItem(new Item.Properties(), GCRarity.UNCOMMON, GCAspect.MIZU));
+    public static final RegistryObject<Item>  RAW_SAPPHIRE = ITEMS.register("raw_sapphire", () -> new GemcraftAspectedItem(new Item.Properties(), GCRarity.RARE, GCAspect.MIZU));
 
     // Aether
-    public static final RegistryObject<Item>  RAW_AMETHYST = ITEMS.register("raw_amethyst", () -> new RawGemItem(new Item.Properties(), GCRarity.COMMON, GCAspect.AETHER));
-    public static final RegistryObject<Item>  RAW_CHAROITE = ITEMS.register("raw_charoite", () -> new RawGemItem(new Item.Properties(), GCRarity.UNCOMMON, GCAspect.AETHER));
-    public static final RegistryObject<Item>  RAW_TANZANITE = ITEMS.register("raw_tanzanite", () -> new RawGemItem(new Item.Properties(), GCRarity.RARE, GCAspect.AETHER));
+    public static final RegistryObject<Item>  RAW_AMETHYST = ITEMS.register("raw_amethyst", () -> new GemcraftAspectedItem(new Item.Properties(), GCRarity.COMMON, GCAspect.AETHER));
+    public static final RegistryObject<Item>  RAW_CHAROITE = ITEMS.register("raw_charoite", () -> new GemcraftAspectedItem(new Item.Properties(), GCRarity.UNCOMMON, GCAspect.AETHER));
+    public static final RegistryObject<Item>  RAW_TANZANITE = ITEMS.register("raw_tanzanite", () -> new GemcraftAspectedItem(new Item.Properties(), GCRarity.RARE, GCAspect.AETHER));
 
     // Lys
-    public static final RegistryObject<Item>  RAW_ALBITE = ITEMS.register("raw_albite", () -> new RawGemItem(new Item.Properties(), GCRarity.COMMON, GCAspect.LYS));
-    public static final RegistryObject<Item>  RAW_DENDRITIC_OPAL = ITEMS.register("raw_dendritic_opal", () -> new RawGemItem(new Item.Properties(), GCRarity.UNCOMMON, GCAspect.LYS));
-    public static final RegistryObject<Item>  RAW_DIAMOND = ITEMS.register("raw_diamond", () -> new RawGemItem(new Item.Properties(), GCRarity.RARE, GCAspect.LYS));
+    public static final RegistryObject<Item>  RAW_ALBITE = ITEMS.register("raw_albite", () -> new GemcraftAspectedItem(new Item.Properties(), GCRarity.COMMON, GCAspect.LYS));
+    public static final RegistryObject<Item>  RAW_DENDRITIC_OPAL = ITEMS.register("raw_dendritic_opal", () -> new GemcraftAspectedItem(new Item.Properties(), GCRarity.UNCOMMON, GCAspect.LYS));
+    public static final RegistryObject<Item>  RAW_DIAMOND = ITEMS.register("raw_diamond", () -> new GemcraftAspectedItem(new Item.Properties(), GCRarity.RARE, GCAspect.LYS));
 
     // Inanis
-    public static final RegistryObject<Item>  RAW_SMOKY_QUARTZ = ITEMS.register("raw_smoky_quartz", () -> new RawGemItem(new Item.Properties(), GCRarity.COMMON, GCAspect.INANIS));
-    public static final RegistryObject<Item>  RAW_FERBERITE = ITEMS.register("raw_ferberite", () -> new RawGemItem(new Item.Properties(), GCRarity.UNCOMMON, GCAspect.INANIS));
-    public static final RegistryObject<Item>  RAW_ONYX = ITEMS.register("raw_onyx", () -> new RawGemItem(new Item.Properties(), GCRarity.RARE, GCAspect.INANIS));
+    public static final RegistryObject<Item>  RAW_SMOKY_QUARTZ = ITEMS.register("raw_smoky_quartz", () -> new GemcraftAspectedItem(new Item.Properties(), GCRarity.COMMON, GCAspect.INANIS));
+    public static final RegistryObject<Item>  RAW_FERBERITE = ITEMS.register("raw_ferberite", () -> new GemcraftAspectedItem(new Item.Properties(), GCRarity.UNCOMMON, GCAspect.INANIS));
+    public static final RegistryObject<Item>  RAW_ONYX = ITEMS.register("raw_onyx", () -> new GemcraftAspectedItem(new Item.Properties(), GCRarity.RARE, GCAspect.INANIS));
 
 
     public static final RegistryObject<Item> RUBY_POWDER = ITEMS.register("ruby_powder",
-            () -> new RubyPowderItem(new Item.Properties()));
-    public static final RegistryObject<Item> EMERALD_POWDER = ITEMS.register("emerald_powder",
-            () -> new EmeraldPowderItem(new Item.Properties()));
-    public static final RegistryObject<Item> DIAMOND_POWDER = ITEMS.register("diamond_powder",
-            () -> new DiamondPowderItem(new Item.Properties()));
+            () -> new IgnisGemPowderItem(new Item.Properties()));
+    public static final RegistryObject<Item> TERRA_GEM_POWDER = ITEMS.register("emerald_powder",
+            () -> new TerraGemPowderItem(new Item.Properties()));
+    public static final RegistryObject<Item> LYS_GEM_POWDER = ITEMS.register("lys_gem_powder",
+            () -> new LysGemPowderItem(new Item.Properties(), null, GCAspect.LYS));
 
     public static final RegistryObject<Item>  ROCK_CANDY = ITEMS.register("rock_candy",
             () -> new Item(new Item.Properties().food(GCFood.ROCK_CANDY)));

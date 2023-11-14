@@ -1,6 +1,8 @@
 package net.brynnexvii.gemcraft.item.gems;
 
 import net.brynnexvii.gemcraft.utility.GCTags;
+import net.brynnexvii.gemcraft.utility.enums.GCAspect;
+import net.brynnexvii.gemcraft.utility.enums.GCRarity;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
@@ -10,19 +12,19 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class EmeraldPowderItem extends AbstractJewelPowderItem {
-    public EmeraldPowderItem(Properties pProperties) {
-        super(pProperties);
+public class LysGemPowderItem extends AbstractJewelPowderItem {
+    public LysGemPowderItem(Properties pProperties, GCRarity rarity, GCAspect aspect) {
+        super(pProperties, rarity, aspect);
     }
 
     @Override
     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
-        pTooltipComponents.add(Component.translatable("gemcraft.emerald_powder.base_tool_tip"));
+        pTooltipComponents.add(Component.translatable("gemcraft.diamond_powder.base_tool_tip"));
         super.appendHoverText(pStack, pLevel, pTooltipComponents, pIsAdvanced);
     }
 
     @Override
     protected boolean isInteractingFlower(BlockState state) {
-        return state.is(GCTags.Blocks.GREEN_INTERACTING_FLOWERS);
+        return state.is(GCTags.Blocks.WHITE_INTERACTING_FLOWERS);
     }
 }

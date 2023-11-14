@@ -1,6 +1,5 @@
-package net.brynnexvii.gemcraft.item.gems;
+package net.brynnexvii.gemcraft.item;
 
-import net.brynnexvii.gemcraft.GemCraft;
 import net.brynnexvii.gemcraft.utility.GCClientAccess;
 import net.brynnexvii.gemcraft.utility.enums.GCAspect;
 import net.brynnexvii.gemcraft.utility.enums.GCRarity;
@@ -15,11 +14,11 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class RawGemItem extends Item {
+public class GemcraftAspectedItem extends Item {
 
     private final GCRarity rarity;
     private final GCAspect aspect;
-    public RawGemItem(Properties pProperties, GCRarity rarity, GCAspect aspect) {
+    public GemcraftAspectedItem(Properties pProperties, GCRarity rarity, GCAspect aspect) {
         super(pProperties);
         this.rarity = rarity;
         this.aspect = aspect;
