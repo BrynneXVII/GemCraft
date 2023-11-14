@@ -68,12 +68,12 @@ public class GCItems {
     public static final RegistryObject<Item>  RAW_ONYX = ITEMS.register("raw_onyx", () -> new GemcraftAspectedItem(new Item.Properties(), GCRarity.RARE, GCAspect.INANIS));
 
 
-    public static final RegistryObject<Item> RUBY_POWDER = ITEMS.register("ruby_powder",
+    public static final RegistryObject<Item> IGNIS_GEM_POWDER = ITEMS.register("ignis_gem_powder",
             () -> new IgnisGemPowderItem(new Item.Properties()));
-    public static final RegistryObject<Item> TERRA_GEM_POWDER = ITEMS.register("emerald_powder",
+    public static final RegistryObject<Item> TERRA_GEM_POWDER = ITEMS.register("terra_gem_powder",
             () -> new TerraGemPowderItem(new Item.Properties()));
     public static final RegistryObject<Item> LYS_GEM_POWDER = ITEMS.register("lys_gem_powder",
-            () -> new LysGemPowderItem(new Item.Properties(), null, GCAspect.LYS));
+            () -> new LysGemPowderItem(new Item.Properties()));
 
     public static final RegistryObject<Item>  ROCK_CANDY = ITEMS.register("rock_candy",
             () -> new Item(new Item.Properties().food(GCFood.ROCK_CANDY)));

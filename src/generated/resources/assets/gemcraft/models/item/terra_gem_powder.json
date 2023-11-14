@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "gemcraft:item/emerald_powder"
+    "layer0": "gemcraft:item/terra_gem_powder"
   }
 }

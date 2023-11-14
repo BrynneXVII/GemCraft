@@ -68,7 +68,6 @@ public class BasicAlchemicalCauldronRecipe extends AbstractAlchemicalCauldronRec
 
             for (int i = 0; i < jewelPowderItems.size(); i++) {
                 jewelPowderItems.set(i, Ingredient.fromJson(jewelPowder.get(i)));
-                System.out.println("Jewel Powders " + i + ": item " + jewelPowderItems.get(i).test((new ItemStack(GCItems.DIAMOND_POWDER.get()))));
             }
 
             return new BasicAlchemicalCauldronRecipe(id, inputItems, jewelPowderItems, output);

@@ -22,12 +22,13 @@ public class GCItemModelProvider extends ItemModelProvider {
     @Override
     protected void registerModels() {
         simpleItem(GCItems.BRILLIANT_DIAMOND);
-        simpleItem(GCItems.DIAMOND_POWDER);
         simpleItem(GCItems.BRILLIANT_EMERALD);
-        simpleItem(GCItems.EMERALD_POWDER);
         simpleItem(GCItems.BRILLIANT_RUBY);
         simpleItem(GCItems.RUBY);
-        simpleItem(GCItems.RUBY_POWDER);
+
+        simpleItem(GCItems.IGNIS_GEM_POWDER);
+        simpleItem(GCItems.TERRA_GEM_POWDER);
+        simpleItem(GCItems.LYS_GEM_POWDER);
 
         simpleItem(GCItems.RAW_GARNET);
         simpleItem(GCItems.RAW_SPHALERITE);

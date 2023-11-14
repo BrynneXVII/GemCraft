@@ -89,9 +89,9 @@ public class GCItemTagGenerator extends ItemTagsProvider {
                 );
 
         this.tag(GCTags.Items.JEWEL_POWDERS)
-                .add(GCItems.DIAMOND_POWDER.get(),
-                        GCItems.EMERALD_POWDER.get(),
-                        GCItems.RUBY_POWDER.get());
+                .add(GCItems.IGNIS_GEM_POWDER.get(),
+                        GCItems.TERRA_GEM_POWDER.get(),
+                        GCItems.LYS_GEM_POWDER.get());
 
         this.tag(ItemTags.SMALL_FLOWERS)
                 .add(GCBlocks.VIOLET_LILY.get().asItem());

@@ -77,13 +77,13 @@ public class GCCreativeModeTabs {
                                 pOutput.accept(GCBlocks.NETHER_INANIS_GEM_ORE.get());
                                 pOutput.accept(GCBlocks.END_STONE_INANIS_GEM_ORE.get());
 
-                                pOutput.accept(GCItems.DIAMOND_POWDER.get());
+                                pOutput.accept(GCItems.LYS_GEM_POWDER.get());
                                 pOutput.accept(GCItems.BRILLIANT_DIAMOND.get());
 
-                                pOutput.accept(GCItems.EMERALD_POWDER.get());
+                                pOutput.accept(GCItems.TERRA_GEM_POWDER.get());
                                 pOutput.accept(GCItems.BRILLIANT_EMERALD.get());
 
-                                pOutput.accept(GCItems.RUBY_POWDER.get());
+                                pOutput.accept(GCItems.IGNIS_GEM_POWDER.get());
                                 pOutput.accept(GCItems.RUBY.get());
                                 pOutput.accept(GCItems.BRILLIANT_RUBY.get());
                                 pOutput.accept(GCBlocks.RUBY_BLOCK.get());
@@ -122,9 +122,9 @@ public class GCCreativeModeTabs {
                 () -> CreativeModeTab.builder().icon(() -> new ItemStack(GCItems.MINT.get()))
                         .title(Component.translatable("gccreativetab.alchemy_tab"))
                         .displayItems((pParameters, pOutput) -> {
-                                pOutput.accept(GCItems.DIAMOND_POWDER.get());
-                                pOutput.accept(GCItems.EMERALD_POWDER.get());
-                                pOutput.accept(GCItems.RUBY_POWDER.get());
+                                pOutput.accept(GCItems.LYS_GEM_POWDER.get());
+                                pOutput.accept(GCItems.TERRA_GEM_POWDER.get());
+                                pOutput.accept(GCItems.IGNIS_GEM_POWDER.get());
 
                                 pOutput.accept(GCItems.GLASS_VIAL.get());
                                 pOutput.accept(GCItems.MINT.get());

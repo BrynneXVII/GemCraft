@@ -1,21 +1,18 @@
 package net.brynnexvii.gemcraft.utility;
 
 import net.brynnexvii.gemcraft.GemCraft;
-import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.tags.BiomeTags;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.level.block.Block;
 
 public class GCTags {
     public static class Blocks {
-        public static final TagKey<Block> RED_INTERACTING_FLOWERS = tag("red_interacting_flowers");
-        public static final TagKey<Block> GREEN_INTERACTING_FLOWERS = tag("green_interacting_flowers");
-        public static final TagKey<Block> WHITE_INTERACTING_FLOWERS = tag("white_interacting_flowers");
+        public static final TagKey<Block> IGNIS_ASPECTED_FLOWERS = tag("ignis_aspected_flowers");
+        public static final TagKey<Block> TERRA_ASPECTED_FLOWERS = tag("terra_aspected_flowers");
+        public static final TagKey<Block> LYS_ASPECTED_FLOWERS = tag("lys_aspected_flowers");
         public static final TagKey<Block> GEM_ORES = tag("gem_ores");
         public static final TagKey<Block> WILLOW_LOGS = tag("willow_logs");
 
