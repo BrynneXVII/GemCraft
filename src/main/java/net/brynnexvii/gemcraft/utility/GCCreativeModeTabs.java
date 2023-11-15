@@ -77,16 +77,25 @@ public class GCCreativeModeTabs {
                                 pOutput.accept(GCBlocks.NETHER_INANIS_GEM_ORE.get());
                                 pOutput.accept(GCBlocks.END_STONE_INANIS_GEM_ORE.get());
 
-                                pOutput.accept(GCItems.LYS_GEM_POWDER.get());
-                                pOutput.accept(GCItems.BRILLIANT_DIAMOND.get());
-
-                                pOutput.accept(GCItems.TERRA_GEM_POWDER.get());
-                                pOutput.accept(GCItems.BRILLIANT_EMERALD.get());
-
                                 pOutput.accept(GCItems.IGNIS_GEM_POWDER.get());
                                 pOutput.accept(GCItems.RUBY.get());
                                 pOutput.accept(GCItems.BRILLIANT_RUBY.get());
                                 pOutput.accept(GCBlocks.RUBY_BLOCK.get());
+
+                                pOutput.accept(GCItems.ZEPHYR_GEM_POWDER.get());
+
+                                pOutput.accept(GCItems.TERRA_GEM_POWDER.get());
+                                pOutput.accept(GCItems.BRILLIANT_EMERALD.get());
+
+                                pOutput.accept(GCItems.MIZU_GEM_POWDER.get());
+
+                                pOutput.accept(GCItems.AETHER_GEM_POWDER.get());
+
+                                pOutput.accept(GCItems.LYS_GEM_POWDER.get());
+                                pOutput.accept(GCItems.BRILLIANT_DIAMOND.get());
+
+                                pOutput.accept(GCItems.INANIS_GEM_POWDER.get());
+
 
                                 pOutput.accept(GCBlocks.WILLOW_LOG.get());
                                 pOutput.accept(GCBlocks.STRIPPED_WILLOW_LOG.get());
@@ -122,9 +131,13 @@ public class GCCreativeModeTabs {
                 () -> CreativeModeTab.builder().icon(() -> new ItemStack(GCItems.MINT.get()))
                         .title(Component.translatable("gccreativetab.alchemy_tab"))
                         .displayItems((pParameters, pOutput) -> {
-                                pOutput.accept(GCItems.LYS_GEM_POWDER.get());
-                                pOutput.accept(GCItems.TERRA_GEM_POWDER.get());
                                 pOutput.accept(GCItems.IGNIS_GEM_POWDER.get());
+                                pOutput.accept(GCItems.ZEPHYR_GEM_POWDER.get());
+                                pOutput.accept(GCItems.TERRA_GEM_POWDER.get());
+                                pOutput.accept(GCItems.MIZU_GEM_POWDER.get());
+                                pOutput.accept(GCItems.AETHER_GEM_POWDER.get());
+                                pOutput.accept(GCItems.LYS_GEM_POWDER.get());
+                                pOutput.accept(GCItems.INANIS_GEM_POWDER.get());
 
                                 pOutput.accept(GCItems.GLASS_VIAL.get());
                                 pOutput.accept(GCItems.MINT.get());
@@ -145,6 +158,7 @@ public class GCCreativeModeTabs {
                             pOutput.accept(GCItems.RAW_GARNET.get());
                             pOutput.accept(GCItems.RAW_SPHALERITE.get());
                             pOutput.accept(GCItems.RAW_RUBY.get());
+                            pOutput.accept(GCItems.IGNIS_GEM_POWDER.get());
 
                             pOutput.accept(GCBlocks.ZEPHYR_GEM_ORE.get());
                             pOutput.accept(GCBlocks.DEEPSLATE_ZEPHYR_GEM_ORE.get());
@@ -153,6 +167,7 @@ public class GCCreativeModeTabs {
                             pOutput.accept(GCItems.RAW_GOLDEN_BERYL.get());
                             pOutput.accept(GCItems.RAW_CITRINE.get());
                             pOutput.accept(GCItems.RAW_TOPAZ.get());
+                            pOutput.accept(GCItems.ZEPHYR_GEM_POWDER.get());
 
                             pOutput.accept(GCBlocks.TERRA_GEM_ORE.get());
                             pOutput.accept(GCBlocks.DEEPSLATE_TERRA_GEM_ORE.get());
@@ -161,6 +176,7 @@ public class GCCreativeModeTabs {
                             pOutput.accept(GCItems.RAW_JADE.get());
                             pOutput.accept(GCItems.RAW_PERIDOT.get());
                             pOutput.accept(GCItems.RAW_EMERALD.get());
+                            pOutput.accept(GCItems.TERRA_GEM_POWDER.get());
 
                             pOutput.accept(GCBlocks.MIZU_GEM_ORE.get());
                             pOutput.accept(GCBlocks.DEEPSLATE_MIZU_GEM_ORE.get());
@@ -169,6 +185,7 @@ public class GCCreativeModeTabs {
                             pOutput.accept(GCItems.RAW_AQUAMARINE.get());
                             pOutput.accept(GCItems.RAW_IOLITE.get());
                             pOutput.accept(GCItems.RAW_SAPPHIRE.get());
+                            pOutput.accept(GCItems.MIZU_GEM_POWDER.get());
 
                             pOutput.accept(GCBlocks.AETHER_GEM_ORE.get());
                             pOutput.accept(GCBlocks.DEEPSLATE_AETHER_GEM_ORE.get());
@@ -177,6 +194,7 @@ public class GCCreativeModeTabs {
                             pOutput.accept(GCItems.RAW_AMETHYST.get());
                             pOutput.accept(GCItems.RAW_CHAROITE.get());
                             pOutput.accept(GCItems.RAW_TANZANITE.get());
+                            pOutput.accept(GCItems.AETHER_GEM_POWDER.get());
 
                             pOutput.accept(GCBlocks.LYS_GEM_ORE.get());
                             pOutput.accept(GCBlocks.DEEPSLATE_LYS_GEM_ORE.get());
@@ -185,6 +203,7 @@ public class GCCreativeModeTabs {
                             pOutput.accept(GCItems.RAW_ALBITE.get());
                             pOutput.accept(GCItems.RAW_DENDRITIC_OPAL.get());
                             pOutput.accept(GCItems.RAW_DIAMOND.get());
+                            pOutput.accept(GCItems.LYS_GEM_POWDER.get());
 
                             pOutput.accept(GCBlocks.INANIS_GEM_ORE.get());
                             pOutput.accept(GCBlocks.DEEPSLATE_INANIS_GEM_ORE.get());
@@ -193,6 +212,7 @@ public class GCCreativeModeTabs {
                             pOutput.accept(GCItems.RAW_SMOKY_QUARTZ.get());
                             pOutput.accept(GCItems.RAW_FERBERITE.get());
                             pOutput.accept(GCItems.RAW_ONYX.get());
+                            pOutput.accept(GCItems.INANIS_GEM_POWDER.get());
                     }).build());
 
         public static void register(IEventBus eventBus){

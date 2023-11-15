@@ -70,18 +70,27 @@ public class GCBlockTagGenerator extends BlockTagsProvider {
 
         //Gem Powder Flower Tags
         //--------------------------------------------------
-        this.tag(GCTags.Blocks.TERRA_ASPECTED_FLOWERS)
-                .add(Blocks.CACTUS,
-                        Blocks.FERN); //can do .addTag for a whole class of items in an existing tag like "ores"
         this.tag(GCTags.Blocks.IGNIS_ASPECTED_FLOWERS)
                 .add(Blocks.POPPY,
                         Blocks.ROSE_BUSH,
                         Blocks.RED_TULIP);
+        this.tag(GCTags.Blocks.ZEPHYR_ASPECTED_FLOWERS)
+                .add(Blocks.DANDELION);
+        this.tag(GCTags.Blocks.TERRA_ASPECTED_FLOWERS)
+                .add(Blocks.CACTUS,
+                        Blocks.FERN); //can do .addTag for a whole class of items in an existing tag like "ores"
+        this.tag(GCTags.Blocks.MIZU_ASPECTED_FLOWERS)
+                .add(Blocks.CORNFLOWER,
+                        Blocks.BLUE_ORCHID);
+        this.tag(GCTags.Blocks.AETHER_ASPECTED_FLOWERS)
+                .add(GCBlocks.VIOLET_LILY.get());
         this.tag(GCTags.Blocks.LYS_ASPECTED_FLOWERS)
                 .add(Blocks.LILY_OF_THE_VALLEY,
                         Blocks.AZURE_BLUET,
                         Blocks.WHITE_TULIP,
                         Blocks.OXEYE_DAISY);
+        this.tag(GCTags.Blocks.INANIS_ASPECTED_FLOWERS)
+                .add(Blocks.WITHER_ROSE);
 
         //Tool Type Tags
         //--------------------------------------------------

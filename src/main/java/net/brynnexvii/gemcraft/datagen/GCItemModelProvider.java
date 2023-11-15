@@ -27,8 +27,12 @@ public class GCItemModelProvider extends ItemModelProvider {
         simpleItem(GCItems.RUBY);
 
         simpleItem(GCItems.IGNIS_GEM_POWDER);
+        simpleItem(GCItems.ZEPHYR_GEM_POWDER);
         simpleItem(GCItems.TERRA_GEM_POWDER);
+        simpleItem(GCItems.MIZU_GEM_POWDER);
+        simpleItem(GCItems.AETHER_GEM_POWDER);
         simpleItem(GCItems.LYS_GEM_POWDER);
+        simpleItem(GCItems.INANIS_GEM_POWDER);
 
         simpleItem(GCItems.RAW_GARNET);
         simpleItem(GCItems.RAW_SPHALERITE);

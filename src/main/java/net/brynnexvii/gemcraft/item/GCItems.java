@@ -2,9 +2,7 @@ package net.brynnexvii.gemcraft.item;
 
 import net.brynnexvii.gemcraft.GemCraft;
 import net.brynnexvii.gemcraft.block.GCBlocks;
-import net.brynnexvii.gemcraft.item.gems.LysGemPowderItem;
-import net.brynnexvii.gemcraft.item.gems.TerraGemPowderItem;
-import net.brynnexvii.gemcraft.item.gems.IgnisGemPowderItem;
+import net.brynnexvii.gemcraft.item.gems.*;
 import net.brynnexvii.gemcraft.item.herbs.MintItem;
 import net.brynnexvii.gemcraft.potion.alchemy.ReassuranceElixir;
 import net.brynnexvii.gemcraft.utility.enums.GCAspect;
@@ -70,10 +68,18 @@ public class GCItems {
 
     public static final RegistryObject<Item> IGNIS_GEM_POWDER = ITEMS.register("ignis_gem_powder",
             () -> new IgnisGemPowderItem(new Item.Properties()));
+    public static final RegistryObject<Item> ZEPHYR_GEM_POWDER = ITEMS.register("zephyr_gem_powder",
+            () -> new ZephyrGemPowderItem(new Item.Properties()));
     public static final RegistryObject<Item> TERRA_GEM_POWDER = ITEMS.register("terra_gem_powder",
             () -> new TerraGemPowderItem(new Item.Properties()));
+    public static final RegistryObject<Item> MIZU_GEM_POWDER = ITEMS.register("mizu_gem_powder",
+            () -> new MizuGemPowderItem(new Item.Properties()));
+    public static final RegistryObject<Item> AETHER_GEM_POWDER = ITEMS.register("aether_gem_powder",
+            () -> new AetherGemPowderItem(new Item.Properties()));
     public static final RegistryObject<Item> LYS_GEM_POWDER = ITEMS.register("lys_gem_powder",
             () -> new LysGemPowderItem(new Item.Properties()));
+    public static final RegistryObject<Item> INANIS_GEM_POWDER = ITEMS.register("inanis_gem_powder",
+            () -> new InanisGemPowderItem(new Item.Properties()));
 
     public static final RegistryObject<Item>  ROCK_CANDY = ITEMS.register("rock_candy",
             () -> new Item(new Item.Properties().food(GCFood.ROCK_CANDY)));

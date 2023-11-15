@@ -1,13 +1,16 @@
-// 1.20.1	2023-11-13T23:45:32.1985147	Item Models: gemcraft
+// 1.20.1	2023-11-14T23:13:58.0854295	Item Models: gemcraft
+ded89fd2824c530d674e065133ce8d13fe05ee58 assets/gemcraft/models/item/aether_gem_powder.json
 2a2ce703142d035c370af1ec2d723fe2dc83b9ec assets/gemcraft/models/item/basic_alchemical_cauldron.json
 ccb4be144069e60fcdb3251a80efe61bab9be29c assets/gemcraft/models/item/brilliant_diamond.json
 67a6e64fe03a4804bf3908a49ec0749b71163461 assets/gemcraft/models/item/brilliant_emerald.json
 101591f9cbe92d3129e593932220aacedbab38d7 assets/gemcraft/models/item/brilliant_ruby.json
 b0676e7579fb987cc3d87c22fd1d81db67fcb3b3 assets/gemcraft/models/item/glass_vial.json
 2eaca66e43948c882d88798704c596376bbec55b assets/gemcraft/models/item/ignis_gem_powder.json
+d13a8e66516d8aab6f0b0a21dfa15f80d850b6b2 assets/gemcraft/models/item/inanis_gem_powder.json
 a27e7b7271618766d6131e3be7d890f525cdfa3a assets/gemcraft/models/item/lys_gem_powder.json
 a26facb98a7b81d76c2321cf5ce0bd02d4cf0d09 assets/gemcraft/models/item/middling_reassurance_elixir.json
 82938af3e84bd77ca58e29823ecaf9547347ae5b assets/gemcraft/models/item/mint.json
+df58b66e5b00d6188418d750f60270f799d3bbe6 assets/gemcraft/models/item/mizu_gem_powder.json
 c9594293eb7245c7533e2324c04363be9867d0a4 assets/gemcraft/models/item/parsnip.json
 822ddd69213cc7e7eb785368a19b4cd18395fea1 assets/gemcraft/models/item/raw_albite.json
 32ca5bd35f5960a97346a216caf12b3cf63485f6 assets/gemcraft/models/item/raw_amethyst.json
@@ -46,3 +49,4 @@ afb1ef63e3755412b51598ddcb4718600689081d assets/gemcraft/models/item/willow_stai
 d3ad72a8c627413f989e93bb3c1ad08225b6a11c assets/gemcraft/models/item/willow_trapdoor.json
 9e4e64312c14c1887f2083f2196feef9681b3fed assets/gemcraft/models/item/willow_wall.json
 2650420a8724b37c8648a27159bab3f91ff3e592 assets/gemcraft/models/item/willow_wood.json
+361654c883a4e3870601dd9dd453f5e97d071cb0 assets/gemcraft/models/item/zephyr_gem_powder.json
