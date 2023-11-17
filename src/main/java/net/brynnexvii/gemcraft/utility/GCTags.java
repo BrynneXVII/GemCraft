@@ -10,6 +10,8 @@ import net.minecraft.world.level.block.Block;
 
 public class GCTags {
     public static class Blocks {
+        public static final TagKey<Block> NEEDS_IGNIS_TOOL = tag("needs_ignis_tool");
+
         public static final TagKey<Block> IGNIS_ASPECTED_FLOWERS = tag("ignis_aspected_flowers");
         public static final TagKey<Block> ZEPHYR_ASPECTED_FLOWERS = tag("zephyr_aspected_flowers");
         public static final TagKey<Block> TERRA_ASPECTED_FLOWERS = tag("terra_aspected_flowers");
