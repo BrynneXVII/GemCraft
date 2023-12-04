@@ -86,6 +86,8 @@ public class GCItems {
 
     public static final RegistryObject<Item>  BASIC_STAFF = ITEMS.register("basic_staff",
             () -> new Item(new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item>  TEST_3D_GEM = ITEMS.register("test_3d_gem",
+            () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> MINT = ITEMS.register("mint", () -> new MintItem(new Item.Properties()));
 
