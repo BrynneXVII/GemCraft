@@ -1,4 +1,7 @@
-// 1.20.1	2023-10-21T01:21:07.2065472	Registries
+// 1.20.1	2023-12-04T01:01:00.8067677	Registries
+f78d9a1dbb071f2c4f78c25b7e355fff636855b8 data/gemcraft/forge/biome_modifier/add_tree_ignis.json
 e6e8dd2d09dab4a5f540d0ffbce3389c794d9286 data/gemcraft/forge/biome_modifier/add_tree_willow.json
+55475858328d3ccebf01840f2debbd0d3ac4c913 data/gemcraft/worldgen/configured_feature/ignis.json
 dae2f1185893545997986bd9e5ccae5abe2a77d3 data/gemcraft/worldgen/configured_feature/willow.json
+86be1f785fabeac694d2e8b3beab99bc8c158046 data/gemcraft/worldgen/placed_feature/ignis_placed.json
 11cf075bb3e6afff7ba3b4bfffdb93d9d0b636f2 data/gemcraft/worldgen/placed_feature/willow_placed.json

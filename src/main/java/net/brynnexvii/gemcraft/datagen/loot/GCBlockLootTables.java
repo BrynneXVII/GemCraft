@@ -72,6 +72,7 @@ public class GCBlockLootTables extends BlockLootSubProvider {
 
         this.dropSelf(GCBlocks.RUBY_BLOCK.get());
 
+        //Willow wood
         this.dropSelf(GCBlocks.WILLOW_LOG.get());
         this.dropSelf(GCBlocks.STRIPPED_WILLOW_LOG.get());
         this.dropSelf(GCBlocks.WILLOW_WOOD.get());
@@ -93,6 +94,29 @@ public class GCBlockLootTables extends BlockLootSubProvider {
 
         this.add(GCBlocks.WILLOW_LEAVES.get(), block ->
                 createLeavesDrops(block, GCBlocks.WILLOW_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+
+        //Ignis wood
+        this.dropSelf(GCBlocks.IGNIS_LOG.get());
+        this.dropSelf(GCBlocks.STRIPPED_IGNIS_LOG.get());
+        this.dropSelf(GCBlocks.IGNIS_WOOD.get());
+        this.dropSelf(GCBlocks.STRIPPED_IGNIS_WOOD.get());
+        this.dropSelf(GCBlocks.IGNIS_SAPLING.get());
+        this.dropSelf(GCBlocks.IGNIS_PLANKS.get());
+        this.dropSelf(GCBlocks.IGNIS_STAIRS.get());
+        this.dropSelf(GCBlocks.IGNIS_BUTTON.get());
+        this.dropSelf(GCBlocks.IGNIS_PRESSURE_PLATE.get());
+        this.dropSelf(GCBlocks.IGNIS_TRAPDOOR.get());
+        this.dropSelf(GCBlocks.IGNIS_FENCE.get());
+        this.dropSelf(GCBlocks.IGNIS_FENCE_GATE.get());
+        this.dropSelf(GCBlocks.IGNIS_WALL.get());
+
+        this.add(GCBlocks.IGNIS_SLAB.get(),
+                block -> createSlabItemTable(GCBlocks.IGNIS_SLAB.get()));
+        this.add(GCBlocks.IGNIS_DOOR.get(),
+                block -> createDoorTable(GCBlocks.IGNIS_DOOR.get()));
+
+        this.add(GCBlocks.IGNIS_LEAVES.get(), block ->
+                createLeavesDrops(block, GCBlocks.IGNIS_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
 
         this.dropSelf(GCBlocks.BASIC_ALCHEMICAL_CAULDRON.get());
 

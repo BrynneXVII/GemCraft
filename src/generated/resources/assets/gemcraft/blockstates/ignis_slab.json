@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "gemcraft:block/ignis_slab"
+    },
+    "type=double": {
+      "model": "gemcraft:block/ignis_planks"
+    },
+    "type=top": {
+      "model": "gemcraft:block/ignis_slab_top"
+    }
+  }
+}

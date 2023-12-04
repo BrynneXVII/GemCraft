@@ -158,6 +158,23 @@
   "block.gemcraft.willow_door": "Willow Door",
   "block.gemcraft.willow_trapdoor": "Willow Trap Door",
 
+  "block.gemcraft.ignis_log": "Fire Oak Log",
+  "block.gemcraft.stripped_ignis_log": "Stripped Fire Oak Log",
+  "block.gemcraft.ignis_wood": "Fire Oak Wood",
+  "block.gemcraft.stripped_ignis_wood": "Stripped Fire Oak Wood",
+  "block.gemcraft.ignis_leaves": "Fire Oak Leaves",
+  "block.gemcraft.ignis_sapling": "Fire Oak Sapling",
+  "block.gemcraft.ignis_planks": "Fire Oak Planks",
+  "block.gemcraft.ignis_stairs": "Fire Oak Stairs",
+  "block.gemcraft.ignis_slab": "Fire Oak Slab",
+  "block.gemcraft.ignis_button": "Fire Oak Button",
+  "block.gemcraft.ignis_pressure_plate": "Fire Oak Pressure Plate",
+  "block.gemcraft.ignis_fence": "Fire Oak Fence",
+  "block.gemcraft.ignis_fence_gate": "Fire Oak Fence Gate",
+  "block.gemcraft.ignis_wall": "Fire Oak Wall",
+  "block.gemcraft.ignis_door": "Fire Oak Door",
+  "block.gemcraft.ignis_trapdoor": "Fire Oak Trap Door",
+
   "block.gemcraft.violet_lily": "Violet Lily",
 
   "block.gemcraft.basic_alchemical_cauldron": "Basic Alchemical Cauldron",

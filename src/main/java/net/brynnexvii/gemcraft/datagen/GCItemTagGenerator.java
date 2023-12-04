@@ -107,13 +107,19 @@ public class GCItemTagGenerator extends ItemTagsProvider {
                 .add(GCBlocks.WILLOW_LOG.get().asItem(),
                         GCBlocks.STRIPPED_WILLOW_LOG.get().asItem(),
                         GCBlocks.WILLOW_WOOD.get().asItem(),
-                        GCBlocks.STRIPPED_WILLOW_WOOD.get().asItem());
+                        GCBlocks.STRIPPED_WILLOW_WOOD.get().asItem(),
+                        GCBlocks.IGNIS_LOG.get().asItem(),
+                        GCBlocks.STRIPPED_IGNIS_LOG.get().asItem(),
+                        GCBlocks.IGNIS_WOOD.get().asItem(),
+                        GCBlocks.STRIPPED_IGNIS_WOOD.get().asItem());
 
         this.tag(ItemTags.PLANKS)
-                .add(GCBlocks.WILLOW_PLANKS.get().asItem());
+                .add(GCBlocks.WILLOW_PLANKS.get().asItem(),
+                        GCBlocks.IGNIS_PLANKS.get().asItem());
 
         this.tag(ItemTags.SAPLINGS)
-                .add(GCBlocks.WILLOW_SAPLING.get().asItem());
+                .add(GCBlocks.WILLOW_SAPLING.get().asItem(),
+                        GCBlocks.IGNIS_SAPLING.get().asItem());
 
         this.tag(GCTags.Items.WILLOW_LOGS)
                 .add(GCBlocks.WILLOW_LOG.get().asItem(),
@@ -121,39 +127,60 @@ public class GCItemTagGenerator extends ItemTagsProvider {
                         GCBlocks.WILLOW_WOOD.get().asItem(),
                         GCBlocks.STRIPPED_WILLOW_WOOD.get().asItem());
 
+        this.tag(GCTags.Items.IGNIS_LOGS)
+                .add(GCBlocks.IGNIS_LOG.get().asItem(),
+                        GCBlocks.STRIPPED_IGNIS_LOG.get().asItem(),
+                        GCBlocks.IGNIS_WOOD.get().asItem(),
+                        GCBlocks.STRIPPED_IGNIS_WOOD.get().asItem());
+
         this.tag(ItemTags.LEAVES)
-                .add(GCBlocks.WILLOW_LEAVES.get().asItem());
+                .add(GCBlocks.WILLOW_LEAVES.get().asItem(),
+                        GCBlocks.IGNIS_LEAVES.get().asItem());
 
         //Special Blocks
         //--------------------------------------------------
         this.tag(ItemTags.BUTTONS)
-                .add(GCBlocks.WILLOW_BUTTON.get().asItem());
+                .add(GCBlocks.WILLOW_BUTTON.get().asItem(),
+                        GCBlocks.IGNIS_BUTTON.get().asItem());
         this.tag(ItemTags.WOODEN_BUTTONS)
-                .add(GCBlocks.WILLOW_BUTTON.get().asItem());
+                .add(GCBlocks.WILLOW_BUTTON.get().asItem(),
+                        GCBlocks.IGNIS_BUTTON.get().asItem());
         this.tag(ItemTags.DOORS)
-                .add(GCBlocks.WILLOW_DOOR.get().asItem());
+                .add(GCBlocks.WILLOW_DOOR.get().asItem(),
+                        GCBlocks.IGNIS_DOOR.get().asItem());
         this.tag(ItemTags.WOODEN_DOORS)
-                .add(GCBlocks.WILLOW_DOOR.get().asItem());
+                .add(GCBlocks.WILLOW_DOOR.get().asItem(),
+                        GCBlocks.IGNIS_DOOR.get().asItem());
         this.tag(ItemTags.FENCES)
-                .add(GCBlocks.WILLOW_FENCE.get().asItem());
+                .add(GCBlocks.WILLOW_FENCE.get().asItem(),
+                        GCBlocks.IGNIS_FENCE.get().asItem());
         this.tag(ItemTags.WOODEN_FENCES)
-                .add(GCBlocks.WILLOW_FENCE.get().asItem());
+                .add(GCBlocks.WILLOW_FENCE.get().asItem(),
+                        GCBlocks.IGNIS_FENCE.get().asItem());
         this.tag(ItemTags.FENCE_GATES)
-                .add(GCBlocks.WILLOW_FENCE.get().asItem());
+                .add(GCBlocks.WILLOW_FENCE.get().asItem(),
+                        GCBlocks.IGNIS_FENCE.get().asItem());
         this.tag(ItemTags.SLABS)
-                .add(GCBlocks.WILLOW_SLAB.get().asItem());
+                .add(GCBlocks.WILLOW_SLAB.get().asItem(),
+                        GCBlocks.IGNIS_SLAB.get().asItem());
         this.tag(ItemTags.WOODEN_SLABS)
-                .add(GCBlocks.WILLOW_SLAB.get().asItem());
+                .add(GCBlocks.WILLOW_SLAB.get().asItem(),
+                        GCBlocks.IGNIS_SLAB.get().asItem());
         this.tag(ItemTags.STAIRS)
-                .add(GCBlocks.WILLOW_STAIRS.get().asItem());
+                .add(GCBlocks.WILLOW_STAIRS.get().asItem(),
+                        GCBlocks.IGNIS_STAIRS.get().asItem());
         this.tag(ItemTags.WOODEN_STAIRS)
-                .add(GCBlocks.WILLOW_STAIRS.get().asItem());
+                .add(GCBlocks.WILLOW_STAIRS.get().asItem(),
+                        GCBlocks.IGNIS_STAIRS.get().asItem());
         this.tag(ItemTags.TRAPDOORS)
-                .add(GCBlocks.WILLOW_TRAPDOOR.get().asItem());
+                .add(GCBlocks.WILLOW_TRAPDOOR.get().asItem(),
+                        GCBlocks.IGNIS_TRAPDOOR.get().asItem());
         this.tag(ItemTags.WOODEN_TRAPDOORS)
-                .add(GCBlocks.WILLOW_TRAPDOOR.get().asItem());
+                .add(GCBlocks.WILLOW_TRAPDOOR.get().asItem(),
+                        GCBlocks.IGNIS_TRAPDOOR.get().asItem());
         this.tag(ItemTags.WALLS)
-                .add(GCBlocks.WILLOW_WALL.get().asItem());
+                .add(GCBlocks.WILLOW_WALL.get().asItem(),
+                        GCBlocks.IGNIS_WALL.get().asItem());
 
     }
 }

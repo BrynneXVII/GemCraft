@@ -3,6 +3,7 @@ package net.brynnexvii.gemcraft.block;
 import net.brynnexvii.gemcraft.GemCraft;
 import net.brynnexvii.gemcraft.block.crops.ParsnipCropBlock;
 import net.brynnexvii.gemcraft.item.GCItems;
+import net.brynnexvii.gemcraft.worldgen.tree.IgnisTreeGrower;
 import net.brynnexvii.gemcraft.worldgen.tree.WillowTreeGrower;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -113,11 +114,38 @@ public class GCBlocks {
     public static final RegistryObject<Block> WILLOW_WOOD = registerBlock("willow_wood",
             () -> new GCFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD), GCBlocks.STRIPPED_WILLOW_WOOD.get()));
 
+    public static final RegistryObject<Block> STRIPPED_IGNIS_LOG = registerBlock("stripped_ignis_log",
+            () -> new GCFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)));
+    public static final RegistryObject<Block> IGNIS_LOG = registerBlock("ignis_log",
+            () -> new GCFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG), GCBlocks.STRIPPED_IGNIS_LOG.get()));
+    public static final RegistryObject<Block> STRIPPED_IGNIS_WOOD = registerBlock("stripped_ignis_wood",
+            () -> new GCFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD)));
+    public static final RegistryObject<Block> IGNIS_WOOD = registerBlock("ignis_wood",
+            () -> new GCFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD), GCBlocks.STRIPPED_IGNIS_WOOD.get()));
+
     //</editor-fold>
 
     //------------------------------------------------------------------------------------------------------------------
     //<editor-fold desc="Leaf Blocks">
     public static final RegistryObject<Block> WILLOW_LEAVES = registerBlock("willow_leaves",
+            () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)){
+                @Override
+                public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 60;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 30;
+                }
+            });
+
+    public static final RegistryObject<Block> IGNIS_LEAVES = registerBlock("ignis_leaves",
             () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)){
                 @Override
                 public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
@@ -141,11 +169,31 @@ public class GCBlocks {
 
     public static final RegistryObject<Block> WILLOW_SAPLING = registerBlock("willow_sapling",
             () -> new SaplingBlock(new WillowTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+    public static final RegistryObject<Block> IGNIS_SAPLING = registerBlock("ignis_sapling",
+            () -> new SaplingBlock(new IgnisTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
     //</editor-fold>
 
     //------------------------------------------------------------------------------------------------------------------
     //<editor-fold desc="Planks">
     public static final RegistryObject<Block> WILLOW_PLANKS = registerBlock("willow_planks",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)){
+                @Override
+                public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 20;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 5;
+                }
+            });
+
+    public static final RegistryObject<Block> IGNIS_PLANKS = registerBlock("ignis_planks",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)){
                 @Override
                 public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
@@ -184,12 +232,48 @@ public class GCBlocks {
                 }
             });
 
+    public static final RegistryObject<Block> IGNIS_STAIRS = registerBlock("ignis_stairs",
+            () -> new StairBlock(() -> GCBlocks.IGNIS_PLANKS.get().defaultBlockState(),BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS)){
+                @Override
+                public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 20;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 5;
+                }
+            });
+
     //</editor-fold>
 
     //------------------------------------------------------------------------------------------------------------------
     //<editor-fold desc="Slab Blocks">
 
     public static final RegistryObject<Block> WILLOW_SLAB = registerBlock("willow_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB)){
+                @Override
+                public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 20;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 5;
+                }
+            });
+
+    public static final RegistryObject<Block> IGNIS_SLAB = registerBlock("ignis_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB)){
                 @Override
                 public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
@@ -213,6 +297,8 @@ public class GCBlocks {
 
     public static final RegistryObject<Block> WILLOW_BUTTON = registerBlock("willow_button",
             () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON), BlockSetType.OAK, 10, true));
+    public static final RegistryObject<Block> IGNIS_BUTTON = registerBlock("ignis_button",
+            () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON), BlockSetType.OAK, 10, true));
     //</editor-fold>
 
     //------------------------------------------------------------------------------------------------------------------
@@ -220,12 +306,31 @@ public class GCBlocks {
 
     public static final RegistryObject<Block> WILLOW_PRESSURE_PLATE = registerBlock("willow_pressure_plate",
             () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.OAK_PRESSURE_PLATE), BlockSetType.OAK));
+    public static final RegistryObject<Block> IGNIS_PRESSURE_PLATE = registerBlock("ignis_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.OAK_PRESSURE_PLATE), BlockSetType.OAK));
     //</editor-fold>
 
     //------------------------------------------------------------------------------------------------------------------
     //<editor-fold desc="Fence Blocks">
 
     public static final RegistryObject<Block> WILLOW_FENCE = registerBlock("willow_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)){
+                @Override
+                public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 20;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 5;
+                }
+            });
+    public static final RegistryObject<Block> IGNIS_FENCE = registerBlock("ignis_fence",
             () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)){
                 @Override
                 public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
@@ -264,12 +369,48 @@ public class GCBlocks {
                     return 5;
                 }
             });
+
+    public static final RegistryObject<Block> IGNIS_FENCE_GATE = registerBlock("ignis_fence_gate",
+            () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE){
+                @Override
+                public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 20;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 5;
+                }
+            });
     //</editor-fold>
 
     //------------------------------------------------------------------------------------------------------------------
     //<editor-fold desc="Wall Blocks">
 
     public static final RegistryObject<Block> WILLOW_WALL = registerBlock("willow_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)){
+                @Override
+                public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 10;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 5;
+                }
+            });
+
+    public static final RegistryObject<Block> IGNIS_WALL = registerBlock("ignis_wall",
             () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)){
                 @Override
                 public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
@@ -293,12 +434,16 @@ public class GCBlocks {
 
     public static final RegistryObject<Block> WILLOW_DOOR = registerBlock("willow_door",
             () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).noOcclusion(), BlockSetType.OAK));
+    public static final RegistryObject<Block> IGNIS_DOOR = registerBlock("ignis_door",
+            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).noOcclusion(), BlockSetType.OAK));
     //</editor-fold>
 
     //------------------------------------------------------------------------------------------------------------------
     //<editor-fold desc="Trapdoors">
 
     public static final RegistryObject<Block> WILLOW_TRAPDOOR = registerBlock("willow_trapdoor",
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).noOcclusion(), BlockSetType.OAK));
+    public static final RegistryObject<Block> IGNIS_TRAPDOOR = registerBlock("ignis_trapdoor",
             () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).noOcclusion(), BlockSetType.OAK));
     //</editor-fold>
 

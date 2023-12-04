@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button",
+  "textures": {
+    "texture": "gemcraft:block/ignis_planks"
+  }
+}

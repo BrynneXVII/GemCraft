@@ -3,6 +3,10 @@
     "gemcraft:willow_log",
     "gemcraft:stripped_willow_log",
     "gemcraft:willow_wood",
-    "gemcraft:stripped_willow_wood"
+    "gemcraft:stripped_willow_wood",
+    "gemcraft:ignis_log",
+    "gemcraft:stripped_ignis_log",
+    "gemcraft:ignis_wood",
+    "gemcraft:stripped_ignis_wood"
   ]
 }

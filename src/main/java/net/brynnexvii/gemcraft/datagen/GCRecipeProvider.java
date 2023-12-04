@@ -32,7 +32,11 @@ public class GCRecipeProvider extends RecipeProvider implements IConditionBuilde
                 .save(pWriter);
         ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, GCBlocks.WILLOW_PLANKS.get(), 4)
                 .requires(GCTags.Items.WILLOW_LOGS)
-                .unlockedBy("has_willow_logs", has(GCTags.Items .WILLOW_LOGS))
+                .unlockedBy("has_willow_logs", has(GCTags.Items.WILLOW_LOGS))
+                .save(pWriter);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, GCBlocks.IGNIS_PLANKS.get(), 4)
+                .requires(GCTags.Items.IGNIS_LOGS)
+                .unlockedBy("has_ignis_logs", has(GCTags.Items.IGNIS_LOGS))
                 .save(pWriter);
 
         //Shaped Recipes

@@ -1,4 +1,5 @@
-// 1.20.1	2023-10-20T22:52:27.1594084	Recipes
+// 1.20.1	2023-12-04T00:28:12.5432571	Recipes
+05791eb131503a62d7b9633eaf80fadaa98d3d27 data/gemcraft/advancements/recipes/building_blocks/ignis_planks.json
 85aa39678a69adda82d103c70bb9fc81c3374fac data/gemcraft/advancements/recipes/building_blocks/willow_planks.json
 bbe35b3c8662dad33776779528a51f351f055c94 data/gemcraft/advancements/recipes/misc/diamond_from_blasting_raw_diamond.json
 96751522bcc5bdc7557a33f5ef534ad8f6508927 data/gemcraft/advancements/recipes/misc/diamond_from_smelting_raw_diamond.json
@@ -12,6 +13,7 @@ fcea4b9dfb5a8bc38abd616c1a247be2e4ab2feb data/gemcraft/advancements/recipes/misc
 79cfeba7c08abb0bae1c11b2c9cc466f972cfb21 data/gemcraft/recipes/diamond_from_smelting_raw_diamond.json
 f4cbc503324b8b8734bafe81bccdc2c3855a2970 data/gemcraft/recipes/emerald_from_blasting_raw_emerald.json
 a6fe660c3435eee415ffe853f74eb184310770a8 data/gemcraft/recipes/emerald_from_smelting_raw_emerald.json
+1a36e11a1d628788938f4ce69d8443da418bc534 data/gemcraft/recipes/ignis_planks.json
 84b7f90ad43646483ce2045eebac8cdcaca1ba29 data/gemcraft/recipes/ruby.json
 403df8dd1822f19e274376f17df9dfb6f6da6a27 data/gemcraft/recipes/ruby_block.json
 e0f1eb46ee2a9d60c07a055b35f003fb4f11c466 data/gemcraft/recipes/ruby_from_blasting_raw_ruby.json

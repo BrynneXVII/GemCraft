@@ -1,11 +1,22 @@
-// 1.20.1	2023-11-14T23:13:58.0854295	Item Models: gemcraft
+// 1.20.1	2023-12-04T00:28:12.5442578	Item Models: gemcraft
 ded89fd2824c530d674e065133ce8d13fe05ee58 assets/gemcraft/models/item/aether_gem_powder.json
 2a2ce703142d035c370af1ec2d723fe2dc83b9ec assets/gemcraft/models/item/basic_alchemical_cauldron.json
 ccb4be144069e60fcdb3251a80efe61bab9be29c assets/gemcraft/models/item/brilliant_diamond.json
 67a6e64fe03a4804bf3908a49ec0749b71163461 assets/gemcraft/models/item/brilliant_emerald.json
 101591f9cbe92d3129e593932220aacedbab38d7 assets/gemcraft/models/item/brilliant_ruby.json
 b0676e7579fb987cc3d87c22fd1d81db67fcb3b3 assets/gemcraft/models/item/glass_vial.json
+59ba6059a306072d557e070069edf2cfb1982693 assets/gemcraft/models/item/ignis_button.json
+c7fb0bc89a712d1a963ad1cdf504362ba9cfc1e1 assets/gemcraft/models/item/ignis_door.json
+122223c1c84d966526d3ec99b982bd4f9f0dbdd4 assets/gemcraft/models/item/ignis_fence.json
+9d4c01ea88464191905e83487db162dbb11b9fce assets/gemcraft/models/item/ignis_fence_gate.json
 2eaca66e43948c882d88798704c596376bbec55b assets/gemcraft/models/item/ignis_gem_powder.json
+26702cbf76c161da1678bb8cdad854feaee473cc assets/gemcraft/models/item/ignis_pressure_plate.json
+578671c7f21a9e3b838225f60fe32ef3c0d9b8ee assets/gemcraft/models/item/ignis_sapling.json
+b863c324bd251ac8279683990447d323d5675a6f assets/gemcraft/models/item/ignis_slab.json
+97ace44d97acca03eab4af8bc53fce7ac3d9318c assets/gemcraft/models/item/ignis_stairs.json
+1f0bc85a4dc8cc1129ecba9f3bd3ce420f8510a5 assets/gemcraft/models/item/ignis_trapdoor.json
+2570d84e0d48313d355d86d40c4c4a48b1a72bd1 assets/gemcraft/models/item/ignis_wall.json
+dd536db2c29c9e426e5a98dc812a292c898730c3 assets/gemcraft/models/item/ignis_wood.json
 d13a8e66516d8aab6f0b0a21dfa15f80d850b6b2 assets/gemcraft/models/item/inanis_gem_powder.json
 a27e7b7271618766d6131e3be7d890f525cdfa3a assets/gemcraft/models/item/lys_gem_powder.json
 a26facb98a7b81d76c2321cf5ce0bd02d4cf0d09 assets/gemcraft/models/item/middling_reassurance_elixir.json

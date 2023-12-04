@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "tag": "gemcraft:ignis_logs"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "gemcraft:ignis_planks"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "gemcraft:block/stripped_ignis_log_top",
+    "side": "gemcraft:block/stripped_ignis_log"
+  }
+}

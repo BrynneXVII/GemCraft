@@ -78,6 +78,21 @@ public class GCItemModelProvider extends ItemModelProvider {
 
         saplingItem(GCBlocks.WILLOW_SAPLING);
 
+        simpleBlockItem(GCBlocks.IGNIS_DOOR);
+        alternateBlockItem(GCBlocks.IGNIS_WOOD);
+
+        fenceItem(GCBlocks.IGNIS_FENCE, GCBlocks.IGNIS_PLANKS);
+        buttonItem(GCBlocks.IGNIS_BUTTON, GCBlocks.IGNIS_PLANKS);
+        wallItem(GCBlocks.IGNIS_WALL, GCBlocks.IGNIS_PLANKS);
+        trapdoorItem(GCBlocks.IGNIS_TRAPDOOR);
+
+        alternateBlockItem(GCBlocks.IGNIS_STAIRS);
+        alternateBlockItem(GCBlocks.IGNIS_PRESSURE_PLATE);
+        alternateBlockItem(GCBlocks.IGNIS_FENCE_GATE);
+        alternateBlockItem(GCBlocks.IGNIS_SLAB);
+
+        saplingItem(GCBlocks.IGNIS_SAPLING);
+
         simpleBlockItem(GCBlocks.VIOLET_LILY);
 
         complexBlock(GCBlocks.BASIC_ALCHEMICAL_CAULDRON.get());

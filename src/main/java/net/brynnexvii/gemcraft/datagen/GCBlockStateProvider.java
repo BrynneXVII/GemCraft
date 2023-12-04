@@ -24,11 +24,20 @@ public class GCBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
+        blockWithItem(GCBlocks.WILLOW_PLANKS);
         blockItem(GCBlocks.STRIPPED_WILLOW_LOG);
         blockItem(GCBlocks.STRIPPED_WILLOW_WOOD);
         blockItem(GCBlocks.WILLOW_LOG);
         blockItem(GCBlocks.WILLOW_WOOD);
         blockItem(GCBlocks.WILLOW_LEAVES);
+
+
+        blockWithItem(GCBlocks.IGNIS_PLANKS);
+        blockItem(GCBlocks.STRIPPED_IGNIS_LOG);
+        blockItem(GCBlocks.STRIPPED_IGNIS_WOOD);
+        blockItem(GCBlocks.IGNIS_LOG);
+        blockItem(GCBlocks.IGNIS_WOOD);
+        blockItem(GCBlocks.IGNIS_LEAVES);
 
         blockWithItem(GCBlocks.RUBY_BLOCK);
 
@@ -68,8 +77,6 @@ public class GCBlockStateProvider extends BlockStateProvider {
         blockWithItem(GCBlocks.END_STONE_INANIS_GEM_ORE);
 
 
-        blockWithItem(GCBlocks.WILLOW_PLANKS);
-
         //horizontalBlock(GCBlocks.BASIC_ALCHEMICAL_CAULDRON.get(), new ModelFile.UncheckedModelFile(modLoc("block/basic_alchemical_cauldron")));
         altBlockWithItem(GCBlocks.BASIC_ALCHEMICAL_CAULDRON);
 
@@ -93,6 +100,26 @@ public class GCBlockStateProvider extends BlockStateProvider {
         wallBlock(((WallBlock) GCBlocks.WILLOW_WALL.get()), blockTexture(GCBlocks.WILLOW_PLANKS.get()));
         doorBlockWithRenderType(((DoorBlock) GCBlocks.WILLOW_DOOR.get()), modLoc("block/willow_door_bottom"), modLoc("block/willow_door_top"), "cutout");
         trapdoorBlockWithRenderType(((TrapDoorBlock) GCBlocks.WILLOW_TRAPDOOR.get()), modLoc("block/willow_trapdoor"), true, "cutout");
+
+        logBlock((RotatedPillarBlock) GCBlocks.IGNIS_LOG.get());
+        axisBlock((RotatedPillarBlock) GCBlocks.IGNIS_WOOD.get(), blockTexture(GCBlocks.IGNIS_LOG.get()), blockTexture(GCBlocks.IGNIS_LOG.get()));
+        axisBlock((RotatedPillarBlock) GCBlocks.STRIPPED_IGNIS_LOG.get(), new ResourceLocation(GemCraft.MODID, "block/stripped_ignis_log"),
+                new ResourceLocation(GemCraft.MODID, "block/stripped_ignis_log_top"));
+        axisBlock((RotatedPillarBlock) GCBlocks.STRIPPED_IGNIS_WOOD.get(), new ResourceLocation(GemCraft.MODID, "block/stripped_ignis_log"),
+                new ResourceLocation(GemCraft.MODID, "block/stripped_ignis_log"));
+
+        saplingBlock(GCBlocks.IGNIS_SAPLING);
+        leavesBlock(GCBlocks.IGNIS_LEAVES);
+
+        stairsBlock(((StairBlock) GCBlocks.IGNIS_STAIRS.get()), blockTexture(GCBlocks.IGNIS_PLANKS.get()));
+        slabBlock(((SlabBlock) GCBlocks.IGNIS_SLAB.get()), blockTexture(GCBlocks.IGNIS_PLANKS.get()), blockTexture(GCBlocks.IGNIS_PLANKS.get()));
+        buttonBlock(((ButtonBlock) GCBlocks.IGNIS_BUTTON.get()), blockTexture(GCBlocks.IGNIS_PLANKS.get()));
+        pressurePlateBlock(((PressurePlateBlock) GCBlocks.IGNIS_PRESSURE_PLATE.get()), blockTexture(GCBlocks.IGNIS_PLANKS.get()));
+        fenceBlock(((FenceBlock) GCBlocks.IGNIS_FENCE.get()), blockTexture(GCBlocks.IGNIS_PLANKS.get()));
+        fenceGateBlock(((FenceGateBlock) GCBlocks.IGNIS_FENCE_GATE.get()), blockTexture(GCBlocks.IGNIS_PLANKS.get()));
+        wallBlock(((WallBlock) GCBlocks.IGNIS_WALL.get()), blockTexture(GCBlocks.IGNIS_PLANKS.get()));
+        doorBlockWithRenderType(((DoorBlock) GCBlocks.IGNIS_DOOR.get()), modLoc("block/ignis_door_bottom"), modLoc("block/ignis_door_top"), "cutout");
+        trapdoorBlockWithRenderType(((TrapDoorBlock) GCBlocks.IGNIS_TRAPDOOR.get()), modLoc("block/ignis_trapdoor"), true, "cutout");
 
         simpleBlock(GCBlocks.VIOLET_LILY.get(), models().cross(blockTexture(GCBlocks.VIOLET_LILY.get()).getPath(), blockTexture(GCBlocks.VIOLET_LILY.get())).renderType("cutout"));
 

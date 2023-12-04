@@ -112,6 +112,23 @@ public class GCCreativeModeTabs {
                                 pOutput.accept(GCBlocks.WILLOW_DOOR.get());
                                 pOutput.accept(GCBlocks.WILLOW_TRAPDOOR.get());
 
+                                pOutput.accept(GCBlocks.IGNIS_LOG.get());
+                                pOutput.accept(GCBlocks.STRIPPED_IGNIS_LOG.get());
+                                pOutput.accept(GCBlocks.IGNIS_WOOD.get());
+                                pOutput.accept(GCBlocks.STRIPPED_IGNIS_WOOD.get());
+                                pOutput.accept(GCBlocks.IGNIS_LEAVES.get());
+                                pOutput.accept(GCBlocks.IGNIS_SAPLING.get());
+                                pOutput.accept(GCBlocks.IGNIS_PLANKS.get());
+                                pOutput.accept(GCBlocks.IGNIS_STAIRS.get());
+                                pOutput.accept(GCBlocks.IGNIS_SLAB.get());
+                                pOutput.accept(GCBlocks.IGNIS_BUTTON.get());
+                                pOutput.accept(GCBlocks.IGNIS_PRESSURE_PLATE.get());
+                                pOutput.accept(GCBlocks.IGNIS_FENCE.get());
+                                pOutput.accept(GCBlocks.IGNIS_FENCE_GATE.get());
+                                pOutput.accept(GCBlocks.IGNIS_WALL.get());
+                                pOutput.accept(GCBlocks.IGNIS_DOOR.get());
+                                pOutput.accept(GCBlocks.IGNIS_TRAPDOOR.get());
+
                                 pOutput.accept(GCItems.BASIC_STAFF.get());
                                 pOutput.accept(GCItems.ROCK_CANDY.get());
                                 pOutput.accept(GCItems.GLASS_VIAL.get());

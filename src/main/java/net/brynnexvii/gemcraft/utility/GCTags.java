@@ -21,6 +21,7 @@ public class GCTags {
         public static final TagKey<Block> INANIS_ASPECTED_FLOWERS = tag("inanis_aspected_flowers");
         public static final TagKey<Block> GEM_ORES = tag("gem_ores");
         public static final TagKey<Block> WILLOW_LOGS = tag("willow_logs");
+        public static final TagKey<Block> IGNIS_LOGS = tag("ignis_logs");
 
         //helper method to find tags
         private static TagKey<Block> tag(String name){
@@ -33,6 +34,7 @@ public class GCTags {
         public static final TagKey<Item> GEM_ORES = tag("gem_ores");
         public static final TagKey<Item> JEWEL_POWDERS = tag("jewel_powders");
         public static final TagKey<Item> WILLOW_LOGS = tag("willow_logs");
+        public static final TagKey<Item> IGNIS_LOGS = tag("ignis_logs");
         public static final TagKey<Item> HERBS = tag("herbs");
 
         private static TagKey<Item> tag(String name){
