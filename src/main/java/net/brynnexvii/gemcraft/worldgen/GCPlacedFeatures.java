@@ -14,14 +14,14 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
-import net.minecraft.world.level.levelgen.placement.PlacedFeature;
-import net.minecraft.world.level.levelgen.placement.PlacementModifier;
+import net.minecraft.world.level.levelgen.placement.*;
 
 import java.util.List;
 
 public class GCPlacedFeatures {
     public static final ResourceKey<PlacedFeature> WILLOW_PLACED_KEY = registerKey("willow_placed");
     public static final ResourceKey<PlacedFeature> IGNIS_PLACED_KEY = registerKey("ignis_placed");
+    public static final ResourceKey<PlacedFeature> VIOLET_LILY_PLACED_KEY = registerKey("violet_lily_placed");
 
     public static void bootstrap(BootstapContext<PlacedFeature> context){
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
@@ -32,6 +32,9 @@ public class GCPlacedFeatures {
         register(context, IGNIS_PLACED_KEY, configuredFeatures.getOrThrow(GCConfiguredFeatures.IGNIS_KEY),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.1f, 1), // num per chunk, extra chance (1/extra chance must be an int), num extra
                         GCBlocks.IGNIS_SAPLING.get()));
+
+        register(context, VIOLET_LILY_PLACED_KEY, configuredFeatures.getOrThrow(GCConfiguredFeatures.VIOLET_LILY_KEY),
+                List.of(RarityFilter.onAverageOnceEvery(4), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
     }
 
 

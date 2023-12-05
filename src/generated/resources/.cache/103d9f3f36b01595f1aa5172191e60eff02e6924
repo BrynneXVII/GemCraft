@@ -1,7 +1,12 @@
-// 1.20.1	2023-12-04T01:01:00.8067677	Registries
+// 1.20.1	2023-12-04T23:33:01.1613426	Registries
 f78d9a1dbb071f2c4f78c25b7e355fff636855b8 data/gemcraft/forge/biome_modifier/add_tree_ignis.json
 e6e8dd2d09dab4a5f540d0ffbce3389c794d9286 data/gemcraft/forge/biome_modifier/add_tree_willow.json
+633ddd294a505f1db19caa6cdb5689cd6509aafb data/gemcraft/forge/biome_modifier/add_violet_lily.json
+528e1c41c7de392f476f3a6a055a2fa3f37d3ce0 data/gemcraft/worldgen/biome/ignis_overworld.json
+0b6f6b2b957ee6f2afb29883b77e2bd76399969c data/gemcraft/worldgen/biome/willow_swamp_overworld.json
 55475858328d3ccebf01840f2debbd0d3ac4c913 data/gemcraft/worldgen/configured_feature/ignis.json
+53ab046e8fd4d962604efe5052cc7dd72f82328f data/gemcraft/worldgen/configured_feature/violet.json
 dae2f1185893545997986bd9e5ccae5abe2a77d3 data/gemcraft/worldgen/configured_feature/willow.json
 86be1f785fabeac694d2e8b3beab99bc8c158046 data/gemcraft/worldgen/placed_feature/ignis_placed.json
+1c410933325dd62e536b06de482413d92cb4f0bb data/gemcraft/worldgen/placed_feature/violet_lily_placed.json
 11cf075bb3e6afff7ba3b4bfffdb93d9d0b636f2 data/gemcraft/worldgen/placed_feature/willow_placed.json

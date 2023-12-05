@@ -4,6 +4,7 @@ import net.brynnexvii.gemcraft.GemCraft;
 import net.brynnexvii.gemcraft.block.GCBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstapContext;
+import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.random.SimpleWeightedRandomList;
@@ -14,6 +15,8 @@ import net.minecraft.util.valueproviders.WeightedListInt;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
+import net.minecraft.world.level.levelgen.feature.configurations.RandomPatchConfiguration;
+import net.minecraft.world.level.levelgen.feature.configurations.SimpleBlockConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration;
 import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize;
 import net.minecraft.world.level.levelgen.feature.foliageplacers.CherryFoliagePlacer;
@@ -24,6 +27,7 @@ import net.minecraft.world.level.levelgen.feature.trunkplacers.CherryTrunkPlacer
 public class GCConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> WILLOW_KEY = registerKey("willow");
     public static final ResourceKey<ConfiguredFeature<?, ?>> IGNIS_KEY = registerKey("ignis");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> VIOLET_LILY_KEY = registerKey("violet");
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context){
 
@@ -73,29 +77,9 @@ public class GCConfiguredFeatures {
                 .build()
         );
 
-        /*
-        register(context, IGNIS_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
-                BlockStateProvider.simple(GCBlocks.IGNIS_LOG.get()), //log (trunk) block
-                new CherryTrunkPlacer( //trunk placer - currently the cherry tree stats
-                        4, //trunk height
-                        1, //height_rand_a
-                        0, //height_rand_b, VV branchCount VV
-                        new WeightedListInt(SimpleWeightedRandomList.<IntProvider>builder().add(ConstantInt.of(1), 1).add(ConstantInt.of(2), 1).add(ConstantInt.of(3), 1).build()),
-                        UniformInt.of(1, 3), //branchHorizontalLength
-                        UniformInt.of(-4, -3), //branchStartOffsetFromTop
-                        UniformInt.of(-1, 0)), //branchEndOffsetFromTop
-                BlockStateProvider.simple(GCBlocks.IGNIS_LEAVES.get()), //leaves block
-                new CherryFoliagePlacer( //foliage placer - currently the cherry tree stats except bottom 2 upped
-                        ConstantInt.of(3), //radius
-                        ConstantInt.of(0), //offset
-                        ConstantInt.of(3), //height
-                        0.25F, //wideBottomLayerHoleChance
-                        0.5F, //cornerHoleChance
-                        0.4F, //hangingLeavesChance
-                        0.2F), //hangingLeavesExtensionChance
-                new TwoLayersFeatureSize(1, 0, 2)) //
-                .build()
-        );*/
+        register(context, VIOLET_LILY_KEY, Feature.FLOWER,
+                new RandomPatchConfiguration(32, 6, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(GCBlocks.VIOLET_LILY.get())))));
     }
 
     //Helper methods

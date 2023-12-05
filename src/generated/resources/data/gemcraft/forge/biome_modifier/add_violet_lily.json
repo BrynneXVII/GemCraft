@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#forge:is_mountain",
+  "features": "gemcraft:violet_lily_placed",
+  "step": "vegetal_decoration"
+}

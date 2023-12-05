@@ -11,6 +11,8 @@ import net.brynnexvii.gemcraft.recipe.GCRecipes;
 import net.brynnexvii.gemcraft.screen.BasicAlchemicalCauldronScreen;
 import net.brynnexvii.gemcraft.screen.GCMenuTypes;
 import net.brynnexvii.gemcraft.utility.GCCreativeModeTabs;
+import net.brynnexvii.gemcraft.worldgen.biome.GCTerraBlenderAPI;
+import net.brynnexvii.gemcraft.worldgen.biome.surface.GCSurfaceRules;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Items;
@@ -31,6 +33,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
+import terrablender.api.SurfaceRuleManager;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(GemCraft.MODID)
@@ -55,8 +58,9 @@ public class GemCraft
 
         GCBlockEntities.register(modEventBus);
         GCMenuTypes.register(modEventBus);
-
         GCRecipes.register(modEventBus);
+
+        GCTerraBlenderAPI.registerRegions();
 
         modEventBus.addListener(this::commonSetup);
 
@@ -76,6 +80,8 @@ public class GemCraft
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(GCBlocks.VIOLET_LILY.getId(), GCBlocks.POTTED_VIOLET_LILY);
 
             BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(Potions.AWKWARD, Items.GLOW_INK_SAC, GCPotions.GLOWING_POTION.get()));
+
+            SurfaceRuleManager.addSurfaceRules(SurfaceRuleManager.RuleCategory.OVERWORLD, MODID, GCSurfaceRules.makeRules());
         });
     }
 

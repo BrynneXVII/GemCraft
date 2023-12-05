@@ -16,6 +16,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 public class GCBiomeModifiers {
     public static final ResourceKey<BiomeModifier> ADD_TREE_WILLOW = registerKey("add_tree_willow");
     public static final ResourceKey<BiomeModifier> ADD_TREE_IGNIS = registerKey("add_tree_ignis");
+    public static final ResourceKey<BiomeModifier> ADD_VIOLET_LILY = registerKey("add_violet_lily");
 
     public static void bootstrap(BootstapContext<BiomeModifier> context){
         var placedFeatures = context.lookup(Registries.PLACED_FEATURE);
@@ -29,6 +30,12 @@ public class GCBiomeModifiers {
         context.register(ADD_TREE_IGNIS, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(Tags.Biomes.IS_HOT_OVERWORLD), //or Tags.Biomes....
                 HolderSet.direct(placedFeatures.getOrThrow(GCPlacedFeatures.IGNIS_PLACED_KEY)),
+                GenerationStep.Decoration.VEGETAL_DECORATION
+        ));
+
+        context.register(ADD_VIOLET_LILY, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(Tags.Biomes.IS_MOUNTAIN),
+                HolderSet.direct(placedFeatures.getOrThrow(GCPlacedFeatures.VIOLET_LILY_PLACED_KEY)),
                 GenerationStep.Decoration.VEGETAL_DECORATION
         ));
     }
