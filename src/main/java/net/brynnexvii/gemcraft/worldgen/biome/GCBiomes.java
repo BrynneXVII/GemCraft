@@ -23,7 +23,7 @@ public class GCBiomes {
     public static void bootstrap(BootstapContext<Biome> context){
         context.register(WILLOW_SWAMP_OVERWORLD, willowSwampOverworld(context));
         context.register(IGNIS_OVERWORLD, ignisOverworld(context));
-        //context.register(IGNIS_NETHER, );
+        context.register(IGNIS_NETHER, ignisNether(context));
         //context.register(IGNIS_END, );
     }
 
@@ -66,12 +66,10 @@ public class GCBiomes {
         BiomeDefaultFeatures.addSwampVegetation(biomeBuilder);
         BiomeDefaultFeatures.addSwampClayDisk(biomeBuilder);
 
-
-
-
         BiomeDefaultFeatures.addDefaultMushrooms(biomeBuilder);
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, GCPlacedFeatures.WILLOW_PLACED_KEY);
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, GCPlacedFeatures.VIOLET_LILY_PLACED_KEY);
+
         //return
         return new Biome.BiomeBuilder()
                 .hasPrecipitation(true)
@@ -102,7 +100,7 @@ public class GCBiomes {
         BiomeGenerationSettings.Builder biomeBuilder = new BiomeGenerationSettings.Builder(context.lookup(Registries.PLACED_FEATURE), context.lookup(Registries.CONFIGURED_CARVER));
         globalOverworldGeneration(biomeBuilder);
 
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, GCPlacedFeatures.IGNIS_PLACED_KEY);
+        biomeBuilder.addFeature(GenerationStep.Decoration.UNDERGROUND_DECORATION, GCPlacedFeatures.IGNIS_PLACED_KEY); //only spawns on surface, need to adapt the placement/features for nether 
 
         //return
         return new Biome.BiomeBuilder()
@@ -123,15 +121,38 @@ public class GCBiomes {
                         .build())
                 .build();
     }
-/*
+
     public static Biome ignisNether(BootstapContext<Biome> context){
         //mobs
         MobSpawnSettings.Builder spawnBuilder = new MobSpawnSettings.Builder();
 
         //terrain
         BiomeGenerationSettings.Builder biomeBuilder = new BiomeGenerationSettings.Builder(context.lookup(Registries.PLACED_FEATURE), context.lookup(Registries.CONFIGURED_CARVER));
+
+        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, GCPlacedFeatures.IGNIS_PLACED_KEY);
+
+        return new Biome.BiomeBuilder()
+                .hasPrecipitation(false)
+                .downfall(0.0f) //how often will it rain
+                .temperature(0.9f)
+                .generationSettings(biomeBuilder.build())
+                .mobSpawnSettings(spawnBuilder.build())
+                .specialEffects((new BiomeSpecialEffects.Builder())
+                        .waterColor(0x96d0eb)
+                        .waterFogColor(0x96d0eb)
+                        .skyColor(0x93c3fe)
+                        .grassColorOverride(0xc70039)
+                        .foliageColorOverride(0xaf3333)
+                        .fogColor(0xeb96a6)
+                        .ambientMoodSound(AmbientMoodSettings.LEGACY_CAVE_SETTINGS)
+                        .backgroundMusic(Musics.GAME)
+                        .build())
+                .build();
+
     }
 
+
+    /*
     public static Biome ignisEnd(BootstapContext<Biome> context){
         //mobs
         MobSpawnSettings.Builder spawnBuilder = new MobSpawnSettings.Builder();

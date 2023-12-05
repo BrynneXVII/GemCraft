@@ -34,7 +34,7 @@ public class GCBiomeModifiers {
         ));
 
         context.register(ADD_VIOLET_LILY, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
-                biomes.getOrThrow(Tags.Biomes.IS_MOUNTAIN),
+                biomes.getOrThrow(Tags.Biomes.IS_MOUNTAIN), //may not be working
                 HolderSet.direct(placedFeatures.getOrThrow(GCPlacedFeatures.VIOLET_LILY_PLACED_KEY)),
                 GenerationStep.Decoration.VEGETAL_DECORATION
         ));

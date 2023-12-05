@@ -53,14 +53,15 @@
       "minecraft:ore_andesite_lower",
       "minecraft:ore_tuff"
     ],
-    [],
+    [
+      "gemcraft:ignis_placed"
+    ],
     [
       "minecraft:spring_water",
       "minecraft:spring_lava"
     ],
     [
-      "minecraft:glow_lichen",
-      "gemcraft:ignis_placed"
+      "minecraft:glow_lichen"
     ],
     [
       "minecraft:freeze_top_layer"

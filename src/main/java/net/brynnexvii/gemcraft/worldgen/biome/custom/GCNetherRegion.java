@@ -1,6 +1,7 @@
 package net.brynnexvii.gemcraft.worldgen.biome.custom;
 
 import com.mojang.datafixers.util.Pair;
+import net.brynnexvii.gemcraft.utility.GCBiomeUtil;
 import net.brynnexvii.gemcraft.worldgen.biome.GCBiomes;
 import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceKey;
@@ -20,8 +21,14 @@ public class GCNetherRegion extends Region {
 
     @Override
     public void addBiomes(Registry<Biome> registry, Consumer<Pair<Climate.ParameterPoint, ResourceKey<Biome>>> mapper) {
-        this.addModifiedVanillaOverworldBiomes(mapper, modifiedVanillaOverworldBuilder -> {
-            //add biomes here
-        });
+        this.addBiome(mapper,
+                Climate.Parameter.point(0.4F),
+                Climate.Parameter.point(0.0F),
+                Climate.Parameter.point(0.0F),
+                Climate.Parameter.point(0.0F),
+                Climate.Parameter.point(0.0F),
+                Climate.Parameter.point(0.0F),
+                0.0F,
+                GCBiomeUtil.biomeOrFallback(registry, GCBiomes.IGNIS_NETHER, Biomes.CRIMSON_FOREST));
     }
 }
