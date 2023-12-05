@@ -100,7 +100,7 @@ public class GCBiomes {
         BiomeGenerationSettings.Builder biomeBuilder = new BiomeGenerationSettings.Builder(context.lookup(Registries.PLACED_FEATURE), context.lookup(Registries.CONFIGURED_CARVER));
         globalOverworldGeneration(biomeBuilder);
 
-        biomeBuilder.addFeature(GenerationStep.Decoration.UNDERGROUND_DECORATION, GCPlacedFeatures.IGNIS_PLACED_KEY); //only spawns on surface, need to adapt the placement/features for nether 
+        biomeBuilder.addFeature(GenerationStep.Decoration.UNDERGROUND_DECORATION, GCPlacedFeatures.IGNIS_PLACED_KEY); //only spawns on surface, need to adapt the placement/features for nether
 
         //return
         return new Biome.BiomeBuilder()

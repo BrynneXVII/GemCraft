@@ -32,6 +32,8 @@ public class GCBlocks {
     //<editor-fold desc="Random Blocks">
     public static final RegistryObject<Block> RUBY_BLOCK = registerBlock("ruby_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK)));
+    public static final RegistryObject<Block> PORTAL_BLOCK = registerBlock("portal_block",
+            () -> new GemcraftPortalBlock(BlockBehaviour.Properties.copy(Blocks.NETHER_PORTAL).noOcclusion().noLootTable()));
     //</editor-fold>
 
     //------------------------------------------------------------------------------------------------------------------

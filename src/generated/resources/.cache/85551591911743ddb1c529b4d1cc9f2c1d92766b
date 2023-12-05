@@ -1,4 +1,4 @@
-// 1.20.1	2023-12-04T00:28:12.5442578	Block States: gemcraft
+// 1.20.1	2023-12-05T15:57:55.0364157	Block States: gemcraft
 d3f070ed6657b105c69b748f9b314e8d323b18c5 assets/gemcraft/blockstates/aether_gem_ore.json
 a72b5059257e0d19e7a139c894bc1e3d375d423e assets/gemcraft/blockstates/basic_alchemical_cauldron.json
 6f35e2dd965db7a9079ba07a8c197c7b7f2d2e17 assets/gemcraft/blockstates/deepslate_aether_gem_ore.json
@@ -41,6 +41,7 @@ b024af363263f2ec9e40fbcaf4d9ccd3073e4aa4 assets/gemcraft/blockstates/nether_igni
 ff4a427d4b870091505b81fb4a34f2d887201f85 assets/gemcraft/blockstates/nether_terra_gem_ore.json
 b551023f87f11f2b52cdcb7f8e47a5a66bec52e2 assets/gemcraft/blockstates/nether_zephyr_gem_ore.json
 37a3a86c908dbf42fadfa857f922e56e6bb70349 assets/gemcraft/blockstates/parsnip_crop.json
+1f25b0ae8620b3bece82f2f6e4473a23770c4d43 assets/gemcraft/blockstates/portal_block.json
 ad5e6399ca8e26684bcaa841e372a8127f6cbffc assets/gemcraft/blockstates/ruby_block.json
 0bf231a4abf31a84ae62a76fe9fba6bc51cc398a assets/gemcraft/blockstates/stripped_ignis_log.json
 20f10539d20096f3f3191fe136125c16f9326018 assets/gemcraft/blockstates/stripped_ignis_wood.json
@@ -129,6 +130,7 @@ c8a637199666ea469b33c0f3d8adc5a90c2f3a4a assets/gemcraft/models/block/nether_zep
 042d20569fde442a93a035e1f391d9c74a7d8837 assets/gemcraft/models/block/parsnip_stage1.json
 35c0ab28811678825c0fa371b2495faa5350c683 assets/gemcraft/models/block/parsnip_stage2.json
 06af954a247619d53175d613c102114c015a9424 assets/gemcraft/models/block/parsnip_stage3.json
+0119e2f59a9a43ffff77244200ac5920b2a480f9 assets/gemcraft/models/block/portal_block.json
 a75c7d673ee47a98509906778c0d82283177844f assets/gemcraft/models/block/ruby_block.json
 b594660f72fb47b91ab7a2c2c322f26d189812d8 assets/gemcraft/models/block/stripped_ignis_log.json
 2670c2e02fa3f39483aad999f4d97b4dc38d62ba assets/gemcraft/models/block/stripped_ignis_log_horizontal.json
@@ -208,6 +210,7 @@ a4ef2fb1c76309a6b1453e322a4e77176056dad8 assets/gemcraft/models/item/nether_aeth
 845463c52e45705a8be0c487a295641d6f0a905e assets/gemcraft/models/item/nether_mizu_gem_ore.json
 1b1b7cfb6b532b2cefef940b50bfee3ee13b0df0 assets/gemcraft/models/item/nether_terra_gem_ore.json
 f861ab069f954c475fed17735c924e2c42694c4b assets/gemcraft/models/item/nether_zephyr_gem_ore.json
+c236466c0e2019c6e1a157d97a44a90d6c8d7acf assets/gemcraft/models/item/portal_block.json
 ead3b2e30879ffb29a13da7b97beacb90829ce12 assets/gemcraft/models/item/ruby_block.json
 156244c939b805801a9541abe9d7508d2ec1878f assets/gemcraft/models/item/stripped_ignis_log.json
 ce96dcbf62d070ada57f4e9ec731df0cd9eb8423 assets/gemcraft/models/item/stripped_ignis_wood.json

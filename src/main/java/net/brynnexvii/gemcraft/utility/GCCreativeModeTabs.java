@@ -140,6 +140,8 @@ public class GCCreativeModeTabs {
 
                                 pOutput.accept(GCBlocks.BASIC_ALCHEMICAL_CAULDRON.get());
 
+                                pOutput.accept(GCBlocks.PORTAL_BLOCK.get());
+
                         }).build());
 
         public static final RegistryObject<CreativeModeTab> ALCHEMY_TAB = CREATIVE_MODE_TABS.register("alchemy_tab",

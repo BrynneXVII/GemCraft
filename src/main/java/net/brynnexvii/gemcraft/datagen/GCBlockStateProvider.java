@@ -31,7 +31,6 @@ public class GCBlockStateProvider extends BlockStateProvider {
         blockItem(GCBlocks.WILLOW_WOOD);
         blockItem(GCBlocks.WILLOW_LEAVES);
 
-
         blockWithItem(GCBlocks.IGNIS_PLANKS);
         blockItem(GCBlocks.STRIPPED_IGNIS_LOG);
         blockItem(GCBlocks.STRIPPED_IGNIS_WOOD);
@@ -40,6 +39,7 @@ public class GCBlockStateProvider extends BlockStateProvider {
         blockItem(GCBlocks.IGNIS_LEAVES);
 
         blockWithItem(GCBlocks.RUBY_BLOCK);
+        blockWithItem(GCBlocks.PORTAL_BLOCK);
 
         blockWithItem(GCBlocks.IGNIS_GEM_ORE);
         blockWithItem(GCBlocks.DEEPSLATE_IGNIS_GEM_ORE);
